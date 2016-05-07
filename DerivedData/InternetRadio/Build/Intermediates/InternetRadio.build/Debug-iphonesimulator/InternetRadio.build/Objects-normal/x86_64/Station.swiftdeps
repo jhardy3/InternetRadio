@@ -7,15 +7,19 @@ provides-member:
 - ["C13InternetRadio7Station", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Station"
 - "String"
+- "Station"
+- "UIImage"
 depends-member:
+- !private ["Ps9AnyObject", "stationImage"]
 - !private ["Ps9AnyObject", "stationName"]
 - !private ["Ps9AnyObject", "stationStream"]
 - ["Ps9AnyObject", ""]
 - ["C13InternetRadio7Station", "String"]
+- ["C13InternetRadio7Station", "UIImage"]
 - ["C13InternetRadio7Station", "deinit"]
 - ["C13InternetRadio7Station", "init"]
+- ["C13InternetRadio7Station", "stationImage"]
 - ["C13InternetRadio7Station", "stationName"]
 - ["C13InternetRadio7Station", "stationStream"]
 depends-nominal:
@@ -34,4 +38,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
-interface-hash: "7772c647c823b036c65955465415d864"
+interface-hash: "4c7d0b1b5486606615c78b5cd5814893"

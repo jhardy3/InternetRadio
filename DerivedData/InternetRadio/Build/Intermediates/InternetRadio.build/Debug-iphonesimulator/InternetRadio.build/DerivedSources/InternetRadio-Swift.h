@@ -200,6 +200,7 @@ SWIFT_CLASS("_TtC13InternetRadio22StationsViewController")
 @end
 
 @class UIButton;
+@class UISlider;
 @class UIProgressView;
 
 SWIFT_CLASS("_TtC13InternetRadio26StreamDetailViewController")
@@ -207,10 +208,11 @@ SWIFT_CLASS("_TtC13InternetRadio26StreamDetailViewController")
 @property (nonatomic, weak) IBOutlet UIProgressView * _Null_unspecified streamProgressBar;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified streamDetailLabel;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified detailImageView;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified togglePlayButton;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (IBAction)togglePlayButtonTapped:(UIButton * _Nonnull)sender;
-- (IBAction)sleepButtonTapped:(UIButton * _Nonnull)sender;
+- (IBAction)volumeSliderFired:(UISlider * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

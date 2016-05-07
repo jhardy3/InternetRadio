@@ -9,29 +9,30 @@ provides-member:
 - ["C13InternetRadio17StationController", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "!"
-- !private "&&"
-- !private "=="
-- "StationController"
+- "Array"
 - !private ">"
-- "SHOWS_ARRAY"
-- !private "NSURL"
-- "Show"
+- "Station"
+- !private "=="
+- !private "NSCalendarIdentifierGregorian"
+- !private ">="
+- "StationController"
+- !private "!"
 - "StringLiteralType"
-- "Bool"
-- "AVPlayer"
+- !private "&&"
+- !private "||"
 - "UIImage"
-- !private "NSDate"
-- "STATIONS_ARRAY"
+- !private "NSURL"
+- "Bool"
+- "SHOWS_ARRAY"
 - !private "NSCalendarUnit"
 - !private "<="
-- !private "||"
-- "BooleanLiteralType"
-- !private "NSCalendarIdentifierGregorian"
-- "Station"
-- "Array"
-- !private ">="
+- "STATIONS_ARRAY"
+- "AVPlayer"
+- "Float"
+- "Show"
 - !private "NSCalendar"
+- !private "NSDate"
+- "BooleanLiteralType"
 depends-member:
 - !private ["CSo8AVPlayer", "init"]
 - !private ["CSo8AVPlayer", "pause"]
@@ -250,6 +251,7 @@ depends-member:
 - !private ["C13InternetRadio7Station", "stationStream"]
 - ["C13InternetRadio17StationController", "AVPlayer"]
 - ["C13InternetRadio17StationController", "Bool"]
+- ["C13InternetRadio17StationController", "Float"]
 - !private ["C13InternetRadio17StationController", "NSCalendar"]
 - !private ["C13InternetRadio17StationController", "NSCalendarIdentifierGregorian"]
 - !private ["C13InternetRadio17StationController", "NSCalendarUnit"]
@@ -261,6 +263,7 @@ depends-member:
 - ["C13InternetRadio17StationController", "Station"]
 - ["C13InternetRadio17StationController", "StationController"]
 - ["C13InternetRadio17StationController", "audioPlayer"]
+- ["C13InternetRadio17StationController", "audioVolumeChanged"]
 - ["C13InternetRadio17StationController", "deinit"]
 - ["C13InternetRadio17StationController", "init"]
 - ["C13InternetRadio17StationController", "isTheWeekend"]
@@ -407,4 +410,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
-interface-hash: "20823e6627d367e85eb94edeb99387ec"
+interface-hash: "2832effb5804632d304028fa7b2d6bbf"

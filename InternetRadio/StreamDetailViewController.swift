@@ -13,16 +13,23 @@ enum ViewMode {
     case Station
 }
 
+enum PlayState {
+    case Paused
+    case Streaming
+}
+
 
 class StreamDetailViewController: UIViewController {
     
     @IBOutlet weak var streamProgressBar: UIProgressView!
     @IBOutlet weak var streamDetailLabel: UILabel!
     @IBOutlet weak var detailImageView: UIImageView!
+    @IBOutlet weak var togglePlayButton: UIButton!
     
     var show: Show?
     var station: Station?
     var viewMode = ViewMode.Show
+    var playState = PlayState.Streaming
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,7 +50,9 @@ class StreamDetailViewController: UIViewController {
     }
     
     func updateWithStation(station: Station) {
+        streamProgressBar.progress = 1.0
         streamDetailLabel.text = station.stationName
+        detailImageView.image = station.stationImage
     }
 
     override func didReceiveMemoryWarning() {
@@ -52,9 +61,20 @@ class StreamDetailViewController: UIViewController {
     }
     
     @IBAction func togglePlayButtonTapped(sender: UIButton) {
+        switch playState {
+        case .Streaming:
+            playState = .Paused
+            StationController.sharedController.stationPaused()
+            togglePlayButton.setImage(UIImage(named: "Play"), forState: .Normal)
+        case .Paused:
+            playState = .Streaming
+            StationController.sharedController.stationStarted()
+            togglePlayButton.setImage(UIImage(named: "Pause"), forState: .Normal)
+        }
     }
     
-    @IBAction func sleepButtonTapped(sender: UIButton) {
+    @IBAction func volumeSliderFired(sender: UISlider) {
+        StationController.sharedController.audioVolumeChanged(sender.value)
     }
     
 }

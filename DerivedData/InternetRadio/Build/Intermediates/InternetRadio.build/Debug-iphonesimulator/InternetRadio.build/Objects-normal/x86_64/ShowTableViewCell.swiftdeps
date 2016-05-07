@@ -6,17 +6,17 @@ provides-nominal:
 provides-member:
 - ["C13InternetRadio17ShowTableViewCell", ""]
 provides-dynamic-lookup:
-- "awakeFromNib"
-- "setSelected"
 - "hostImageView"
-- "hostNameLabel"
+- "setSelected"
+- "awakeFromNib"
 - "hostDetailLabel"
+- "hostNameLabel"
 depends-top-level:
-- "Bool"
-- "ShowTableViewCell"
-- "UITableViewCell"
 - "UIImageView"
+- "Bool"
+- "UITableViewCell"
 - "UILabel"
+- "ShowTableViewCell"
 depends-member:
 - ["Ps9AnyObject", "awakeFromNib"]
 - ["Ps9AnyObject", "hostDetailLabel"]

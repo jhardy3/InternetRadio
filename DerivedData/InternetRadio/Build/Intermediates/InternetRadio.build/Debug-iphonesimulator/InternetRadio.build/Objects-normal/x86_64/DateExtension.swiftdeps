@@ -7,9 +7,9 @@ provides-member:
 provides-dynamic-lookup:
 - "stringValue"
 depends-top-level:
-- "NSDate"
 - "String"
 - !private "NSDateFormatter"
+- "NSDate"
 depends-member:
 - !private ["Ps9AnyObject", "NSDateFormatter"]
 - !private ["Ps9AnyObject", "dateStyle"]

@@ -14,30 +14,30 @@ import AVFoundation
 // Add Station Streams to this array
 let STATIONS_ARRAY = [
     
-    ("Freedom 970", "http://65.19.131.171/alphaportland-kufoamaac-ibc1?session-id=1128215199"),
-    ("Red State Radio A", "http://fire.wavestreamer.com:8841"),
-    ("Red State Radio B", "http://majestic.wavestreamer.com:2418"),
-    ("KCAA California", "http://stream.kcaastreaming.com:8000/kcaa.mp3"),
-    ("iCRN - Liberty", "http://ca.radioboss.fm:8328/live"),
-    ("iCRN - Justice", "http://ca2.radioboss.fm:8061/stream"),
-    ("KIXW - Talk 960", "http://54.81.244.228/eldorado-kixwamaac-ibc2?session-id=624764968&source=TuneIn"), // Time Donnelly
-    ("Kern Radio", "http://65.19.131.132/agmedia28-kernamaac-32?session-id=1219782653"),
-    ("KMOX 1120", "http://4533.live.streamtheworld.com/KMOXAMDIALUP_SC"),
-    ("GCN - 1", "http://gcnplayer.gcnlive.com/channel1-hi.mp3"),
-    ("GCN - 2", "http://gcnplayer.gcnlive.com:80/channel2-hi.mp3"),
-    ("GCN - 3", "http://ice01.gcnlive.com/channel3-lo.mp3"),
-    ("GCN - 4", "http://tunein.com/radio/GCN-Live-4-s45477/"),
-    ("GCN - 2", "http://gcnplayer.gcnlive.com:80/channel2-hi.mp3"),
-    ("KSFO 560 AM", "http://10423.live.streamtheworld.com:3690/KSFOAM_SC"),
-    ("WWB-AM", "http://1.ice1.firststreaming.com/wwba_am.mp3"),
+    ("Freedom 970", "http://65.19.131.171/alphaportland-kufoamaac-ibc1?session-id=1128215199", UIImage(named: "Freedom970")!),
+    ("Red State Radio A", "http://fire.wavestreamer.com:8841", UIImage(named: "RedStateRadio")!),
+    ("Red State Radio B", "http://majestic.wavestreamer.com:2418", UIImage(named: "RedStateRadio")!),
+    ("KCAA California", "http://stream.kcaastreaming.com:8000/kcaa.mp3", UIImage(named: "KCAACalifornia")!),
+    ("iCRN - Liberty", "http://ca.radioboss.fm:8328/live", UIImage(named: "iCRN")!),
+    ("iCRN - Justice", "http://ca2.radioboss.fm:8061/stream", UIImage(named: "iCRN")!),
+    ("KIXW - Talk 960", "http://54.81.244.228/eldorado-kixwamaac-ibc2?session-id=624764968&source=TuneIn", UIImage(named: "Talk960")!), // Time Donnelly
+    ("Kern Radio", "http://65.19.131.132/agmedia28-kernamaac-32?session-id=1219782653", UIImage(named: "Kern")!),
+    ("KMOX 1120", "http://4533.live.streamtheworld.com/KMOXAMDIALUP_SC", UIImage(named: "KMOX")!),
+    ("GCN - 1", "http://gcnplayer.gcnlive.com/channel1-hi.mp3", UIImage(named: "GCN")!),
+    ("GCN - 2", "http://gcnplayer.gcnlive.com:80/channel2-hi.mp3", UIImage(named: "GCN")!),
+    ("GCN - 3", "http://ice01.gcnlive.com/channel3-lo.mp3", UIImage(named: "GCN")!),
+    ("GCN - 4", "http://tunein.com/radio/GCN-Live-4-s45477/", UIImage(named: "GCN")!),
+    ("GCN - 2", "http://gcnplayer.gcnlive.com:80/channel2-hi.mp3", UIImage(named: "GCN")!),
+    ("KSFO 560 AM", "http://10423.live.streamtheworld.com:3690/KSFOAM_SC", UIImage(named: "KSFO")!)
+//    ("WWB-AM", "http://1.ice1.firststreaming.com/wwba_am.mp3", UIImage(named: "Beck")!),
     // Savage 6-7
     
     // Specifics
-    ("The Glenn Beck Program", "http://15233.live.streamtheworld.com:3690/KSSZFM_SC"),
-    ("The Michael Savage Show", "http://13753.live.streamtheworld.com:3690/WKZOAM_SC"),
-    ("The Sean Hannity Show", "http://streaming.cmgdigital.com/atl750/atl750-tunein.mp3"),
-    ("The Mark Levin Show", "http://www.ophanim.net:9640"),
-    ("The Savage Nation", "http://icy3.abacast.com/southerncomm-wwnramaac-64"),
+//    ("The Glenn Beck Program", "http://15233.live.streamtheworld.com:3690/KSSZFM_SC", UIImage(named: "Beck")!),
+//    ("The Michael Savage Show", "http://13753.live.streamtheworld.com:3690/WKZOAM_SC", UIImage(named: "Savage")!),
+//    ("The Sean Hannity Show", "http://streaming.cmgdigital.com/atl750/atl750-tunein.mp3", UIImage(named: "Hannity")!),
+//    ("The Mark Levin Show", "http://www.ophanim.net:9640", UIImage(named: "Levin")!),
+//    ("The Savage Nation", "http://icy3.abacast.com/southerncomm-wwnramaac-64", UIImage(named: "Savage")!)
     
 ]
 
@@ -76,7 +76,7 @@ class StationController {
     
     init() {
         for station in STATIONS_ARRAY {
-            stations.append(Station(stationStream: station.1, stationName: station.0))
+            stations.append(Station(stationStream: station.1, stationName: station.0, stationImage: station.2))
         }
         
         for show in SHOWS_ARRAY {
@@ -151,6 +151,10 @@ class StationController {
         if let audioPlayer = audioPlayer {
             audioPlayer.play()
         }
+    }
+    
+    func audioVolumeChanged(volumeFloat: Float) {
+        self.audioPlayer?.volume = volumeFloat
     }
 }
 

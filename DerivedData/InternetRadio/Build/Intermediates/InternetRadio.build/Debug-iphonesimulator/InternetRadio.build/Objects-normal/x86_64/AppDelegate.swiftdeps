@@ -6,24 +6,32 @@ provides-nominal:
 provides-member:
 - ["C13InternetRadio11AppDelegate", ""]
 provides-dynamic-lookup:
-- "applicationDidBecomeActive"
 - "applicationWillEnterForeground"
-- "applicationDidEnterBackground"
-- "window"
 - "application"
+- "applicationDidEnterBackground"
 - "applicationWillResignActive"
+- "window"
 - "applicationWillTerminate"
+- "applicationDidBecomeActive"
 depends-top-level:
-- "NSObject"
-- "UIResponder"
-- "UIWindow"
-- "AnyObject"
-- "UIApplicationDelegate"
-- "UIApplication"
 - "Bool"
+- !private "UINavigationBar"
+- !private "StringLiteralType"
+- "UIWindow"
+- "UIResponder"
 - !private "BooleanLiteralType"
+- !private "UIColor"
+- "UIApplicationDelegate"
+- !private "UIImage"
+- "NSObject"
+- "AnyObject"
+- "UIApplication"
 - "AppDelegate"
 depends-member:
+- !private ["Ps9AnyObject", "UIColor"]
+- !private ["Ps9AnyObject", "UIImage"]
+- !private ["Ps9AnyObject", "UINavigationBar"]
+- !private ["Ps9AnyObject", "appearance"]
 - ["Ps9AnyObject", "application"]
 - ["Ps9AnyObject", "applicationDidBecomeActive"]
 - ["Ps9AnyObject", "applicationDidEnterBackground"]
@@ -36,13 +44,19 @@ depends-member:
 - ["Ps9AnyObject", "applicationWillEnterForeground"]
 - ["Ps9AnyObject", "applicationWillResignActive"]
 - ["Ps9AnyObject", "applicationWillTerminate"]
+- !private ["Ps9AnyObject", "blackColor"]
 - ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "setBackgroundImage"]
+- !private ["Ps9AnyObject", "tintColor"]
 - ["Ps9AnyObject", "window"]
 - ["Ps9AnyObject", ""]
 - ["C13InternetRadio11AppDelegate", "AnyObject"]
 - ["C13InternetRadio11AppDelegate", "Bool"]
 - ["C13InternetRadio11AppDelegate", "NSObject"]
 - ["C13InternetRadio11AppDelegate", "UIApplication"]
+- !private ["C13InternetRadio11AppDelegate", "UIColor"]
+- !private ["C13InternetRadio11AppDelegate", "UIImage"]
+- !private ["C13InternetRadio11AppDelegate", "UINavigationBar"]
 - ["C13InternetRadio11AppDelegate", "UIWindow"]
 - ["C13InternetRadio11AppDelegate", "application"]
 - ["C13InternetRadio11AppDelegate", "applicationDidBecomeActive"]
@@ -59,6 +73,10 @@ depends-member:
 - ["C13InternetRadio11AppDelegate", "deinit"]
 - ["C13InternetRadio11AppDelegate", "init"]
 - ["C13InternetRadio11AppDelegate", "window"]
+- !private ["Ps11CVarArgType", "UIColor"]
+- !private ["Ps11CVarArgType", "UIImage"]
+- !private ["Ps11CVarArgType", "UINavigationBar"]
+- !private ["Ps11CVarArgType", "appearance"]
 - ["Ps11CVarArgType", "application"]
 - ["Ps11CVarArgType", "applicationDidBecomeActive"]
 - ["Ps11CVarArgType", "applicationDidEnterBackground"]
@@ -71,9 +89,16 @@ depends-member:
 - ["Ps11CVarArgType", "applicationWillEnterForeground"]
 - ["Ps11CVarArgType", "applicationWillResignActive"]
 - ["Ps11CVarArgType", "applicationWillTerminate"]
+- !private ["Ps11CVarArgType", "blackColor"]
 - ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "setBackgroundImage"]
+- !private ["Ps11CVarArgType", "tintColor"]
 - ["Ps11CVarArgType", "window"]
 - ["Ps11CVarArgType", ""]
+- !private ["Ps28CustomDebugStringConvertible", "UIColor"]
+- !private ["Ps28CustomDebugStringConvertible", "UIImage"]
+- !private ["Ps28CustomDebugStringConvertible", "UINavigationBar"]
+- !private ["Ps28CustomDebugStringConvertible", "appearance"]
 - ["Ps28CustomDebugStringConvertible", "application"]
 - ["Ps28CustomDebugStringConvertible", "applicationDidBecomeActive"]
 - ["Ps28CustomDebugStringConvertible", "applicationDidEnterBackground"]
@@ -86,9 +111,16 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "applicationWillEnterForeground"]
 - ["Ps28CustomDebugStringConvertible", "applicationWillResignActive"]
 - ["Ps28CustomDebugStringConvertible", "applicationWillTerminate"]
+- !private ["Ps28CustomDebugStringConvertible", "blackColor"]
 - ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "setBackgroundImage"]
+- !private ["Ps28CustomDebugStringConvertible", "tintColor"]
 - ["Ps28CustomDebugStringConvertible", "window"]
 - ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "UIColor"]
+- !private ["Ps23CustomStringConvertible", "UIImage"]
+- !private ["Ps23CustomStringConvertible", "UINavigationBar"]
+- !private ["Ps23CustomStringConvertible", "appearance"]
 - ["Ps23CustomStringConvertible", "application"]
 - ["Ps23CustomStringConvertible", "applicationDidBecomeActive"]
 - ["Ps23CustomStringConvertible", "applicationDidEnterBackground"]
@@ -101,9 +133,17 @@ depends-member:
 - ["Ps23CustomStringConvertible", "applicationWillEnterForeground"]
 - ["Ps23CustomStringConvertible", "applicationWillResignActive"]
 - ["Ps23CustomStringConvertible", "applicationWillTerminate"]
+- !private ["Ps23CustomStringConvertible", "blackColor"]
 - ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "setBackgroundImage"]
+- !private ["Ps23CustomStringConvertible", "tintColor"]
 - ["Ps23CustomStringConvertible", "window"]
 - ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "Default"]
+- !private ["Ps9Equatable", "UIColor"]
+- !private ["Ps9Equatable", "UIImage"]
+- !private ["Ps9Equatable", "UINavigationBar"]
+- !private ["Ps9Equatable", "appearance"]
 - ["Ps9Equatable", "application"]
 - ["Ps9Equatable", "applicationDidBecomeActive"]
 - ["Ps9Equatable", "applicationDidEnterBackground"]
@@ -116,9 +156,17 @@ depends-member:
 - ["Ps9Equatable", "applicationWillEnterForeground"]
 - ["Ps9Equatable", "applicationWillResignActive"]
 - ["Ps9Equatable", "applicationWillTerminate"]
+- !private ["Ps9Equatable", "blackColor"]
 - ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "setBackgroundImage"]
+- !private ["Ps9Equatable", "tintColor"]
 - ["Ps9Equatable", "window"]
 - ["Ps9Equatable", ""]
+- !private ["Ps8Hashable", "Default"]
+- !private ["Ps8Hashable", "UIColor"]
+- !private ["Ps8Hashable", "UIImage"]
+- !private ["Ps8Hashable", "UINavigationBar"]
+- !private ["Ps8Hashable", "appearance"]
 - ["Ps8Hashable", "application"]
 - ["Ps8Hashable", "applicationDidBecomeActive"]
 - ["Ps8Hashable", "applicationDidEnterBackground"]
@@ -131,14 +179,27 @@ depends-member:
 - ["Ps8Hashable", "applicationWillEnterForeground"]
 - ["Ps8Hashable", "applicationWillResignActive"]
 - ["Ps8Hashable", "applicationWillTerminate"]
+- !private ["Ps8Hashable", "blackColor"]
 - ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "setBackgroundImage"]
+- !private ["Ps8Hashable", "tintColor"]
 - ["Ps8Hashable", "window"]
 - ["Ps8Hashable", ""]
+- !private ["PSo8NSCoding", "appearance"]
+- !private ["PSo8NSCoding", "blackColor"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "setBackgroundImage"]
+- !private ["PSo8NSCoding", "tintColor"]
+- !private ["PSo9NSCopying", "blackColor"]
 - ["CSo8NSObject", "AnyObject"]
 - ["CSo8NSObject", "Bool"]
 - ["CSo8NSObject", "NSObject"]
 - ["CSo8NSObject", "UIApplication"]
+- !private ["CSo8NSObject", "UIColor"]
+- !private ["CSo8NSObject", "UIImage"]
+- !private ["CSo8NSObject", "UINavigationBar"]
 - ["CSo8NSObject", "UIWindow"]
+- !private ["CSo8NSObject", "appearance"]
 - ["CSo8NSObject", "application"]
 - ["CSo8NSObject", "applicationDidBecomeActive"]
 - ["CSo8NSObject", "applicationDidEnterBackground"]
@@ -151,8 +212,15 @@ depends-member:
 - ["CSo8NSObject", "applicationWillEnterForeground"]
 - ["CSo8NSObject", "applicationWillResignActive"]
 - ["CSo8NSObject", "applicationWillTerminate"]
+- !private ["CSo8NSObject", "blackColor"]
 - ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "setBackgroundImage"]
+- !private ["CSo8NSObject", "tintColor"]
 - ["CSo8NSObject", "window"]
+- !private ["PSo16NSObjectProtocol", "UIColor"]
+- !private ["PSo16NSObjectProtocol", "UIImage"]
+- !private ["PSo16NSObjectProtocol", "UINavigationBar"]
+- !private ["PSo16NSObjectProtocol", "appearance"]
 - ["PSo16NSObjectProtocol", "application"]
 - ["PSo16NSObjectProtocol", "applicationDidBecomeActive"]
 - ["PSo16NSObjectProtocol", "applicationDidEnterBackground"]
@@ -165,9 +233,28 @@ depends-member:
 - ["PSo16NSObjectProtocol", "applicationWillEnterForeground"]
 - ["PSo16NSObjectProtocol", "applicationWillResignActive"]
 - ["PSo16NSObjectProtocol", "applicationWillTerminate"]
+- !private ["PSo16NSObjectProtocol", "blackColor"]
 - ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "setBackgroundImage"]
+- !private ["PSo16NSObjectProtocol", "tintColor"]
 - ["PSo16NSObjectProtocol", "window"]
 - ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "blackColor"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["Ps16RawRepresentable", "Default"]
+- !private ["PSo29UIAccessibilityIdentification", "appearance"]
+- !private ["PSo29UIAccessibilityIdentification", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "setBackgroundImage"]
+- !private ["PSo29UIAccessibilityIdentification", "tintColor"]
+- !private ["PSo12UIAppearance", "appearance"]
+- !private ["PSo12UIAppearance", "setBackgroundImage"]
+- !private ["PSo12UIAppearance", "tintColor"]
+- !private ["PSo21UIAppearanceContainer", "appearance"]
+- !private ["PSo21UIAppearanceContainer", "setBackgroundImage"]
+- !private ["PSo21UIAppearanceContainer", "tintColor"]
+- !private ["PSo21UIApplicationDelegate", "UIColor"]
+- !private ["PSo21UIApplicationDelegate", "UIImage"]
+- !private ["PSo21UIApplicationDelegate", "UINavigationBar"]
 - ["PSo21UIApplicationDelegate", "application"]
 - ["PSo21UIApplicationDelegate", "applicationDidBecomeActive"]
 - ["PSo21UIApplicationDelegate", "applicationDidEnterBackground"]
@@ -182,11 +269,33 @@ depends-member:
 - ["PSo21UIApplicationDelegate", "applicationWillTerminate"]
 - ["PSo21UIApplicationDelegate", "window"]
 - ["PSo21UIApplicationDelegate", ""]
+- !private ["OSC12UIBarMetrics", "Default"]
+- !private ["PSo16UIBarPositioning", "appearance"]
+- !private ["PSo16UIBarPositioning", "setBackgroundImage"]
+- !private ["PSo16UIBarPositioning", "tintColor"]
+- !private ["CSo7UIColor", "blackColor"]
+- !private ["PSo17UICoordinateSpace", "appearance"]
+- !private ["PSo17UICoordinateSpace", "setBackgroundImage"]
+- !private ["PSo17UICoordinateSpace", "tintColor"]
+- !private ["PSo13UIDynamicItem", "appearance"]
+- !private ["PSo13UIDynamicItem", "setBackgroundImage"]
+- !private ["PSo13UIDynamicItem", "tintColor"]
+- !private ["PSo18UIFocusEnvironment", "appearance"]
+- !private ["PSo18UIFocusEnvironment", "setBackgroundImage"]
+- !private ["PSo18UIFocusEnvironment", "tintColor"]
+- !private ["CSo7UIImage", "init"]
+- !private ["CSo15UINavigationBar", "appearance"]
+- !private ["CSo15UINavigationBar", "setBackgroundImage"]
+- !private ["CSo15UINavigationBar", "tintColor"]
 - ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Bool"]
 - ["CSo11UIResponder", "NSObject"]
 - ["CSo11UIResponder", "UIApplication"]
+- !private ["CSo11UIResponder", "UIColor"]
+- !private ["CSo11UIResponder", "UIImage"]
+- !private ["CSo11UIResponder", "UINavigationBar"]
 - ["CSo11UIResponder", "UIWindow"]
+- !private ["CSo11UIResponder", "appearance"]
 - ["CSo11UIResponder", "application"]
 - ["CSo11UIResponder", "applicationDidBecomeActive"]
 - ["CSo11UIResponder", "applicationDidEnterBackground"]
@@ -200,8 +309,21 @@ depends-member:
 - ["CSo11UIResponder", "applicationWillResignActive"]
 - ["CSo11UIResponder", "applicationWillTerminate"]
 - ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "setBackgroundImage"]
+- !private ["CSo11UIResponder", "tintColor"]
 - ["CSo11UIResponder", "window"]
 - ["CSo11UIResponder", ""]
+- !private ["PSo18UITraitEnvironment", "appearance"]
+- !private ["PSo18UITraitEnvironment", "setBackgroundImage"]
+- !private ["PSo18UITraitEnvironment", "tintColor"]
+- !private ["CSo6UIView", "appearance"]
+- !private ["CSo6UIView", "setBackgroundImage"]
+- !private ["CSo6UIView", "tintColor"]
+- !private ["Ps24_ColorLiteralConvertible", "blackColor"]
+- !private ["Ps24_ImageLiteralConvertible", "init"]
+- !private ["Ps12_Reflectable", "appearance"]
+- !private ["Ps12_Reflectable", "setBackgroundImage"]
+- !private ["Ps12_Reflectable", "tintColor"]
 depends-nominal:
 - "Ps9AnyObject"
 - "C13InternetRadio11AppDelegate"
@@ -210,10 +332,30 @@ depends-nominal:
 - "Ps23CustomStringConvertible"
 - "Ps9Equatable"
 - "Ps8Hashable"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "Ps16RawRepresentable"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- !private "PSo21UIAppearanceContainer"
 - "PSo21UIApplicationDelegate"
+- !private "OSC12UIBarMetrics"
+- !private "PSo16UIBarPositioning"
+- !private "CSo7UIColor"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- !private "PSo18UIFocusEnvironment"
+- !private "CSo7UIImage"
+- !private "CSo15UINavigationBar"
 - "CSo11UIResponder"
+- !private "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- !private "Ps24_ColorLiteralConvertible"
+- !private "Ps24_ImageLiteralConvertible"
+- !private "Ps12_Reflectable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"

@@ -18,6 +18,7 @@ class StationTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        stationNameLabel.adjustsFontSizeToFitWidth = true
         // Initialization code
     }
 

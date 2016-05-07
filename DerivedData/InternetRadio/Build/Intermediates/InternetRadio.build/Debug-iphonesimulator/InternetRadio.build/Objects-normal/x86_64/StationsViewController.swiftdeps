@@ -7,37 +7,38 @@ provides-member:
 - ["C13InternetRadio22StationsViewController", ""]
 provides-dynamic-lookup:
 - "numberOfSectionsInTableView"
-- "viewDidLoad"
 - "prepareForSegue"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
+- "viewDidLoad"
 - "didReceiveMemoryWarning"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
 depends-top-level:
+- !private "StationTableViewCell"
+- "UITableView"
+- !private "print"
 - "StationsViewController"
 - "Int"
 - !private "StreamDetailViewController"
-- !private "StringLiteralType"
-- "UIViewController"
-- "AnyObject"
-- "UITableView"
-- "UIStoryboardSegue"
 - !private "StationController"
-- "NSIndexPath"
-- !private "ViewMode"
+- "UIViewController"
+- !private "StringLiteralType"
 - "UITableViewCell"
 - "UITableViewDelegate"
+- !private "ViewMode"
 - "UITableViewDataSource"
-- !private "StationTableViewCell"
-- !private "print"
+- "NSIndexPath"
+- "AnyObject"
+- "UIStoryboardSegue"
 depends-member:
 - !private ["Ps9AnyObject", "StationController"]
 - !private ["Ps9AnyObject", "ViewMode"]
 - !private ["Ps9AnyObject", "dequeueReusableCellWithIdentifier"]
 - !private ["Ps9AnyObject", "destinationViewController"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
+- !private ["Ps9AnyObject", "image"]
 - !private ["Ps9AnyObject", "indexPathForCell"]
 - ["Ps9AnyObject", "indexPathForPreferredFocusedViewInTableView"]
 - ["Ps9AnyObject", "init"]
@@ -61,6 +62,8 @@ depends-member:
 - !private ["Ps9AnyObject", "sharedController"]
 - !private ["Ps9AnyObject", "station"]
 - !private ["Ps9AnyObject", "stationDetailLabel"]
+- !private ["Ps9AnyObject", "stationImage"]
+- !private ["Ps9AnyObject", "stationImageView"]
 - !private ["Ps9AnyObject", "stationName"]
 - !private ["Ps9AnyObject", "stationNameLabel"]
 - !private ["Ps9AnyObject", "stationSelected"]
@@ -96,6 +99,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "dequeueReusableCellWithIdentifier"]
 - !private ["Ps11CVarArgType", "destinationViewController"]
 - ["Ps11CVarArgType", "didReceiveMemoryWarning"]
+- !private ["Ps11CVarArgType", "image"]
 - !private ["Ps11CVarArgType", "indexPathForCell"]
 - ["Ps11CVarArgType", "indexPathForPreferredFocusedViewInTableView"]
 - ["Ps11CVarArgType", "init"]
@@ -118,6 +122,7 @@ depends-member:
 - ["Ps11CVarArgType", "sectionIndexTitlesForTableView"]
 - !private ["Ps11CVarArgType", "station"]
 - !private ["Ps11CVarArgType", "stationDetailLabel"]
+- !private ["Ps11CVarArgType", "stationImageView"]
 - !private ["Ps11CVarArgType", "stationNameLabel"]
 - ["Ps11CVarArgType", "tableView"]
 - !private ["Ps11CVarArgType", "text"]
@@ -143,6 +148,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "dequeueReusableCellWithIdentifier"]
 - !private ["Ps28CustomDebugStringConvertible", "destinationViewController"]
 - ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps28CustomDebugStringConvertible", "image"]
 - !private ["Ps28CustomDebugStringConvertible", "indexPathForCell"]
 - ["Ps28CustomDebugStringConvertible", "indexPathForPreferredFocusedViewInTableView"]
 - ["Ps28CustomDebugStringConvertible", "init"]
@@ -165,6 +171,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "sectionIndexTitlesForTableView"]
 - !private ["Ps28CustomDebugStringConvertible", "station"]
 - !private ["Ps28CustomDebugStringConvertible", "stationDetailLabel"]
+- !private ["Ps28CustomDebugStringConvertible", "stationImageView"]
 - !private ["Ps28CustomDebugStringConvertible", "stationNameLabel"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - ["Ps28CustomDebugStringConvertible", "tableView"]
@@ -184,6 +191,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "dequeueReusableCellWithIdentifier"]
 - !private ["Ps23CustomStringConvertible", "destinationViewController"]
 - ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps23CustomStringConvertible", "image"]
 - !private ["Ps23CustomStringConvertible", "indexPathForCell"]
 - ["Ps23CustomStringConvertible", "indexPathForPreferredFocusedViewInTableView"]
 - ["Ps23CustomStringConvertible", "init"]
@@ -206,6 +214,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "sectionIndexTitlesForTableView"]
 - !private ["Ps23CustomStringConvertible", "station"]
 - !private ["Ps23CustomStringConvertible", "stationDetailLabel"]
+- !private ["Ps23CustomStringConvertible", "stationImageView"]
 - !private ["Ps23CustomStringConvertible", "stationNameLabel"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
 - ["Ps23CustomStringConvertible", "tableView"]
@@ -222,6 +231,7 @@ depends-member:
 - !private ["Ps9Equatable", "dequeueReusableCellWithIdentifier"]
 - !private ["Ps9Equatable", "destinationViewController"]
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
+- !private ["Ps9Equatable", "image"]
 - !private ["Ps9Equatable", "indexPathForCell"]
 - ["Ps9Equatable", "indexPathForPreferredFocusedViewInTableView"]
 - ["Ps9Equatable", "init"]
@@ -244,6 +254,7 @@ depends-member:
 - ["Ps9Equatable", "sectionIndexTitlesForTableView"]
 - !private ["Ps9Equatable", "station"]
 - !private ["Ps9Equatable", "stationDetailLabel"]
+- !private ["Ps9Equatable", "stationImageView"]
 - !private ["Ps9Equatable", "stationNameLabel"]
 - ["Ps9Equatable", "tableView"]
 - !private ["Ps9Equatable", "text"]
@@ -262,6 +273,7 @@ depends-member:
 - !private ["Ps8Hashable", "dequeueReusableCellWithIdentifier"]
 - !private ["Ps8Hashable", "destinationViewController"]
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
+- !private ["Ps8Hashable", "image"]
 - !private ["Ps8Hashable", "indexPathForCell"]
 - ["Ps8Hashable", "indexPathForPreferredFocusedViewInTableView"]
 - ["Ps8Hashable", "init"]
@@ -284,6 +296,7 @@ depends-member:
 - ["Ps8Hashable", "sectionIndexTitlesForTableView"]
 - !private ["Ps8Hashable", "station"]
 - !private ["Ps8Hashable", "stationDetailLabel"]
+- !private ["Ps8Hashable", "stationImageView"]
 - !private ["Ps8Hashable", "stationNameLabel"]
 - ["Ps8Hashable", "tableView"]
 - !private ["Ps8Hashable", "text"]
@@ -327,6 +340,7 @@ depends-member:
 - !private ["PSo8NSCoding", "ViewMode"]
 - !private ["PSo8NSCoding", "dequeueReusableCellWithIdentifier"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- !private ["PSo8NSCoding", "image"]
 - !private ["PSo8NSCoding", "indexPathForCell"]
 - ["PSo8NSCoding", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo8NSCoding", "init"]
@@ -349,6 +363,7 @@ depends-member:
 - ["PSo8NSCoding", "sectionIndexTitlesForTableView"]
 - !private ["PSo8NSCoding", "station"]
 - !private ["PSo8NSCoding", "stationDetailLabel"]
+- !private ["PSo8NSCoding", "stationImageView"]
 - !private ["PSo8NSCoding", "stationNameLabel"]
 - ["PSo8NSCoding", "tableView"]
 - !private ["PSo8NSCoding", "text"]
@@ -398,6 +413,7 @@ depends-member:
 - !private ["CSo8NSObject", "dequeueReusableCellWithIdentifier"]
 - !private ["CSo8NSObject", "destinationViewController"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
+- !private ["CSo8NSObject", "image"]
 - !private ["CSo8NSObject", "indexPathForCell"]
 - ["CSo8NSObject", "indexPathForPreferredFocusedViewInTableView"]
 - ["CSo8NSObject", "init"]
@@ -420,6 +436,7 @@ depends-member:
 - ["CSo8NSObject", "sectionIndexTitlesForTableView"]
 - !private ["CSo8NSObject", "station"]
 - !private ["CSo8NSObject", "stationDetailLabel"]
+- !private ["CSo8NSObject", "stationImageView"]
 - !private ["CSo8NSObject", "stationNameLabel"]
 - ["CSo8NSObject", "tableView"]
 - !private ["CSo8NSObject", "text"]
@@ -431,6 +448,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo16NSObjectProtocol", "destinationViewController"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- !private ["PSo16NSObjectProtocol", "image"]
 - !private ["PSo16NSObjectProtocol", "indexPathForCell"]
 - ["PSo16NSObjectProtocol", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo16NSObjectProtocol", "init"]
@@ -453,6 +471,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "sectionIndexTitlesForTableView"]
 - !private ["PSo16NSObjectProtocol", "station"]
 - !private ["PSo16NSObjectProtocol", "stationDetailLabel"]
+- !private ["PSo16NSObjectProtocol", "stationImageView"]
 - !private ["PSo16NSObjectProtocol", "stationNameLabel"]
 - ["PSo16NSObjectProtocol", "tableView"]
 - !private ["PSo16NSObjectProtocol", "text"]
@@ -486,12 +505,14 @@ depends-member:
 - !private ["Vs5Slice", "Index"]
 - !private ["Vs5Slice", "SubSequence"]
 - !private ["Vs5Slice", "_Element"]
+- !private ["C13InternetRadio7Station", "stationImage"]
 - !private ["C13InternetRadio7Station", "stationName"]
 - !private ["C13InternetRadio7Station", "stationStream"]
 - !private ["C13InternetRadio17StationController", "sharedController"]
 - !private ["C13InternetRadio17StationController", "stationSelected"]
 - !private ["C13InternetRadio17StationController", "stations"]
 - !private ["C13InternetRadio20StationTableViewCell", "stationDetailLabel"]
+- !private ["C13InternetRadio20StationTableViewCell", "stationImageView"]
 - !private ["C13InternetRadio20StationTableViewCell", "stationNameLabel"]
 - ["C13InternetRadio22StationsViewController", "AnyObject"]
 - ["C13InternetRadio22StationsViewController", "Int"]
@@ -531,19 +552,24 @@ depends-member:
 - !private ["Ps10Strideable", "Distance"]
 - !private ["Ps10Strideable", "IntegerLiteralType"]
 - !private ["PSo29UIAccessibilityIdentification", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo29UIAccessibilityIdentification", "image"]
 - !private ["PSo29UIAccessibilityIdentification", "indexPathForCell"]
 - !private ["PSo29UIAccessibilityIdentification", "stationDetailLabel"]
+- !private ["PSo29UIAccessibilityIdentification", "stationImageView"]
 - !private ["PSo29UIAccessibilityIdentification", "stationNameLabel"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo12UIAppearance", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo12UIAppearance", "image"]
 - !private ["PSo12UIAppearance", "indexPathForCell"]
 - !private ["PSo12UIAppearance", "stationDetailLabel"]
+- !private ["PSo12UIAppearance", "stationImageView"]
 - !private ["PSo12UIAppearance", "stationNameLabel"]
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo21UIAppearanceContainer", "StationController"]
 - !private ["PSo21UIAppearanceContainer", "ViewMode"]
 - !private ["PSo21UIAppearanceContainer", "dequeueReusableCellWithIdentifier"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- !private ["PSo21UIAppearanceContainer", "image"]
 - !private ["PSo21UIAppearanceContainer", "indexPathForCell"]
 - ["PSo21UIAppearanceContainer", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo21UIAppearanceContainer", "init"]
@@ -565,6 +591,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "sectionIndexTitlesForTableView"]
 - !private ["PSo21UIAppearanceContainer", "station"]
 - !private ["PSo21UIAppearanceContainer", "stationDetailLabel"]
+- !private ["PSo21UIAppearanceContainer", "stationImageView"]
 - !private ["PSo21UIAppearanceContainer", "stationNameLabel"]
 - ["PSo21UIAppearanceContainer", "tableView"]
 - !private ["PSo21UIAppearanceContainer", "text"]
@@ -600,19 +627,24 @@ depends-member:
 - !private ["PSo18UIContentContainer", "viewMode"]
 - ["PSo18UIContentContainer", ""]
 - !private ["PSo17UICoordinateSpace", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo17UICoordinateSpace", "image"]
 - !private ["PSo17UICoordinateSpace", "indexPathForCell"]
 - !private ["PSo17UICoordinateSpace", "stationDetailLabel"]
+- !private ["PSo17UICoordinateSpace", "stationImageView"]
 - !private ["PSo17UICoordinateSpace", "stationNameLabel"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo13UIDynamicItem", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo13UIDynamicItem", "image"]
 - !private ["PSo13UIDynamicItem", "indexPathForCell"]
 - !private ["PSo13UIDynamicItem", "stationDetailLabel"]
+- !private ["PSo13UIDynamicItem", "stationImageView"]
 - !private ["PSo13UIDynamicItem", "stationNameLabel"]
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo18UIFocusEnvironment", "StationController"]
 - !private ["PSo18UIFocusEnvironment", "ViewMode"]
 - !private ["PSo18UIFocusEnvironment", "dequeueReusableCellWithIdentifier"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UIFocusEnvironment", "image"]
 - !private ["PSo18UIFocusEnvironment", "indexPathForCell"]
 - ["PSo18UIFocusEnvironment", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo18UIFocusEnvironment", "init"]
@@ -634,6 +666,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "sectionIndexTitlesForTableView"]
 - !private ["PSo18UIFocusEnvironment", "station"]
 - !private ["PSo18UIFocusEnvironment", "stationDetailLabel"]
+- !private ["PSo18UIFocusEnvironment", "stationImageView"]
 - !private ["PSo18UIFocusEnvironment", "stationNameLabel"]
 - ["PSo18UIFocusEnvironment", "tableView"]
 - !private ["PSo18UIFocusEnvironment", "text"]
@@ -642,7 +675,9 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "viewMode"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["PSo27UIGestureRecognizerDelegate", "stationDetailLabel"]
+- !private ["PSo27UIGestureRecognizerDelegate", "stationImageView"]
 - !private ["PSo27UIGestureRecognizerDelegate", "stationNameLabel"]
+- !private ["CSo11UIImageView", "image"]
 - !private ["CSo7UILabel", "text"]
 - ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Int"]
@@ -656,6 +691,7 @@ depends-member:
 - !private ["CSo11UIResponder", "ViewMode"]
 - !private ["CSo11UIResponder", "dequeueReusableCellWithIdentifier"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- !private ["CSo11UIResponder", "image"]
 - !private ["CSo11UIResponder", "indexPathForCell"]
 - ["CSo11UIResponder", "indexPathForPreferredFocusedViewInTableView"]
 - ["CSo11UIResponder", "init"]
@@ -677,6 +713,7 @@ depends-member:
 - ["CSo11UIResponder", "sectionIndexTitlesForTableView"]
 - !private ["CSo11UIResponder", "station"]
 - !private ["CSo11UIResponder", "stationDetailLabel"]
+- !private ["CSo11UIResponder", "stationImageView"]
 - !private ["CSo11UIResponder", "stationNameLabel"]
 - ["CSo11UIResponder", "tableView"]
 - !private ["CSo11UIResponder", "text"]
@@ -738,6 +775,7 @@ depends-member:
 - !private ["CSo11UITableView", "indexPathForCell"]
 - !private ["CSo15UITableViewCell", "deinit"]
 - !private ["CSo15UITableViewCell", "stationDetailLabel"]
+- !private ["CSo15UITableViewCell", "stationImageView"]
 - !private ["CSo15UITableViewCell", "stationNameLabel"]
 - !private ["PSo21UITableViewDataSource", "StationController"]
 - !private ["PSo21UITableViewDataSource", "ViewMode"]
@@ -785,6 +823,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "ViewMode"]
 - !private ["PSo18UITraitEnvironment", "dequeueReusableCellWithIdentifier"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UITraitEnvironment", "image"]
 - !private ["PSo18UITraitEnvironment", "indexPathForCell"]
 - ["PSo18UITraitEnvironment", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo18UITraitEnvironment", "init"]
@@ -806,6 +845,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "sectionIndexTitlesForTableView"]
 - !private ["PSo18UITraitEnvironment", "station"]
 - !private ["PSo18UITraitEnvironment", "stationDetailLabel"]
+- !private ["PSo18UITraitEnvironment", "stationImageView"]
 - !private ["PSo18UITraitEnvironment", "stationNameLabel"]
 - ["PSo18UITraitEnvironment", "tableView"]
 - !private ["PSo18UITraitEnvironment", "text"]
@@ -814,8 +854,10 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "viewMode"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "dequeueReusableCellWithIdentifier"]
+- !private ["CSo6UIView", "image"]
 - !private ["CSo6UIView", "indexPathForCell"]
 - !private ["CSo6UIView", "stationDetailLabel"]
+- !private ["CSo6UIView", "stationImageView"]
 - !private ["CSo6UIView", "stationNameLabel"]
 - !private ["CSo6UIView", "text"]
 - ["CSo16UIViewController", "AnyObject"]
@@ -890,8 +932,10 @@ depends-member:
 - !private ["Ps12_Reflectable", "SubSequence"]
 - !private ["Ps12_Reflectable", "count"]
 - !private ["Ps12_Reflectable", "dequeueReusableCellWithIdentifier"]
+- !private ["Ps12_Reflectable", "image"]
 - !private ["Ps12_Reflectable", "indexPathForCell"]
 - !private ["Ps12_Reflectable", "stationDetailLabel"]
+- !private ["Ps12_Reflectable", "stationImageView"]
 - !private ["Ps12_Reflectable", "stationNameLabel"]
 - !private ["Ps12_Reflectable", "subscript"]
 - !private ["Ps12_Reflectable", "text"]
@@ -952,6 +996,7 @@ depends-nominal:
 - !private "PSo13UIDynamicItem"
 - "PSo18UIFocusEnvironment"
 - !private "PSo27UIGestureRecognizerDelegate"
+- !private "CSo11UIImageView"
 - !private "CSo7UILabel"
 - "CSo11UIResponder"
 - !private "CSo12UIScrollView"

@@ -1,15 +1,15 @@
 version: "Apple Swift version 2.2 (swiftlang-703.0.18.1 clang-703.0.29)"
 options: "aa21017cb2710c7966679d0c11c47c82"
-build_time: [515823336, 434352000]
+build_time: [515919273, 275211000]
 inputs:
-  "/Users/JLH/Desktop/Swift Code Bank/White Label Apps/InternetRadio/InternetRadio/StationController.swift": [515816012, 0]
-  "/Users/JLH/Desktop/Swift Code Bank/White Label Apps/InternetRadio/InternetRadio/StreamDetailViewController.swift": [515823336, 0]
-  "/Users/JLH/Desktop/Swift Code Bank/White Label Apps/InternetRadio/InternetRadio/StationTableViewCell.swift": [515651401, 0]
-  "/Users/JLH/Desktop/Swift Code Bank/White Label Apps/InternetRadio/InternetRadio/ShowsViewController.swift": [515823248, 0]
-  "/Users/JLH/Desktop/Swift Code Bank/White Label Apps/InternetRadio/InternetRadio/AppDelegate.swift": [515109202, 0]
+  "/Users/JLH/Desktop/Swift Code Bank/White Label Apps/InternetRadio/InternetRadio/StationController.swift": [515919258, 0]
+  "/Users/JLH/Desktop/Swift Code Bank/White Label Apps/InternetRadio/InternetRadio/StreamDetailViewController.swift": [515919273, 0]
+  "/Users/JLH/Desktop/Swift Code Bank/White Label Apps/InternetRadio/InternetRadio/StationTableViewCell.swift": [515886341, 0]
+  "/Users/JLH/Desktop/Swift Code Bank/White Label Apps/InternetRadio/InternetRadio/ShowsViewController.swift": [515911580, 0]
+  "/Users/JLH/Desktop/Swift Code Bank/White Label Apps/InternetRadio/InternetRadio/AppDelegate.swift": [515917472, 0]
   "/Users/JLH/Desktop/Swift Code Bank/White Label Apps/InternetRadio/InternetRadio/DateExtension.swift": [515735325, 0]
   "/Users/JLH/Desktop/Swift Code Bank/White Label Apps/InternetRadio/InternetRadio/ShowTableViewCell.swift": [515745712, 0]
-  "/Users/JLH/Desktop/Swift Code Bank/White Label Apps/InternetRadio/InternetRadio/Station.swift": [515553288, 0]
+  "/Users/JLH/Desktop/Swift Code Bank/White Label Apps/InternetRadio/InternetRadio/Station.swift": [515826776, 0]
   "/Users/JLH/Desktop/Swift Code Bank/White Label Apps/InternetRadio/InternetRadio/Show.swift": [515745606, 0]
-  "/Users/JLH/Desktop/Swift Code Bank/White Label Apps/InternetRadio/InternetRadio/StationsViewController.swift": [515823258, 0]
+  "/Users/JLH/Desktop/Swift Code Bank/White Label Apps/InternetRadio/InternetRadio/StationsViewController.swift": [515827257, 0]
   "/Users/JLH/Desktop/Swift Code Bank/White Label Apps/InternetRadio/InternetRadio/SettingsViewController.swift": [515553288, 0]

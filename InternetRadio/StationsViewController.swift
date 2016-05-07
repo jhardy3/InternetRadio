@@ -44,6 +44,7 @@ extension StationsViewController: UITableViewDelegate, UITableViewDataSource {
         
         cell.stationNameLabel.text = station.stationName
         cell.stationDetailLabel.text = station.stationStream
+        cell.stationImageView.image = station.stationImage
         
         return cell
     }

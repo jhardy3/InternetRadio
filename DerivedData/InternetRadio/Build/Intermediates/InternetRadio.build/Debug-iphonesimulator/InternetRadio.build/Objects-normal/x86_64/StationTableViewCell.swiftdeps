@@ -6,18 +6,20 @@ provides-nominal:
 provides-member:
 - ["C13InternetRadio20StationTableViewCell", ""]
 provides-dynamic-lookup:
-- "setSelected"
-- "stationDetailLabel"
 - "stationNameLabel"
-- "stationImageView"
 - "awakeFromNib"
+- "setSelected"
+- "stationImageView"
+- "stationDetailLabel"
 depends-top-level:
-- "UITableViewCell"
-- "UIImageView"
-- "Bool"
 - "UILabel"
+- !private "BooleanLiteralType"
+- "UIImageView"
 - "StationTableViewCell"
+- "Bool"
+- "UITableViewCell"
 depends-member:
+- !private ["Ps9AnyObject", "adjustsFontSizeToFitWidth"]
 - ["Ps9AnyObject", "awakeFromNib"]
 - ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", "setSelected"]
@@ -25,6 +27,7 @@ depends-member:
 - ["Ps9AnyObject", "stationImageView"]
 - ["Ps9AnyObject", "stationNameLabel"]
 - ["Ps9AnyObject", ""]
+- !private ["Ps11CVarArgType", "adjustsFontSizeToFitWidth"]
 - ["Ps11CVarArgType", "awakeFromNib"]
 - ["Ps11CVarArgType", "init"]
 - ["Ps11CVarArgType", "setSelected"]
@@ -32,6 +35,7 @@ depends-member:
 - ["Ps11CVarArgType", "stationImageView"]
 - ["Ps11CVarArgType", "stationNameLabel"]
 - ["Ps11CVarArgType", ""]
+- !private ["Ps28CustomDebugStringConvertible", "adjustsFontSizeToFitWidth"]
 - ["Ps28CustomDebugStringConvertible", "awakeFromNib"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - ["Ps28CustomDebugStringConvertible", "setSelected"]
@@ -39,6 +43,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "stationImageView"]
 - ["Ps28CustomDebugStringConvertible", "stationNameLabel"]
 - ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "adjustsFontSizeToFitWidth"]
 - ["Ps23CustomStringConvertible", "awakeFromNib"]
 - ["Ps23CustomStringConvertible", "init"]
 - ["Ps23CustomStringConvertible", "setSelected"]
@@ -46,6 +51,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "stationImageView"]
 - ["Ps23CustomStringConvertible", "stationNameLabel"]
 - ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "adjustsFontSizeToFitWidth"]
 - ["Ps9Equatable", "awakeFromNib"]
 - ["Ps9Equatable", "init"]
 - ["Ps9Equatable", "setSelected"]
@@ -53,6 +59,7 @@ depends-member:
 - ["Ps9Equatable", "stationImageView"]
 - ["Ps9Equatable", "stationNameLabel"]
 - ["Ps9Equatable", ""]
+- !private ["Ps8Hashable", "adjustsFontSizeToFitWidth"]
 - ["Ps8Hashable", "awakeFromNib"]
 - ["Ps8Hashable", "init"]
 - ["Ps8Hashable", "setSelected"]
@@ -60,6 +67,7 @@ depends-member:
 - ["Ps8Hashable", "stationImageView"]
 - ["Ps8Hashable", "stationNameLabel"]
 - ["Ps8Hashable", ""]
+- !private ["PSo8NSCoding", "adjustsFontSizeToFitWidth"]
 - ["PSo8NSCoding", "awakeFromNib"]
 - ["PSo8NSCoding", "init"]
 - ["PSo8NSCoding", "setSelected"]
@@ -70,12 +78,14 @@ depends-member:
 - ["CSo8NSObject", "Bool"]
 - ["CSo8NSObject", "UIImageView"]
 - ["CSo8NSObject", "UILabel"]
+- !private ["CSo8NSObject", "adjustsFontSizeToFitWidth"]
 - ["CSo8NSObject", "awakeFromNib"]
 - ["CSo8NSObject", "init"]
 - ["CSo8NSObject", "setSelected"]
 - ["CSo8NSObject", "stationDetailLabel"]
 - ["CSo8NSObject", "stationImageView"]
 - ["CSo8NSObject", "stationNameLabel"]
+- !private ["PSo16NSObjectProtocol", "adjustsFontSizeToFitWidth"]
 - ["PSo16NSObjectProtocol", "awakeFromNib"]
 - ["PSo16NSObjectProtocol", "init"]
 - ["PSo16NSObjectProtocol", "setSelected"]
@@ -93,6 +103,7 @@ depends-member:
 - ["C13InternetRadio20StationTableViewCell", "stationDetailLabel"]
 - ["C13InternetRadio20StationTableViewCell", "stationImageView"]
 - ["C13InternetRadio20StationTableViewCell", "stationNameLabel"]
+- !private ["PSo29UIAccessibilityIdentification", "adjustsFontSizeToFitWidth"]
 - ["PSo29UIAccessibilityIdentification", "awakeFromNib"]
 - ["PSo29UIAccessibilityIdentification", "init"]
 - ["PSo29UIAccessibilityIdentification", "setSelected"]
@@ -100,6 +111,7 @@ depends-member:
 - ["PSo29UIAccessibilityIdentification", "stationImageView"]
 - ["PSo29UIAccessibilityIdentification", "stationNameLabel"]
 - ["PSo29UIAccessibilityIdentification", ""]
+- !private ["PSo12UIAppearance", "adjustsFontSizeToFitWidth"]
 - ["PSo12UIAppearance", "awakeFromNib"]
 - ["PSo12UIAppearance", "init"]
 - ["PSo12UIAppearance", "setSelected"]
@@ -107,6 +119,7 @@ depends-member:
 - ["PSo12UIAppearance", "stationImageView"]
 - ["PSo12UIAppearance", "stationNameLabel"]
 - ["PSo12UIAppearance", ""]
+- !private ["PSo21UIAppearanceContainer", "adjustsFontSizeToFitWidth"]
 - ["PSo21UIAppearanceContainer", "awakeFromNib"]
 - ["PSo21UIAppearanceContainer", "init"]
 - ["PSo21UIAppearanceContainer", "setSelected"]
@@ -114,6 +127,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "stationImageView"]
 - ["PSo21UIAppearanceContainer", "stationNameLabel"]
 - ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo17UICoordinateSpace", "adjustsFontSizeToFitWidth"]
 - ["PSo17UICoordinateSpace", "awakeFromNib"]
 - ["PSo17UICoordinateSpace", "init"]
 - ["PSo17UICoordinateSpace", "setSelected"]
@@ -121,6 +135,7 @@ depends-member:
 - ["PSo17UICoordinateSpace", "stationImageView"]
 - ["PSo17UICoordinateSpace", "stationNameLabel"]
 - ["PSo17UICoordinateSpace", ""]
+- !private ["PSo13UIDynamicItem", "adjustsFontSizeToFitWidth"]
 - ["PSo13UIDynamicItem", "awakeFromNib"]
 - ["PSo13UIDynamicItem", "init"]
 - ["PSo13UIDynamicItem", "setSelected"]
@@ -128,6 +143,7 @@ depends-member:
 - ["PSo13UIDynamicItem", "stationImageView"]
 - ["PSo13UIDynamicItem", "stationNameLabel"]
 - ["PSo13UIDynamicItem", ""]
+- !private ["PSo18UIFocusEnvironment", "adjustsFontSizeToFitWidth"]
 - ["PSo18UIFocusEnvironment", "awakeFromNib"]
 - ["PSo18UIFocusEnvironment", "init"]
 - ["PSo18UIFocusEnvironment", "setSelected"]
@@ -142,9 +158,11 @@ depends-member:
 - ["PSo27UIGestureRecognizerDelegate", "stationImageView"]
 - ["PSo27UIGestureRecognizerDelegate", "stationNameLabel"]
 - ["PSo27UIGestureRecognizerDelegate", ""]
+- !private ["CSo7UILabel", "adjustsFontSizeToFitWidth"]
 - ["CSo11UIResponder", "Bool"]
 - ["CSo11UIResponder", "UIImageView"]
 - ["CSo11UIResponder", "UILabel"]
+- !private ["CSo11UIResponder", "adjustsFontSizeToFitWidth"]
 - ["CSo11UIResponder", "awakeFromNib"]
 - ["CSo11UIResponder", "init"]
 - ["CSo11UIResponder", "setSelected"]
@@ -161,6 +179,7 @@ depends-member:
 - ["CSo15UITableViewCell", "stationImageView"]
 - ["CSo15UITableViewCell", "stationNameLabel"]
 - ["CSo15UITableViewCell", ""]
+- !private ["PSo18UITraitEnvironment", "adjustsFontSizeToFitWidth"]
 - ["PSo18UITraitEnvironment", "awakeFromNib"]
 - ["PSo18UITraitEnvironment", "init"]
 - ["PSo18UITraitEnvironment", "setSelected"]
@@ -171,12 +190,14 @@ depends-member:
 - ["CSo6UIView", "Bool"]
 - ["CSo6UIView", "UIImageView"]
 - ["CSo6UIView", "UILabel"]
+- !private ["CSo6UIView", "adjustsFontSizeToFitWidth"]
 - ["CSo6UIView", "awakeFromNib"]
 - ["CSo6UIView", "init"]
 - ["CSo6UIView", "setSelected"]
 - ["CSo6UIView", "stationDetailLabel"]
 - ["CSo6UIView", "stationImageView"]
 - ["CSo6UIView", "stationNameLabel"]
+- !private ["Ps12_Reflectable", "adjustsFontSizeToFitWidth"]
 - ["Ps12_Reflectable", "awakeFromNib"]
 - ["Ps12_Reflectable", "init"]
 - ["Ps12_Reflectable", "setSelected"]
@@ -202,6 +223,7 @@ depends-nominal:
 - "PSo13UIDynamicItem"
 - "PSo18UIFocusEnvironment"
 - "PSo27UIGestureRecognizerDelegate"
+- !private "CSo7UILabel"
 - "CSo11UIResponder"
 - "CSo15UITableViewCell"
 - "PSo18UITraitEnvironment"
