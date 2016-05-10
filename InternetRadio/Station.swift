@@ -16,11 +16,13 @@ class Station {
     var stationStream: String
     var stationName: String
     var stationImage: UIImage
+    let stationDetail: String
     
     // MARK: - Class Initialization
     
-    init(stationStream: String, stationName: String, stationImage: UIImage) {
+    init(stationStream: String, stationName: String, stationImage: UIImage, stationDetail: String) {
         
+        self.stationDetail = stationDetail
         self.stationImage = stationImage
         self.stationName = stationName
         self.stationStream = stationStream

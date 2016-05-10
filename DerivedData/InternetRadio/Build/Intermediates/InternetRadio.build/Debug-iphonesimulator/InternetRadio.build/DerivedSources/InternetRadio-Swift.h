@@ -138,6 +138,7 @@ SWIFT_CLASS("_TtC13InternetRadio17ShowTableViewCell")
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified hostImageView;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified hostNameLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified hostDetailLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified onAirLabel;
 - (void)awakeFromNib;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
@@ -209,12 +210,18 @@ SWIFT_CLASS("_TtC13InternetRadio26StreamDetailViewController")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified streamDetailLabel;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified detailImageView;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified togglePlayButton;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified listeningTimeLabel;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (IBAction)togglePlayButtonTapped:(UIButton * _Nonnull)sender;
 - (IBAction)volumeSliderFired:(UISlider * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface StreamDetailViewController (SWIFT_EXTENSION(InternetRadio))
+- (void)updatedTimeString:(NSString * _Nonnull)time;
 @end
 
 #pragma clang diagnostic pop

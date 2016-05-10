@@ -21,6 +21,7 @@
 		74FC42CD1CDAD5C80022DD6C /* Show.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FC42CC1CDAD5C80022DD6C /* Show.swift */; };
 		74FC42D11CDAE6870022DD6C /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FC42D01CDAE6870022DD6C /* DateExtension.swift */; };
 		74FC42D31CDB22450022DD6C /* ShowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FC42D21CDB22450022DD6C /* ShowTableViewCell.swift */; };
+		74FC42D51CDDCAD80022DD6C /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FC42D41CDDCAD80022DD6C /* Timer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		74FC42CC1CDAD5C80022DD6C /* Show.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Show.swift; sourceTree = "<group>"; };
 		74FC42D01CDAE6870022DD6C /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		74FC42D21CDB22450022DD6C /* ShowTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowTableViewCell.swift; sourceTree = "<group>"; };
+		74FC42D41CDDCAD80022DD6C /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 		74FC42C71CD831DD0022DD6C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				74FC42D41CDDCAD80022DD6C /* Timer.swift */,
 				74FC42CC1CDAD5C80022DD6C /* Show.swift */,
 				74C5BCB71CD170880063E893 /* Station.swift */,
 			);
@@ -189,6 +192,7 @@
 				74C5BCBA1CD170E10063E893 /* StationController.swift in Sources */,
 				74FC42C91CD83CC80022DD6C /* StreamDetailViewController.swift in Sources */,
 				74FC42CB1CD9AF080022DD6C /* StationTableViewCell.swift in Sources */,
+				74FC42D51CDDCAD80022DD6C /* Timer.swift in Sources */,
 				74FC42C21CD831B50022DD6C /* ShowsViewController.swift in Sources */,
 				74C5BCA41CD16C520063E893 /* AppDelegate.swift in Sources */,
 				74FC42D11CDAE6870022DD6C /* DateExtension.swift in Sources */,

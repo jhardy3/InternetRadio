@@ -6,18 +6,18 @@ provides-nominal:
 provides-member:
 - ["C13InternetRadio20StationTableViewCell", ""]
 provides-dynamic-lookup:
-- "stationNameLabel"
 - "awakeFromNib"
 - "setSelected"
 - "stationImageView"
 - "stationDetailLabel"
+- "stationNameLabel"
 depends-top-level:
-- "UILabel"
-- !private "BooleanLiteralType"
-- "UIImageView"
-- "StationTableViewCell"
 - "Bool"
+- "UILabel"
+- "UIImageView"
 - "UITableViewCell"
+- !private "BooleanLiteralType"
+- "StationTableViewCell"
 depends-member:
 - !private ["Ps9AnyObject", "adjustsFontSizeToFitWidth"]
 - ["Ps9AnyObject", "awakeFromNib"]

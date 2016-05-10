@@ -43,7 +43,7 @@ extension StationsViewController: UITableViewDelegate, UITableViewDataSource {
         let station = StationController.sharedController.stations[indexPath.row]
         
         cell.stationNameLabel.text = station.stationName
-        cell.stationDetailLabel.text = station.stationStream
+        cell.stationDetailLabel.text = station.stationDetail
         cell.stationImageView.image = station.stationImage
         
         return cell

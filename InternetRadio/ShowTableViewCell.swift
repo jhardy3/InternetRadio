@@ -13,9 +13,13 @@ class ShowTableViewCell: UITableViewCell {
     @IBOutlet weak var hostImageView: UIImageView!
     @IBOutlet weak var hostNameLabel: UILabel!
     @IBOutlet weak var hostDetailLabel: UILabel!
+    @IBOutlet weak var onAirLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        onAirLabel.layer.cornerRadius = 4.0
+        onAirLabel.clipsToBounds = true
+        onAirLabel.backgroundColor = colorWithHexString("FF6666", alpha: 1.0)
         // Initialization code
     }
 

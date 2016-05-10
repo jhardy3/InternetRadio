@@ -1,0 +1,16 @@
+version: "Apple Swift version 2.2 (swiftlang-703.0.18.1 clang-703.0.29)"
+options: "44086c9d5aa7a8577de343f4e7d5b168"
+build_time: [515923285, 111727000]
+inputs:
+  "/Users/JLH/Desktop/Swift Code Bank/White Label Apps/InternetRadio/InternetRadio/StationController.swift": [9223372036854775807, 0]
+  "/Users/JLH/Desktop/Swift Code Bank/White Label Apps/InternetRadio/InternetRadio/StreamDetailViewController.swift": [9223372036854775807, 0]
+  "/Users/JLH/Desktop/Swift Code Bank/White Label Apps/InternetRadio/InternetRadio/StationTableViewCell.swift": [9223372036854775807, 0]
+  "/Users/JLH/Desktop/Swift Code Bank/White Label Apps/InternetRadio/InternetRadio/Timer.swift": [9223372036854775807, 0]
+  "/Users/JLH/Desktop/Swift Code Bank/White Label Apps/InternetRadio/InternetRadio/ShowsViewController.swift": [9223372036854775807, 0]
+  "/Users/JLH/Desktop/Swift Code Bank/White Label Apps/InternetRadio/InternetRadio/AppDelegate.swift": [9223372036854775807, 0]
+  "/Users/JLH/Desktop/Swift Code Bank/White Label Apps/InternetRadio/InternetRadio/DateExtension.swift": [9223372036854775807, 0]
+  "/Users/JLH/Desktop/Swift Code Bank/White Label Apps/InternetRadio/InternetRadio/ShowTableViewCell.swift": [9223372036854775807, 0]
+  "/Users/JLH/Desktop/Swift Code Bank/White Label Apps/InternetRadio/InternetRadio/Station.swift": [9223372036854775807, 0]
+  "/Users/JLH/Desktop/Swift Code Bank/White Label Apps/InternetRadio/InternetRadio/Show.swift": [9223372036854775807, 0]
+  "/Users/JLH/Desktop/Swift Code Bank/White Label Apps/InternetRadio/InternetRadio/StationsViewController.swift": [9223372036854775807, 0]
+  "/Users/JLH/Desktop/Swift Code Bank/White Label Apps/InternetRadio/InternetRadio/SettingsViewController.swift": [9223372036854775807, 0]

@@ -25,15 +25,18 @@ class StreamDetailViewController: UIViewController {
     @IBOutlet weak var streamDetailLabel: UILabel!
     @IBOutlet weak var detailImageView: UIImageView!
     @IBOutlet weak var togglePlayButton: UIButton!
+    @IBOutlet weak var listeningTimeLabel: UILabel!
     
     var show: Show?
     var station: Station?
     var viewMode = ViewMode.Show
     var playState = PlayState.Streaming
+    var timer = Timer()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        timer.delegate = self
         streamDetailLabel.adjustsFontSizeToFitWidth = true
         
         if let show = show where viewMode == .Show {
@@ -47,12 +50,14 @@ class StreamDetailViewController: UIViewController {
     func updateWithShow(show: Show) {
         self.streamDetailLabel.text = show.hostName
         self.detailImageView.image = show.hostImage
+        timer.startTimer()
     }
     
     func updateWithStation(station: Station) {
         streamProgressBar.progress = 1.0
         streamDetailLabel.text = station.stationName
         detailImageView.image = station.stationImage
+        timer.startTimer()
     }
 
     override func didReceiveMemoryWarning() {
@@ -66,15 +71,25 @@ class StreamDetailViewController: UIViewController {
             playState = .Paused
             StationController.sharedController.stationPaused()
             togglePlayButton.setImage(UIImage(named: "Play"), forState: .Normal)
+            timer.stopTimer()
         case .Paused:
             playState = .Streaming
             StationController.sharedController.stationStarted()
             togglePlayButton.setImage(UIImage(named: "Pause"), forState: .Normal)
+            timer.startTimer()
         }
     }
     
     @IBAction func volumeSliderFired(sender: UISlider) {
         StationController.sharedController.audioVolumeChanged(sender.value)
+    }
+    
+}
+
+extension StreamDetailViewController: TimerDelegate {
+    
+    func updatedTimeString(time: String) {
+        self.listeningTimeLabel.text = time
     }
     
 }

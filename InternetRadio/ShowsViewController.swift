@@ -46,15 +46,14 @@ extension ShowsViewController: UITableViewDelegate, UITableViewDataSource {
         
         cell.hostImageView.image = show.hostImage
         cell.hostNameLabel.text = show.hostName
+        cell.hostDetailLabel.text = "Weekdays, \(show.startTime) GMT to \(show.endTime) GMT"
         
         if StationController.sharedController.showIsValid(show) {
-            cell.hostDetailLabel.text = "ON AIR"
-            cell.hostDetailLabel.textColor = UIColor.redColor()
-            cell.userInteractionEnabled = true
+            cell.onAirLabel.hidden = false
+            cell.hostNameLabel.textColor = UIColor.blackColor()
         } else {
-            cell.hostDetailLabel.textColor = UIColor.blackColor()
-            cell.hostDetailLabel.text = "Weekdays, \(show.startTime) GMT to \(show.endTime) GMT"
-            cell.userInteractionEnabled = false
+            cell.hostNameLabel.textColor = UIColor.grayColor()
+            cell.onAirLabel.hidden = true
         }
         
         return cell

@@ -14,21 +14,22 @@ import AVFoundation
 // Add Station Streams to this array
 let STATIONS_ARRAY = [
     
-    ("Freedom 970", "http://65.19.131.171/alphaportland-kufoamaac-ibc1?session-id=1128215199", UIImage(named: "Freedom970")!),
-    ("Red State Radio A", "http://fire.wavestreamer.com:8841", UIImage(named: "RedStateRadio")!),
-    ("Red State Radio B", "http://majestic.wavestreamer.com:2418", UIImage(named: "RedStateRadio")!),
-    ("KCAA California", "http://stream.kcaastreaming.com:8000/kcaa.mp3", UIImage(named: "KCAACalifornia")!),
-    ("iCRN - Liberty", "http://ca.radioboss.fm:8328/live", UIImage(named: "iCRN")!),
-    ("iCRN - Justice", "http://ca2.radioboss.fm:8061/stream", UIImage(named: "iCRN")!),
-    ("KIXW - Talk 960", "http://54.81.244.228/eldorado-kixwamaac-ibc2?session-id=624764968&source=TuneIn", UIImage(named: "Talk960")!), // Time Donnelly
-    ("Kern Radio", "http://65.19.131.132/agmedia28-kernamaac-32?session-id=1219782653", UIImage(named: "Kern")!),
-    ("KMOX 1120", "http://4533.live.streamtheworld.com/KMOXAMDIALUP_SC", UIImage(named: "KMOX")!),
-    ("GCN - 1", "http://gcnplayer.gcnlive.com/channel1-hi.mp3", UIImage(named: "GCN")!),
-    ("GCN - 2", "http://gcnplayer.gcnlive.com:80/channel2-hi.mp3", UIImage(named: "GCN")!),
-    ("GCN - 3", "http://ice01.gcnlive.com/channel3-lo.mp3", UIImage(named: "GCN")!),
-    ("GCN - 4", "http://tunein.com/radio/GCN-Live-4-s45477/", UIImage(named: "GCN")!),
-    ("GCN - 2", "http://gcnplayer.gcnlive.com:80/channel2-hi.mp3", UIImage(named: "GCN")!),
-    ("KSFO 560 AM", "http://10423.live.streamtheworld.com:3690/KSFOAM_SC", UIImage(named: "KSFO")!)
+    ("KSFO 560 AM", "http://10423.live.streamtheworld.com:3690/KSFOAM_SC", UIImage(named: "KSFO")!, "San Francisco Hot Talk Radio"),
+    ("KUFO 970 AM", "http://65.19.131.171/alphaportland-kufoamaac-ibc1?session-id=1128215199", UIImage(named: "Freedom970")!, "Freedom 970"),
+    ("Red State Radio A", "http://fire.wavestreamer.com:8841", UIImage(named: "RedStateRadio")!, "Conservative Network"),
+    ("Red State Radio B", "http://majestic.wavestreamer.com:2418", UIImage(named: "RedStateRadio")!, "Conservative Network"),
+    ("KCAA California", "http://stream.kcaastreaming.com:8000/kcaa.mp3", UIImage(named: "KCAACalifornia")!, "Keeping California Aware"),
+    ("iCRN - Liberty", "http://ca.radioboss.fm:8328/live", UIImage(named: "iCRN")!, "Conservative Radio Network"),
+    ("iCRN - Justice", "http://ca2.radioboss.fm:8061/stream", UIImage(named: "iCRN")!, "Conservative radio Network"),
+    ("KIXW - Talk 960", "http://54.81.244.228/eldorado-kixwamaac-ibc2?session-id=624764968&source=TuneIn", UIImage(named: "Talk960")!, "The High Desert's Talk Station"),
+    ("NewsTalk 1180", "http://65.19.131.132/agmedia28-kernamaac-32?session-id=1219782653", UIImage(named: "Kern")!, "Kern Radio"),
+    ("KMOX 1120", "http://4533.live.streamtheworld.com/KMOXAMDIALUP_SC", UIImage(named: "KMOX")!, "St. Louis KMOX"),
+    ("GCN", "http://gcnplayer.gcnlive.com/channel1-hi.mp3", UIImage(named: "GCN")!, "Channel One"),
+    ("GCN", "http://gcnplayer.gcnlive.com:80/channel2-hi.mp3", UIImage(named: "GCN")!, "Channel Two"),
+    ("GCN", "http://ice01.gcnlive.com/channel3-lo.mp3", UIImage(named: "GCN")!, "Channel Three"),
+    ("GCN", "http://tunein.com/radio/GCN-Live-4-s45477/", UIImage(named: "GCN")!, "Channel Four"),
+    ("GCN", "http://gcnplayer.gcnlive.com:80/channel2-hi.mp3", UIImage(named: "GCN")!, "Channel Five")
+    
 //    ("WWB-AM", "http://1.ice1.firststreaming.com/wwba_am.mp3", UIImage(named: "Beck")!),
     // Savage 6-7
     
@@ -76,7 +77,7 @@ class StationController {
     
     init() {
         for station in STATIONS_ARRAY {
-            stations.append(Station(stationStream: station.1, stationName: station.0, stationImage: station.2))
+            stations.append(Station(stationStream: station.1, stationName: station.0, stationImage: station.2, stationDetail: station.3))
         }
         
         for show in SHOWS_ARRAY {
