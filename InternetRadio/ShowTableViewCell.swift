@@ -19,7 +19,7 @@ class ShowTableViewCell: UITableViewCell {
         super.awakeFromNib()
         onAirLabel.layer.cornerRadius = 4.0
         onAirLabel.clipsToBounds = true
-        onAirLabel.backgroundColor = colorWithHexString("FF6666", alpha: 1.0)
+        onAirLabel.backgroundColor = colorWithHexString("FF6666", alpha: 0.9)
         // Initialization code
     }
 

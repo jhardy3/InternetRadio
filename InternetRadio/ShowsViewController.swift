@@ -12,6 +12,8 @@ class ShowsViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+    let timeZoneAbbreviation = DateStandardizer.returnAcronym()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -46,7 +48,7 @@ extension ShowsViewController: UITableViewDelegate, UITableViewDataSource {
         
         cell.hostImageView.image = show.hostImage
         cell.hostNameLabel.text = show.hostName
-        cell.hostDetailLabel.text = "Weekdays, \(show.startTime) GMT to \(show.endTime) GMT"
+        cell.hostDetailLabel.text = "Weekdays, \(show.startTimeStandardized.returnTimeString()) to  \(show.endTimeStandardized.returnTimeString()) \(timeZoneAbbreviation)"
         
         if StationController.sharedController.showIsValid(show) {
             cell.onAirLabel.hidden = false
@@ -69,7 +71,32 @@ extension ShowsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let show = StationController.sharedController.shows[indexPath.row]
-        StationController.sharedController.showSelected(show)
+        if StationController.sharedController.showIsValid(show) {
+            StationController.sharedController.showSelected(show)
+            performSegueWithIdentifier("toDetail", sender: nil)
+        } else {
+            createAlertWithShow(show)
+        }
+    }
+    
+    func createAlertWithShow(show: Show) {
+        let startTime = show.startTime
+        let endTime = show.endTime
+        let host = show.hostName
+        
+        var weekdays = "weekdays"
+        if show.weekend {
+            weekdays = "weekends"
+        }
+        
+        let messageString = "\(host) is available \n \(weekdays) from \(startTime) to \(endTime), \n Please check back at that time."
+        
+        let alertController = UIAlertController(title: "Show currently not broadcasting", message: messageString, preferredStyle: .Alert)
+        let okAction = UIAlertAction(title: "Ok", style: .Default, handler: nil)
+        
+        alertController.addAction(okAction)
+        
+        presentViewController(alertController, animated: true, completion: nil)
     }
     
 }

@@ -9,30 +9,31 @@ provides-member:
 - ["C13InternetRadio17StationController", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "NSCalendarIdentifierGregorian"
-- !private ">"
-- "BooleanLiteralType"
+- "Station"
+- !private "NSDate"
 - "SHOWS_ARRAY"
 - "UIImage"
-- !private "NSCalendar"
-- !private "&&"
-- !private "!"
-- "Float"
-- !private "NSDate"
-- "AVPlayer"
-- "Show"
-- !private "NSCalendarUnit"
-- "StationController"
-- !private "<="
-- "Bool"
-- !private "NSURL"
 - "Array"
-- "StringLiteralType"
-- !private "||"
-- "STATIONS_ARRAY"
+- !private "NSCalendarUnit"
+- !private "<="
+- !private "NSCalendar"
 - !private ">="
+- !private "NSCalendarIdentifierGregorian"
+- "AVPlayer"
+- "BooleanLiteralType"
+- "StationController"
+- !private "&&"
+- !private "||"
+- !private "NSURL"
 - !private "=="
-- "Station"
+- "Show"
+- "Bool"
+- "StringLiteralType"
+- "STATIONS_ARRAY"
+- !private ">"
+- "GreenwichTime"
+- "Float"
+- !private "!"
 depends-member:
 - !private ["CSo8AVPlayer", "init"]
 - !private ["CSo8AVPlayer", "pause"]
@@ -51,13 +52,13 @@ depends-member:
 - ["Ps9AnyObject", "StationController"]
 - !private ["Ps9AnyObject", "audioPlayer"]
 - !private ["Ps9AnyObject", "component"]
-- !private ["Ps9AnyObject", "endTime"]
+- !private ["Ps9AnyObject", "endTimeStandardized"]
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "isTheWeekend"]
 - !private ["Ps9AnyObject", "pause"]
 - !private ["Ps9AnyObject", "play"]
 - !private ["Ps9AnyObject", "shows"]
-- !private ["Ps9AnyObject", "startTime"]
+- !private ["Ps9AnyObject", "startTimeStandardized"]
 - !private ["Ps9AnyObject", "stationStream"]
 - !private ["Ps9AnyObject", "stations"]
 - !private ["Ps9AnyObject", "streamURL"]
@@ -132,25 +133,56 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "play"]
 - !private ["Ps23CustomStringConvertible", "volume"]
 - ["Ps9Equatable", "Distance"]
+- ["Ps9Equatable", "FourAM"]
+- ["Ps9Equatable", "FourPM"]
 - !private ["Ps9Equatable", "Hour"]
 - ["Ps9Equatable", "IntegerLiteralType"]
+- ["Ps9Equatable", "NinePM"]
+- ["Ps9Equatable", "OneAM"]
+- ["Ps9Equatable", "OnePM"]
+- ["Ps9Equatable", "SevenAM"]
+- ["Ps9Equatable", "SevenPM"]
+- ["Ps9Equatable", "TenPM"]
+- ["Ps9Equatable", "TwelveAM"]
 - !private ["Ps9Equatable", "Weekday"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "component"]
 - ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "pause"]
 - !private ["Ps9Equatable", "play"]
+- !private ["Ps9Equatable", "rawValue"]
 - !private ["Ps9Equatable", "volume"]
 - ["Ps16ForwardIndexType", "Distance"]
 - ["Ps16ForwardIndexType", "IntegerLiteralType"]
 - ["Ps13GeneratorType", "Element"]
+- ["O13InternetRadio13GreenwichTime", "FourAM"]
+- ["O13InternetRadio13GreenwichTime", "FourPM"]
+- ["O13InternetRadio13GreenwichTime", "NinePM"]
+- ["O13InternetRadio13GreenwichTime", "OneAM"]
+- ["O13InternetRadio13GreenwichTime", "OnePM"]
+- ["O13InternetRadio13GreenwichTime", "SevenAM"]
+- ["O13InternetRadio13GreenwichTime", "SevenPM"]
+- ["O13InternetRadio13GreenwichTime", "TenPM"]
+- ["O13InternetRadio13GreenwichTime", "TwelveAM"]
+- !private ["O13InternetRadio13GreenwichTime", "deinit"]
+- !private ["O13InternetRadio13GreenwichTime", "rawValue"]
 - ["Ps8Hashable", "Distance"]
+- ["Ps8Hashable", "FourAM"]
+- ["Ps8Hashable", "FourPM"]
 - ["Ps8Hashable", "IntegerLiteralType"]
+- ["Ps8Hashable", "NinePM"]
+- ["Ps8Hashable", "OneAM"]
+- ["Ps8Hashable", "OnePM"]
+- ["Ps8Hashable", "SevenAM"]
+- ["Ps8Hashable", "SevenPM"]
+- ["Ps8Hashable", "TenPM"]
+- ["Ps8Hashable", "TwelveAM"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "component"]
 - ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "pause"]
 - !private ["Ps8Hashable", "play"]
+- !private ["Ps8Hashable", "rawValue"]
 - !private ["Ps8Hashable", "volume"]
 - ["Ps9Indexable", "Element"]
 - ["Ps9Indexable", "Generator"]
@@ -227,8 +259,18 @@ depends-member:
 - ["Ps30RangeReplaceableCollectionType", "_Element"]
 - !private ["Ps30RangeReplaceableCollectionType", "append"]
 - ["Ps30RangeReplaceableCollectionType", "init"]
+- ["Ps16RawRepresentable", "FourAM"]
+- ["Ps16RawRepresentable", "FourPM"]
 - !private ["Ps16RawRepresentable", "Hour"]
+- ["Ps16RawRepresentable", "NinePM"]
+- ["Ps16RawRepresentable", "OneAM"]
+- ["Ps16RawRepresentable", "OnePM"]
+- ["Ps16RawRepresentable", "SevenAM"]
+- ["Ps16RawRepresentable", "SevenPM"]
+- ["Ps16RawRepresentable", "TenPM"]
+- ["Ps16RawRepresentable", "TwelveAM"]
 - !private ["Ps16RawRepresentable", "Weekday"]
+- !private ["Ps16RawRepresentable", "rawValue"]
 - ["Ps12SequenceType", "Element"]
 - ["Ps12SequenceType", "Generator"]
 - ["Ps12SequenceType", "Index"]
@@ -238,9 +280,9 @@ depends-member:
 - ["Ps12SequenceType", "init"]
 - !private ["Ps14SetAlgebraType", "Hour"]
 - !private ["Ps14SetAlgebraType", "Weekday"]
-- !private ["C13InternetRadio4Show", "endTime"]
+- !private ["C13InternetRadio4Show", "endTimeStandardized"]
 - !private ["C13InternetRadio4Show", "init"]
-- !private ["C13InternetRadio4Show", "startTime"]
+- !private ["C13InternetRadio4Show", "startTimeStandardized"]
 - !private ["C13InternetRadio4Show", "streamURL"]
 - !private ["C13InternetRadio4Show", "weekend"]
 - ["Ps17SignedIntegerType", "Distance"]
@@ -348,6 +390,7 @@ depends-nominal:
 - "Ps9Equatable"
 - "Ps16ForwardIndexType"
 - "Ps13GeneratorType"
+- "O13InternetRadio13GreenwichTime"
 - "Ps8Hashable"
 - "Ps9Indexable"
 - "Vs17IndexingGenerator"
@@ -373,7 +416,7 @@ depends-nominal:
 - "Sq"
 - "Ps21RandomAccessIndexType"
 - "Ps30RangeReplaceableCollectionType"
-- !private "Ps16RawRepresentable"
+- "Ps16RawRepresentable"
 - "Ps12SequenceType"
 - !private "Ps14SetAlgebraType"
 - !private "C13InternetRadio4Show"
@@ -410,4 +453,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
-interface-hash: "c75741d6d4c2f2a7915ec6ad5638354e"
+interface-hash: "7c9b7a8cbdc0995a04ae63ec26c9ae91"

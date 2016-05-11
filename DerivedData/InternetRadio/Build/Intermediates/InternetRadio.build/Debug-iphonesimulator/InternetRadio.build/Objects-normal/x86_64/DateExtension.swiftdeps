@@ -1,64 +1,252 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
+- "GreenwichTime"
+- "DateStandardizer"
 provides-nominal:
+- "O13InternetRadio13GreenwichTime"
+- "C13InternetRadio16DateStandardizer"
 provides-member:
+- ["O13InternetRadio13GreenwichTime", ""]
 - ["CSo6NSDate", ""]
+- ["C13InternetRadio16DateStandardizer", ""]
 - ["CSo6NSDate", "stringValue"]
 provides-dynamic-lookup:
 - "stringValue"
 depends-top-level:
-- !private "NSDateFormatter"
+- "NSTimeZone"
+- "StringLiteralType"
+- !private "+"
+- "GreenwichTime"
+- !private "UnicodeScalarType"
+- !private "/"
 - "String"
+- !private ">"
+- !private "NSDateFormatter"
+- "=="
+- !private "%"
+- !private "~="
+- !private "||"
+- !private "..."
+- !private "-"
+- !private "print"
+- !private "abs"
+- "DateStandardizer"
 - "NSDate"
+- "Int"
 depends-member:
 - !private ["Ps9AnyObject", "NSDateFormatter"]
+- ["Ps9AnyObject", "NSTimeZone"]
+- !private ["Ps9AnyObject", "abbreviation"]
+- !private ["Ps9AnyObject", "currentTimeZone"]
 - !private ["Ps9AnyObject", "dateStyle"]
-- !private ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "defaultTimeZone"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "returnOffset"]
+- !private ["Ps9AnyObject", "secondsFromGMT"]
 - !private ["Ps9AnyObject", "stringFromDate"]
 - ["Ps9AnyObject", "stringValue"]
 - !private ["Ps9AnyObject", "timeStyle"]
+- ["Ps9AnyObject", ""]
+- !private ["Ps22BidirectionalIndexType", "Distance"]
+- !private ["Ps22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["Ps22BidirectionalIndexType", "Stride"]
+- !private ["Ps22BidirectionalIndexType", "hashValue"]
+- !private ["Ps21BitwiseOperationsType", "Distance"]
+- !private ["Ps21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["Ps21BitwiseOperationsType", "Stride"]
+- !private ["Ps21BitwiseOperationsType", "hashValue"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Sb", "deinit"]
+- !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
+- !private ["Ps11CVarArgType", "Distance"]
+- !private ["Ps11CVarArgType", "IntegerLiteralType"]
 - !private ["Ps11CVarArgType", "NSDateFormatter"]
+- !private ["Ps11CVarArgType", "Stride"]
+- !private ["Ps11CVarArgType", "abbreviation"]
 - !private ["Ps11CVarArgType", "dateStyle"]
-- !private ["Ps11CVarArgType", "init"]
+- ["Ps11CVarArgType", "defaultTimeZone"]
+- !private ["Ps11CVarArgType", "hashValue"]
+- ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "secondsFromGMT"]
 - !private ["Ps11CVarArgType", "stringFromDate"]
 - ["Ps11CVarArgType", "stringValue"]
 - !private ["Ps11CVarArgType", "timeStyle"]
+- !private ["Vs9Character", "deinit"]
+- !private ["Vs14ClosedInterval", "Bound"]
+- !private ["Ps10Comparable", "Distance"]
+- !private ["Ps10Comparable", "IntegerLiteralType"]
+- !private ["Ps10Comparable", "Stride"]
+- !private ["Ps10Comparable", "hashValue"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "Bound"]
 - !private ["Ps28CustomDebugStringConvertible", "NSDateFormatter"]
+- ["Ps28CustomDebugStringConvertible", "Some"]
+- !private ["Ps28CustomDebugStringConvertible", "abbreviation"]
 - !private ["Ps28CustomDebugStringConvertible", "dateStyle"]
-- !private ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "defaultTimeZone"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "secondsFromGMT"]
 - !private ["Ps28CustomDebugStringConvertible", "stringFromDate"]
 - ["Ps28CustomDebugStringConvertible", "stringValue"]
 - !private ["Ps28CustomDebugStringConvertible", "timeStyle"]
+- !private ["Ps23CustomStringConvertible", "Bound"]
+- !private ["Ps23CustomStringConvertible", "Distance"]
+- !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
 - !private ["Ps23CustomStringConvertible", "NSDateFormatter"]
+- !private ["Ps23CustomStringConvertible", "Stride"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "abbreviation"]
 - !private ["Ps23CustomStringConvertible", "dateStyle"]
-- !private ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "defaultTimeZone"]
+- !private ["Ps23CustomStringConvertible", "hashValue"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "secondsFromGMT"]
 - !private ["Ps23CustomStringConvertible", "stringFromDate"]
 - ["Ps23CustomStringConvertible", "stringValue"]
 - !private ["Ps23CustomStringConvertible", "timeStyle"]
+- ["C13InternetRadio16DateStandardizer", "Int"]
+- ["C13InternetRadio16DateStandardizer", "NSTimeZone"]
+- ["C13InternetRadio16DateStandardizer", "String"]
+- ["C13InternetRadio16DateStandardizer", "currentTimeZone"]
+- ["C13InternetRadio16DateStandardizer", "deinit"]
+- ["C13InternetRadio16DateStandardizer", "init"]
+- ["C13InternetRadio16DateStandardizer", "mountainTimeZone"]
+- ["C13InternetRadio16DateStandardizer", "returnAcronym"]
+- ["C13InternetRadio16DateStandardizer", "returnOffset"]
+- !private ["Sd", "deinit"]
+- !private ["Ps9Equatable", "Bound"]
+- !private ["Ps9Equatable", "DateStandardizer"]
+- !private ["Ps9Equatable", "Distance"]
+- !private ["Ps9Equatable", "GreenwichTime"]
+- !private ["Ps9Equatable", "IntegerLiteralType"]
 - !private ["Ps9Equatable", "MediumStyle"]
 - !private ["Ps9Equatable", "NSDateFormatter"]
+- ["Ps9Equatable", "RawValue"]
 - !private ["Ps9Equatable", "ShortStyle"]
+- !private ["Ps9Equatable", "Stride"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "abbreviation"]
+- !private ["Ps9Equatable", "abs"]
 - !private ["Ps9Equatable", "dateStyle"]
-- !private ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "defaultTimeZone"]
+- ["Ps9Equatable", "hashValue"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "print"]
+- ["Ps9Equatable", "rawValue"]
+- !private ["Ps9Equatable", "secondsFromGMT"]
 - !private ["Ps9Equatable", "stringFromDate"]
 - ["Ps9Equatable", "stringValue"]
 - !private ["Ps9Equatable", "timeStyle"]
+- ["Ps9Equatable", ""]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Sf", "deinit"]
+- !private ["Ps16ForwardIndexType", "Distance"]
+- !private ["Ps16ForwardIndexType", "IntegerLiteralType"]
+- !private ["Ps16ForwardIndexType", "Stride"]
+- !private ["Ps16ForwardIndexType", "hashValue"]
+- !private ["O13InternetRadio13GreenwichTime", "DateStandardizer"]
+- ["O13InternetRadio13GreenwichTime", "EightAM"]
+- ["O13InternetRadio13GreenwichTime", "EightPM"]
+- ["O13InternetRadio13GreenwichTime", "ElevenAM"]
+- ["O13InternetRadio13GreenwichTime", "ElevenPM"]
+- ["O13InternetRadio13GreenwichTime", "FiveAM"]
+- ["O13InternetRadio13GreenwichTime", "FivePM"]
+- ["O13InternetRadio13GreenwichTime", "FourAM"]
+- ["O13InternetRadio13GreenwichTime", "FourPM"]
+- ["O13InternetRadio13GreenwichTime", "GreenwichTime"]
+- ["O13InternetRadio13GreenwichTime", "NineAM"]
+- ["O13InternetRadio13GreenwichTime", "NinePM"]
+- ["O13InternetRadio13GreenwichTime", "OneAM"]
+- ["O13InternetRadio13GreenwichTime", "OnePM"]
+- ["O13InternetRadio13GreenwichTime", "RawValue"]
+- ["O13InternetRadio13GreenwichTime", "SevenAM"]
+- ["O13InternetRadio13GreenwichTime", "SevenPM"]
+- ["O13InternetRadio13GreenwichTime", "SixAM"]
+- ["O13InternetRadio13GreenwichTime", "SixPM"]
+- ["O13InternetRadio13GreenwichTime", "String"]
+- ["O13InternetRadio13GreenwichTime", "TenAM"]
+- ["O13InternetRadio13GreenwichTime", "TenPM"]
+- ["O13InternetRadio13GreenwichTime", "ThreeAM"]
+- ["O13InternetRadio13GreenwichTime", "ThreePM"]
+- ["O13InternetRadio13GreenwichTime", "TwelveAM"]
+- ["O13InternetRadio13GreenwichTime", "TwelvePM"]
+- ["O13InternetRadio13GreenwichTime", "TwoAM"]
+- ["O13InternetRadio13GreenwichTime", "TwoPM"]
+- !private ["O13InternetRadio13GreenwichTime", "abs"]
+- ["O13InternetRadio13GreenwichTime", "deinit"]
+- ["O13InternetRadio13GreenwichTime", "hashValue"]
+- ["O13InternetRadio13GreenwichTime", "init"]
+- !private ["O13InternetRadio13GreenwichTime", "print"]
+- ["O13InternetRadio13GreenwichTime", "rawValue"]
+- ["O13InternetRadio13GreenwichTime", "returnTimeBasedOnZone"]
+- ["O13InternetRadio13GreenwichTime", "returnTimeString"]
+- !private ["Ps8Hashable", "DateStandardizer"]
+- !private ["Ps8Hashable", "Distance"]
+- !private ["Ps8Hashable", "GreenwichTime"]
+- !private ["Ps8Hashable", "IntegerLiteralType"]
 - !private ["Ps8Hashable", "MediumStyle"]
 - !private ["Ps8Hashable", "NSDateFormatter"]
+- ["Ps8Hashable", "RawValue"]
 - !private ["Ps8Hashable", "ShortStyle"]
+- !private ["Ps8Hashable", "Stride"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "abbreviation"]
+- !private ["Ps8Hashable", "abs"]
 - !private ["Ps8Hashable", "dateStyle"]
-- !private ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "defaultTimeZone"]
+- ["Ps8Hashable", "hashValue"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "print"]
+- ["Ps8Hashable", "rawValue"]
+- !private ["Ps8Hashable", "secondsFromGMT"]
 - !private ["Ps8Hashable", "stringFromDate"]
 - ["Ps8Hashable", "stringValue"]
 - !private ["Ps8Hashable", "timeStyle"]
+- ["Ps8Hashable", ""]
+- !private ["Si", "Distance"]
+- !private ["Si", "IntegerLiteralType"]
+- !private ["Si", "Stride"]
+- !private ["Si", "deinit"]
+- !private ["Si", "hashValue"]
+- !private ["Vs5Int16", "deinit"]
+- !private ["Vs5Int32", "IntegerLiteralType"]
+- !private ["Vs5Int32", "Stride"]
+- !private ["Vs5Int32", "deinit"]
+- !private ["Vs5Int64", "deinit"]
+- !private ["Vs4Int8", "deinit"]
+- !private ["Ps21IntegerArithmeticType", "Distance"]
+- !private ["Ps21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["Ps21IntegerArithmeticType", "Stride"]
+- !private ["Ps21IntegerArithmeticType", "hashValue"]
+- !private ["Ps25IntegerLiteralConvertible", "Distance"]
+- !private ["Ps25IntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["Ps25IntegerLiteralConvertible", "Stride"]
+- !private ["Ps25IntegerLiteralConvertible", "hashValue"]
+- !private ["Ps11IntegerType", "Distance"]
+- !private ["Ps11IntegerType", "IntegerLiteralType"]
+- !private ["Ps11IntegerType", "Stride"]
+- !private ["Ps11IntegerType", "hashValue"]
+- !private ["Ps12IntervalType", "Bound"]
+- !private ["Ps14MirrorPathType", "Distance"]
+- !private ["Ps14MirrorPathType", "IntegerLiteralType"]
+- !private ["Ps14MirrorPathType", "Stride"]
+- !private ["Ps14MirrorPathType", "hashValue"]
+- !private ["Ps14MirrorPathType", "init"]
 - !private ["PSo8NSCoding", "NSDateFormatter"]
+- !private ["PSo8NSCoding", "abbreviation"]
 - !private ["PSo8NSCoding", "dateStyle"]
-- !private ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "defaultTimeZone"]
+- ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "secondsFromGMT"]
 - !private ["PSo8NSCoding", "stringFromDate"]
 - !private ["PSo8NSCoding", "timeStyle"]
 - !private ["PSo9NSCopying", "NSDateFormatter"]
+- !private ["PSo9NSCopying", "abbreviation"]
 - !private ["PSo9NSCopying", "dateStyle"]
-- !private ["PSo9NSCopying", "init"]
+- ["PSo9NSCopying", "defaultTimeZone"]
+- ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "secondsFromGMT"]
 - !private ["PSo9NSCopying", "stringFromDate"]
 - !private ["PSo9NSCopying", "timeStyle"]
 - !private ["CSo6NSDate", "NSDateFormatter"]
@@ -74,41 +262,205 @@ depends-member:
 - !private ["CSo11NSFormatter", "init"]
 - !private ["CSo11NSFormatter", "stringFromDate"]
 - !private ["CSo11NSFormatter", "timeStyle"]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["CSo8NSNumber", "deinit"]
 - !private ["CSo8NSObject", "NSDateFormatter"]
 - ["CSo8NSObject", "String"]
+- !private ["CSo8NSObject", "abbreviation"]
 - !private ["CSo8NSObject", "dateStyle"]
-- !private ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "defaultTimeZone"]
+- !private ["CSo8NSObject", "deinit"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "secondsFromGMT"]
 - !private ["CSo8NSObject", "stringFromDate"]
 - ["CSo8NSObject", "stringValue"]
 - !private ["CSo8NSObject", "timeStyle"]
 - !private ["PSo16NSObjectProtocol", "NSDateFormatter"]
+- !private ["PSo16NSObjectProtocol", "abbreviation"]
 - !private ["PSo16NSObjectProtocol", "dateStyle"]
-- !private ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "defaultTimeZone"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "secondsFromGMT"]
 - !private ["PSo16NSObjectProtocol", "stringFromDate"]
 - ["PSo16NSObjectProtocol", "stringValue"]
 - !private ["PSo16NSObjectProtocol", "timeStyle"]
 - !private ["PSo14NSSecureCoding", "NSDateFormatter"]
+- !private ["PSo14NSSecureCoding", "abbreviation"]
+- ["PSo14NSSecureCoding", "defaultTimeZone"]
+- ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "secondsFromGMT"]
+- !private ["CSo8NSString", "init"]
+- !private ["CSo10NSTimeZone", "abbreviation"]
+- ["CSo10NSTimeZone", "defaultTimeZone"]
+- ["CSo10NSTimeZone", "init"]
+- !private ["CSo10NSTimeZone", "secondsFromGMT"]
+- !private ["CSo7NSValue", "deinit"]
+- ["Ps21NilLiteralConvertible", "Some"]
+- ["Sq", "Some"]
+- !private ["Ps16OutputStreamType", "init"]
+- !private ["Ps21RandomAccessIndexType", "Distance"]
+- !private ["Ps21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["Ps21RandomAccessIndexType", "Stride"]
+- !private ["Ps21RandomAccessIndexType", "hashValue"]
+- !private ["Vs5Range", "deinit"]
+- !private ["Ps16RawRepresentable", "DateStandardizer"]
+- !private ["Ps16RawRepresentable", "GreenwichTime"]
 - !private ["Ps16RawRepresentable", "MediumStyle"]
+- ["Ps16RawRepresentable", "RawValue"]
 - !private ["Ps16RawRepresentable", "ShortStyle"]
+- !private ["Ps16RawRepresentable", "abs"]
+- ["Ps16RawRepresentable", "hashValue"]
+- ["Ps16RawRepresentable", "init"]
+- !private ["Ps16RawRepresentable", "print"]
+- ["Ps16RawRepresentable", "rawValue"]
+- ["Ps16RawRepresentable", ""]
+- !private ["Ps17SignedIntegerType", "Distance"]
+- !private ["Ps17SignedIntegerType", "IntegerLiteralType"]
+- !private ["Ps17SignedIntegerType", "Stride"]
+- !private ["Ps17SignedIntegerType", "hashValue"]
+- !private ["Ps16SignedNumberType", "Distance"]
+- !private ["Ps16SignedNumberType", "IntegerLiteralType"]
+- !private ["Ps16SignedNumberType", "Stride"]
+- !private ["Ps16SignedNumberType", "hashValue"]
+- !private ["Ps10Streamable", "init"]
+- !private ["Ps10Strideable", "Distance"]
+- !private ["Ps10Strideable", "IntegerLiteralType"]
+- !private ["Ps10Strideable", "Stride"]
+- !private ["Ps10Strideable", "hashValue"]
+- !private ["SS", "init"]
+- !private ["Ps30StringInterpolationConvertible", "init"]
+- !private ["Ps24StringLiteralConvertible", "init"]
+- !private ["Su", "deinit"]
+- !private ["Vs6UInt16", "deinit"]
+- !private ["Vs6UInt32", "deinit"]
+- !private ["Vs6UInt64", "deinit"]
+- !private ["Vs5UInt8", "deinit"]
+- !private ["Sc", "deinit"]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
+- !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "Distance"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "Stride"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "hashValue"]
+- !private ["Ps32_BuiltinStringLiteralConvertible", "init"]
+- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "init"]
+- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "init"]
+- !private ["Ps14_Incrementable", "Distance"]
+- !private ["Ps14_Incrementable", "IntegerLiteralType"]
+- !private ["Ps14_Incrementable", "Stride"]
+- !private ["Ps14_Incrementable", "hashValue"]
+- !private ["Ps22_IntegerArithmeticType", "Distance"]
+- !private ["Ps22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["Ps22_IntegerArithmeticType", "Stride"]
+- !private ["Ps22_IntegerArithmeticType", "hashValue"]
+- !private ["Ps12_IntegerType", "Distance"]
+- !private ["Ps12_IntegerType", "IntegerLiteralType"]
+- !private ["Ps12_IntegerType", "Stride"]
+- !private ["Ps12_IntegerType", "hashValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "Distance"]
+- !private ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["Ps21_ObjectiveCBridgeable", "Stride"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "hashValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
+- !private ["Ps22_RandomAccessAmbiguity", "Distance"]
+- !private ["Ps22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- !private ["Ps22_RandomAccessAmbiguity", "Stride"]
+- !private ["Ps22_RandomAccessAmbiguity", "hashValue"]
+- !private ["Ps12_Reflectable", "Bound"]
+- !private ["Ps12_Reflectable", "Distance"]
+- !private ["Ps12_Reflectable", "IntegerLiteralType"]
 - !private ["Ps12_Reflectable", "NSDateFormatter"]
+- ["Ps12_Reflectable", "Some"]
+- !private ["Ps12_Reflectable", "Stride"]
+- !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["Ps12_Reflectable", "hashValue"]
+- !private ["Ps12_Reflectable", "init"]
+- !private ["Ps18_SignedIntegerType", "Distance"]
+- !private ["Ps18_SignedIntegerType", "IntegerLiteralType"]
+- !private ["Ps18_SignedIntegerType", "Stride"]
+- !private ["Ps18_SignedIntegerType", "hashValue"]
 depends-nominal:
 - "Ps9AnyObject"
+- !private "Ps22BidirectionalIndexType"
+- !private "Ps21BitwiseOperationsType"
+- !private "Sb"
+- !private "Ps25BooleanLiteralConvertible"
+- !private "Ps11BooleanType"
 - "Ps11CVarArgType"
+- !private "Vs9Character"
+- !private "Vs14ClosedInterval"
+- !private "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
 - "Ps23CustomStringConvertible"
+- "C13InternetRadio16DateStandardizer"
+- !private "Sd"
 - "Ps9Equatable"
+- !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
+- !private "Sf"
+- !private "Ps16ForwardIndexType"
+- "O13InternetRadio13GreenwichTime"
 - "Ps8Hashable"
-- !private "PSo8NSCoding"
-- !private "PSo9NSCopying"
+- !private "Si"
+- !private "Vs5Int16"
+- !private "Vs5Int32"
+- !private "Vs5Int64"
+- !private "Vs4Int8"
+- !private "Ps21IntegerArithmeticType"
+- !private "Ps25IntegerLiteralConvertible"
+- !private "Ps11IntegerType"
+- !private "Ps12IntervalType"
+- !private "Ps14MirrorPathType"
+- "PSo8NSCoding"
+- "PSo9NSCopying"
 - "CSo6NSDate"
 - !private "CSo15NSDateFormatter"
 - !private "OSC20NSDateFormatterStyle"
 - !private "CSo11NSFormatter"
+- !private "PSo16NSMutableCopying"
+- !private "CSo8NSNumber"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
-- !private "PSo14NSSecureCoding"
-- !private "Ps16RawRepresentable"
-- !private "Ps12_Reflectable"
+- "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- "CSo10NSTimeZone"
+- !private "CSo7NSValue"
+- "Ps21NilLiteralConvertible"
+- "Sq"
+- !private "Ps16OutputStreamType"
+- !private "Ps21RandomAccessIndexType"
+- !private "Vs5Range"
+- "Ps16RawRepresentable"
+- !private "Ps17SignedIntegerType"
+- !private "Ps16SignedNumberType"
+- !private "Ps10Streamable"
+- !private "Ps10Strideable"
+- !private "SS"
+- !private "Ps30StringInterpolationConvertible"
+- !private "Ps24StringLiteralConvertible"
+- !private "Su"
+- !private "Vs6UInt16"
+- !private "Vs6UInt32"
+- !private "Vs6UInt64"
+- !private "Vs5UInt8"
+- !private "Sc"
+- !private "Ps31UnicodeScalarLiteralConvertible"
+- !private "Ps33_BuiltinBooleanLiteralConvertible"
+- !private "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "Ps33_BuiltinIntegerLiteralConvertible"
+- !private "Ps32_BuiltinStringLiteralConvertible"
+- !private "Ps37_BuiltinUTF16StringLiteralConvertible"
+- !private "Ps39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "Ps14_Incrementable"
+- !private "Ps22_IntegerArithmeticType"
+- !private "Ps12_IntegerType"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
+- !private "Ps22_RandomAccessAmbiguity"
+- "Ps12_Reflectable"
+- !private "Ps18_SignedIntegerType"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
@@ -122,4 +474,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
-interface-hash: "b96301028e8612d31552f9f5f4c6d44a"
+interface-hash: "a46109dfc0e81083c7517f686c7bc726"

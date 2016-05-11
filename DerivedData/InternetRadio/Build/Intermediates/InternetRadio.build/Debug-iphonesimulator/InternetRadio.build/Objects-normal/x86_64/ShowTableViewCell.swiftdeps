@@ -9,18 +9,18 @@ provides-dynamic-lookup:
 - "hostImageView"
 - "onAirLabel"
 - "hostNameLabel"
+- "awakeFromNib"
 - "hostDetailLabel"
 - "setSelected"
-- "awakeFromNib"
 depends-top-level:
 - !private "BooleanLiteralType"
-- "ShowTableViewCell"
-- "UIImageView"
-- !private "StringLiteralType"
-- "UILabel"
 - !private "colorWithHexString"
 - "UITableViewCell"
+- "ShowTableViewCell"
 - "Bool"
+- !private "StringLiteralType"
+- "UILabel"
+- "UIImageView"
 depends-member:
 - ["Ps9AnyObject", "awakeFromNib"]
 - !private ["Ps9AnyObject", "backgroundColor"]

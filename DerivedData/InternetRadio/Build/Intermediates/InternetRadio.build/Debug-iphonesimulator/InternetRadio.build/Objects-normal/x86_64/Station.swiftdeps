@@ -7,8 +7,8 @@ provides-member:
 - ["C13InternetRadio7Station", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "UIImage"
 - "String"
+- "UIImage"
 - "Station"
 depends-member:
 - !private ["Ps9AnyObject", "stationDetail"]

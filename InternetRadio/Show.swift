@@ -13,8 +13,19 @@ class Show {
     
     // MARK: - Class Properties
     
-    var startTime: Int
-    var endTime: Int
+    var startTimeStandardized: GreenwichTime {
+        get {
+            return self.startTime.returnTimeBasedOnZone()
+        }
+    }
+    var endTimeStandardized: GreenwichTime {
+        get {
+            return self.endTime.returnTimeBasedOnZone()
+            
+        }
+    }
+    var startTime: GreenwichTime
+    var endTime: GreenwichTime
     var hostName: String
     var showStation: String
     var streamURL: String
@@ -24,7 +35,7 @@ class Show {
     
     // MARK: - Class Initialization
     
-    init(startTime: Int, endTime: Int, hostName: String, showStation: String, streamURL: String, weekend: Bool, hostImage: UIImage) {
+    init(startTime: GreenwichTime, endTime: GreenwichTime, hostName: String, showStation: String, streamURL: String, weekend: Bool, hostImage: UIImage) {
         self.hostImage = hostImage
         self.startTime = startTime
         self.streamURL = streamURL

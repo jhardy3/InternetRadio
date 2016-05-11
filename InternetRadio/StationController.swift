@@ -44,21 +44,18 @@ let STATIONS_ARRAY = [
 
 let SHOWS_ARRAY = [
     
-    ("Laura Ingraham","Talk 960","http://54.81.244.228/eldorado-kixwamaac-ibc2?session-id=624764968&source=TuneIn", 6, 9, false, UIImage(named: "Ingraham")!),
-    ("Rush Limbaugh","Talk 960","http://54.81.244.228/eldorado-kixwamaac-ibc2?session-id=624764968&source=TuneIn", 9, 12, false, UIImage(named: "Limbaugh")!),
-    ("Laura Ingraham","Freedom 970","http://65.19.131.171/alphaportland-kufoamaac-ibc1?session-id=1128215199", 9, 12, false, UIImage(named: "Ingraham")!),
-    ("Glenn Beck","KSFO 560","http://10423.live.streamtheworld.com:3690/KSFOAM_SC", 9, 12, false, UIImage(named: "Beck")!),
-    ("Rush Limbaugh","KMOX 1120","http://4533.live.streamtheworld.com/KMOXAMDIALUP_SC", 11, 14, false, UIImage(named: "Limbaugh")!),
-    ("Sean Hannity","Freedom 970","http://65.19.131.171/alphaportland-kufoamaac-ibc1?session-id=1128215199", 12, 15, false, UIImage(named: "Hannity")!),
-    ("Sean Hannity","Sean Hannity Show","http://streaming.cmgdigital.com/atl750/atl750-tunein.mp3", 13, 16, false, UIImage(named: "Hannity")!),
-    ("Michael Savage","KSFO 560","http://10423.live.streamtheworld.com:3690/KSFOAM_SC", 13, 16, false, UIImage(named: "Savage")!),
-    ("Mark Reardon","KMOX 1120","http://4533.live.streamtheworld.com/KMOXAMDIALUP_SC", 14, 16, false, UIImage(named: "Reardon")!),
-    ("Mark Levin","Freedom 970","http://65.19.131.171/alphaportland-kufoamaac-ibc1?session-id=1128215199", 15, 18, false, UIImage(named: "Levin")!),
-    ("Joe Pags","Talk 960","http://54.81.244.228/eldorado-kixwamaac-ibc2?session-id=624764968&source=TuneIn", 15, 18, false, UIImage(named: "Pags")!),
-    ("Alex Jones","Talk 960","http://54.81.244.228/eldorado-kixwamaac-ibc2?session-id=624764968&source=TuneIn", 18, 22, false, UIImage(named: "Jones")!),
-    ("Sean Hannity","KSFO 560","http://10423.live.streamtheworld.com:3690/KSFOAM_SC", 19, 22, false, UIImage(named: "Hannity")!),
-    ("Dave Ramsey","Kern","http://65.19.131.132/agmedia28-kernamaac-32?session-id=1219782653", 18, 22, false, UIImage(named: "Ramsey")!),
-    ("Mark Levin","KSFO 560","http://10423.live.streamtheworld.com:3690/KSFOAM_SC", 16, 19, false, UIImage(named: "Levin")!)
+    ("Laura Ingraham","Talk 960","http://54.81.244.228/eldorado-kixwamaac-ibc2?session-id=624764968&source=TuneIn", GreenwichTime.OnePM, GreenwichTime.FourPM, false, UIImage(named: "Ingraham")!),
+    ("Rush Limbaugh","KMOX 1120","http://4533.live.streamtheworld.com/KMOXAMDIALUP_SC", GreenwichTime.FourPM, GreenwichTime.SevenPM, false, UIImage(named: "Limbaugh")!),
+    ("Sean Hannity","Freedom 970","http://65.19.131.171/alphaportland-kufoamaac-ibc1?session-id=1128215199", GreenwichTime.SevenPM, GreenwichTime.TenPM, false, UIImage(named: "Hannity")!),
+    ("Mark Reardon","KMOX 1120","http://4533.live.streamtheworld.com/KMOXAMDIALUP_SC", GreenwichTime.SevenPM, GreenwichTime.NinePM, false, UIImage(named: "Reardon")!),
+    ("Michael Savage","KSFO 560","http://10423.live.streamtheworld.com:3690/KSFOAM_SC", GreenwichTime.SevenPM, GreenwichTime.TenPM, false, UIImage(named: "Savage")!),
+    ("Joe Pags","Talk 960","http://54.81.244.228/eldorado-kixwamaac-ibc2?session-id=624764968&source=TuneIn", GreenwichTime.NinePM, GreenwichTime.TwelveAM, false, UIImage(named: "Pags")!),
+    ("Mark Levin","KSFO 560","http://10423.live.streamtheworld.com:3690/KSFOAM_SC", GreenwichTime.TenPM, GreenwichTime.OneAM, false, UIImage(named: "Levin")!),
+    ("Alex Jones","Talk 960","http://54.81.244.228/eldorado-kixwamaac-ibc2?session-id=624764968&source=TuneIn", GreenwichTime.TwelveAM, GreenwichTime.FourAM, false, UIImage(named: "Jones")!),
+    ("Dave Ramsey","Kern","http://65.19.131.132/agmedia28-kernamaac-32?session-id=1219782653", GreenwichTime.TwelveAM, GreenwichTime.FourAM, false, UIImage(named: "Ramsey")!),
+    ("Mark Levin","Freedom 970","http://65.19.131.171/alphaportland-kufoamaac-ibc1?session-id=1128215199", GreenwichTime.OneAM, GreenwichTime.FourAM, false, UIImage(named: "Levin")!),
+    ("Sean Hannity","KSFO 560","http://10423.live.streamtheworld.com:3690/KSFOAM_SC", GreenwichTime.OneAM, GreenwichTime.FourAM, false, UIImage(named: "Hannity")!),
+    ("Glenn Beck","KSFO 560","http://10423.live.streamtheworld.com:3690/KSFOAM_SC", GreenwichTime.FourAM, GreenwichTime.SevenAM, false, UIImage(named: "Beck")!),
     
 ]
 
@@ -101,8 +98,8 @@ class StationController {
     
     func showIsValid(show: Show) -> Bool {
         
-        let endTime = show.endTime
-        let startTime = show.startTime
+        let endTime = show.endTimeStandardized.rawValue
+        let startTime = show.startTimeStandardized.rawValue
         let onWeekend = show.weekend
         
         let calendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)

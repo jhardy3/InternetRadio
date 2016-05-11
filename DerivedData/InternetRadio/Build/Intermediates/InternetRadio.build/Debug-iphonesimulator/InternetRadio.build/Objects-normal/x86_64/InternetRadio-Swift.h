@@ -151,6 +151,7 @@ SWIFT_CLASS("_TtC13InternetRadio17ShowTableViewCell")
 SWIFT_CLASS("_TtC13InternetRadio19ShowsViewController")
 @interface ShowsViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
+@property (nonatomic, readonly, copy) NSString * _Nonnull timeZoneAbbreviation;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
