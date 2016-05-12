@@ -13,26 +13,25 @@ provides-member:
 provides-dynamic-lookup:
 - "stringValue"
 depends-top-level:
-- "NSTimeZone"
-- "StringLiteralType"
-- !private "+"
-- "GreenwichTime"
-- !private "UnicodeScalarType"
-- !private "/"
-- "String"
-- !private ">"
-- !private "NSDateFormatter"
-- "=="
-- !private "%"
-- !private "~="
 - !private "||"
-- !private "..."
-- !private "-"
-- !private "print"
-- !private "abs"
+- "Int"
+- !private "UnicodeScalarType"
+- !private "NSDateFormatter"
+- !private "+"
+- !private "%"
+- "String"
+- !private "/"
+- "GreenwichTime"
+- !private ">"
 - "DateStandardizer"
 - "NSDate"
-- "Int"
+- "NSTimeZone"
+- "=="
+- !private "~="
+- !private "-"
+- !private "StringLiteralType"
+- !private "abs"
+- !private "..."
 depends-member:
 - !private ["Ps9AnyObject", "NSDateFormatter"]
 - ["Ps9AnyObject", "NSTimeZone"]
@@ -40,7 +39,7 @@ depends-member:
 - !private ["Ps9AnyObject", "currentTimeZone"]
 - !private ["Ps9AnyObject", "dateStyle"]
 - ["Ps9AnyObject", "defaultTimeZone"]
-- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "returnOffset"]
 - !private ["Ps9AnyObject", "secondsFromGMT"]
 - !private ["Ps9AnyObject", "stringFromDate"]
@@ -67,7 +66,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "dateStyle"]
 - ["Ps11CVarArgType", "defaultTimeZone"]
 - !private ["Ps11CVarArgType", "hashValue"]
-- ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "init"]
 - !private ["Ps11CVarArgType", "secondsFromGMT"]
 - !private ["Ps11CVarArgType", "stringFromDate"]
 - ["Ps11CVarArgType", "stringValue"]
@@ -85,7 +84,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "abbreviation"]
 - !private ["Ps28CustomDebugStringConvertible", "dateStyle"]
 - ["Ps28CustomDebugStringConvertible", "defaultTimeZone"]
-- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "secondsFromGMT"]
 - !private ["Ps28CustomDebugStringConvertible", "stringFromDate"]
 - ["Ps28CustomDebugStringConvertible", "stringValue"]
@@ -100,7 +99,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "dateStyle"]
 - ["Ps23CustomStringConvertible", "defaultTimeZone"]
 - !private ["Ps23CustomStringConvertible", "hashValue"]
-- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "secondsFromGMT"]
 - !private ["Ps23CustomStringConvertible", "stringFromDate"]
 - ["Ps23CustomStringConvertible", "stringValue"]
@@ -111,7 +110,6 @@ depends-member:
 - ["C13InternetRadio16DateStandardizer", "currentTimeZone"]
 - ["C13InternetRadio16DateStandardizer", "deinit"]
 - ["C13InternetRadio16DateStandardizer", "init"]
-- ["C13InternetRadio16DateStandardizer", "mountainTimeZone"]
 - ["C13InternetRadio16DateStandardizer", "returnAcronym"]
 - ["C13InternetRadio16DateStandardizer", "returnOffset"]
 - !private ["Sd", "deinit"]
@@ -132,7 +130,6 @@ depends-member:
 - ["Ps9Equatable", "defaultTimeZone"]
 - ["Ps9Equatable", "hashValue"]
 - ["Ps9Equatable", "init"]
-- !private ["Ps9Equatable", "print"]
 - ["Ps9Equatable", "rawValue"]
 - !private ["Ps9Equatable", "secondsFromGMT"]
 - !private ["Ps9Equatable", "stringFromDate"]
@@ -177,7 +174,6 @@ depends-member:
 - ["O13InternetRadio13GreenwichTime", "deinit"]
 - ["O13InternetRadio13GreenwichTime", "hashValue"]
 - ["O13InternetRadio13GreenwichTime", "init"]
-- !private ["O13InternetRadio13GreenwichTime", "print"]
 - ["O13InternetRadio13GreenwichTime", "rawValue"]
 - ["O13InternetRadio13GreenwichTime", "returnTimeBasedOnZone"]
 - ["O13InternetRadio13GreenwichTime", "returnTimeString"]
@@ -197,7 +193,6 @@ depends-member:
 - ["Ps8Hashable", "defaultTimeZone"]
 - ["Ps8Hashable", "hashValue"]
 - ["Ps8Hashable", "init"]
-- !private ["Ps8Hashable", "print"]
 - ["Ps8Hashable", "rawValue"]
 - !private ["Ps8Hashable", "secondsFromGMT"]
 - !private ["Ps8Hashable", "stringFromDate"]
@@ -237,7 +232,7 @@ depends-member:
 - !private ["PSo8NSCoding", "abbreviation"]
 - !private ["PSo8NSCoding", "dateStyle"]
 - ["PSo8NSCoding", "defaultTimeZone"]
-- ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "secondsFromGMT"]
 - !private ["PSo8NSCoding", "stringFromDate"]
 - !private ["PSo8NSCoding", "timeStyle"]
@@ -245,7 +240,7 @@ depends-member:
 - !private ["PSo9NSCopying", "abbreviation"]
 - !private ["PSo9NSCopying", "dateStyle"]
 - ["PSo9NSCopying", "defaultTimeZone"]
-- ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "init"]
 - !private ["PSo9NSCopying", "secondsFromGMT"]
 - !private ["PSo9NSCopying", "stringFromDate"]
 - !private ["PSo9NSCopying", "timeStyle"]
@@ -270,7 +265,7 @@ depends-member:
 - !private ["CSo8NSObject", "dateStyle"]
 - ["CSo8NSObject", "defaultTimeZone"]
 - !private ["CSo8NSObject", "deinit"]
-- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "secondsFromGMT"]
 - !private ["CSo8NSObject", "stringFromDate"]
 - ["CSo8NSObject", "stringValue"]
@@ -279,7 +274,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "abbreviation"]
 - !private ["PSo16NSObjectProtocol", "dateStyle"]
 - ["PSo16NSObjectProtocol", "defaultTimeZone"]
-- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "secondsFromGMT"]
 - !private ["PSo16NSObjectProtocol", "stringFromDate"]
 - ["PSo16NSObjectProtocol", "stringValue"]
@@ -287,12 +282,11 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "NSDateFormatter"]
 - !private ["PSo14NSSecureCoding", "abbreviation"]
 - ["PSo14NSSecureCoding", "defaultTimeZone"]
-- ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "init"]
 - !private ["PSo14NSSecureCoding", "secondsFromGMT"]
 - !private ["CSo8NSString", "init"]
 - !private ["CSo10NSTimeZone", "abbreviation"]
 - ["CSo10NSTimeZone", "defaultTimeZone"]
-- ["CSo10NSTimeZone", "init"]
 - !private ["CSo10NSTimeZone", "secondsFromGMT"]
 - !private ["CSo7NSValue", "deinit"]
 - ["Ps21NilLiteralConvertible", "Some"]
@@ -311,7 +305,6 @@ depends-member:
 - !private ["Ps16RawRepresentable", "abs"]
 - ["Ps16RawRepresentable", "hashValue"]
 - ["Ps16RawRepresentable", "init"]
-- !private ["Ps16RawRepresentable", "print"]
 - ["Ps16RawRepresentable", "rawValue"]
 - ["Ps16RawRepresentable", ""]
 - !private ["Ps17SignedIntegerType", "Distance"]
@@ -474,4 +467,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
-interface-hash: "a46109dfc0e81083c7517f686c7bc726"
+interface-hash: "74ac76d75782ff4ac09825468cce0d7e"

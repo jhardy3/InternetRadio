@@ -6,39 +6,39 @@ provides-nominal:
 provides-member:
 - ["C13InternetRadio19ShowsViewController", ""]
 provides-dynamic-lookup:
+- "timeZoneAbbreviation"
+- "prepareForSegue"
+- "didReceiveMemoryWarning"
+- "numberOfSectionsInTableView"
 - "tableView"
 - "tableView"
 - "tableView"
 - "tableView"
 - "tableView"
 - "viewDidLoad"
-- "didReceiveMemoryWarning"
-- "prepareForSegue"
-- "numberOfSectionsInTableView"
-- "timeZoneAbbreviation"
 depends-top-level:
+- !private "UIAlertAction"
+- "UIStoryboardSegue"
+- !private "UIAlertController"
 - !private "ViewMode"
-- "Int"
-- "AnyObject"
+- "NSIndexPath"
+- "DateStandardizer"
+- "UIViewController"
 - "UITableView"
-- !private "StreamDetailViewController"
+- "Show"
+- "ShowsViewController"
+- "AnyObject"
 - !private "StringLiteralType"
 - !private "UIColor"
-- !private "UIAlertAction"
 - "UITableViewDelegate"
+- "Int"
+- !private "StationController"
+- "UITableViewDataSource"
 - !private "ShowTableViewCell"
 - !private "UnicodeScalarType"
-- "UITableViewDataSource"
-- "Show"
-- !private "StationController"
-- !private "UIAlertController"
-- "DateStandardizer"
-- "ShowsViewController"
-- "UIViewController"
 - "UITableViewCell"
-- "NSIndexPath"
-- "UIStoryboardSegue"
 - !private "BooleanLiteralType"
+- !private "StreamDetailViewController"
 depends-member:
 - ["Ps9AnyObject", "DateStandardizer"]
 - !private ["Ps9AnyObject", "StationController"]
@@ -48,11 +48,12 @@ depends-member:
 - !private ["Ps9AnyObject", "ViewMode"]
 - !private ["Ps9AnyObject", "addAction"]
 - !private ["Ps9AnyObject", "blackColor"]
+- !private ["Ps9AnyObject", "cellForRowAtIndexPath"]
 - ["Ps9AnyObject", "createAlertWithShow"]
 - !private ["Ps9AnyObject", "dequeueReusableCellWithIdentifier"]
+- !private ["Ps9AnyObject", "deselectRowAtIndexPath"]
 - !private ["Ps9AnyObject", "destinationViewController"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
-- !private ["Ps9AnyObject", "endTime"]
 - !private ["Ps9AnyObject", "endTimeStandardized"]
 - !private ["Ps9AnyObject", "grayColor"]
 - !private ["Ps9AnyObject", "hidden"]
@@ -90,7 +91,6 @@ depends-member:
 - !private ["Ps9AnyObject", "showIsValid"]
 - !private ["Ps9AnyObject", "showSelected"]
 - !private ["Ps9AnyObject", "shows"]
-- !private ["Ps9AnyObject", "startTime"]
 - !private ["Ps9AnyObject", "startTimeStandardized"]
 - ["Ps9AnyObject", "tableView"]
 - !private ["Ps9AnyObject", "text"]
@@ -132,8 +132,10 @@ depends-member:
 - !private ["Ps11CVarArgType", "ViewMode"]
 - !private ["Ps11CVarArgType", "addAction"]
 - !private ["Ps11CVarArgType", "blackColor"]
+- !private ["Ps11CVarArgType", "cellForRowAtIndexPath"]
 - ["Ps11CVarArgType", "createAlertWithShow"]
 - !private ["Ps11CVarArgType", "dequeueReusableCellWithIdentifier"]
+- !private ["Ps11CVarArgType", "deselectRowAtIndexPath"]
 - !private ["Ps11CVarArgType", "destinationViewController"]
 - ["Ps11CVarArgType", "didReceiveMemoryWarning"]
 - !private ["Ps11CVarArgType", "grayColor"]
@@ -195,9 +197,11 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "ViewMode"]
 - !private ["Ps28CustomDebugStringConvertible", "addAction"]
 - !private ["Ps28CustomDebugStringConvertible", "blackColor"]
+- !private ["Ps28CustomDebugStringConvertible", "cellForRowAtIndexPath"]
 - !private ["Ps28CustomDebugStringConvertible", "count"]
 - ["Ps28CustomDebugStringConvertible", "createAlertWithShow"]
 - !private ["Ps28CustomDebugStringConvertible", "dequeueReusableCellWithIdentifier"]
+- !private ["Ps28CustomDebugStringConvertible", "deselectRowAtIndexPath"]
 - !private ["Ps28CustomDebugStringConvertible", "destinationViewController"]
 - ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
 - !private ["Ps28CustomDebugStringConvertible", "grayColor"]
@@ -252,9 +256,11 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "addAction"]
 - !private ["Ps23CustomStringConvertible", "blackColor"]
+- !private ["Ps23CustomStringConvertible", "cellForRowAtIndexPath"]
 - !private ["Ps23CustomStringConvertible", "count"]
 - ["Ps23CustomStringConvertible", "createAlertWithShow"]
 - !private ["Ps23CustomStringConvertible", "dequeueReusableCellWithIdentifier"]
+- !private ["Ps23CustomStringConvertible", "deselectRowAtIndexPath"]
 - !private ["Ps23CustomStringConvertible", "destinationViewController"]
 - ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
 - !private ["Ps23CustomStringConvertible", "grayColor"]
@@ -311,8 +317,10 @@ depends-member:
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "addAction"]
 - !private ["Ps9Equatable", "blackColor"]
+- !private ["Ps9Equatable", "cellForRowAtIndexPath"]
 - ["Ps9Equatable", "createAlertWithShow"]
 - !private ["Ps9Equatable", "dequeueReusableCellWithIdentifier"]
+- !private ["Ps9Equatable", "deselectRowAtIndexPath"]
 - !private ["Ps9Equatable", "destinationViewController"]
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
 - !private ["Ps9Equatable", "grayColor"]
@@ -373,8 +381,10 @@ depends-member:
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "addAction"]
 - !private ["Ps8Hashable", "blackColor"]
+- !private ["Ps8Hashable", "cellForRowAtIndexPath"]
 - ["Ps8Hashable", "createAlertWithShow"]
 - !private ["Ps8Hashable", "dequeueReusableCellWithIdentifier"]
+- !private ["Ps8Hashable", "deselectRowAtIndexPath"]
 - !private ["Ps8Hashable", "destinationViewController"]
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
 - !private ["Ps8Hashable", "grayColor"]
@@ -461,8 +471,10 @@ depends-member:
 - !private ["PSo8NSCoding", "ViewMode"]
 - !private ["PSo8NSCoding", "addAction"]
 - !private ["PSo8NSCoding", "blackColor"]
+- !private ["PSo8NSCoding", "cellForRowAtIndexPath"]
 - ["PSo8NSCoding", "createAlertWithShow"]
 - !private ["PSo8NSCoding", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo8NSCoding", "deselectRowAtIndexPath"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
 - !private ["PSo8NSCoding", "grayColor"]
 - !private ["PSo8NSCoding", "hidden"]
@@ -559,8 +571,10 @@ depends-member:
 - !private ["CSo8NSObject", "ViewMode"]
 - !private ["CSo8NSObject", "addAction"]
 - !private ["CSo8NSObject", "blackColor"]
+- !private ["CSo8NSObject", "cellForRowAtIndexPath"]
 - ["CSo8NSObject", "createAlertWithShow"]
 - !private ["CSo8NSObject", "dequeueReusableCellWithIdentifier"]
+- !private ["CSo8NSObject", "deselectRowAtIndexPath"]
 - !private ["CSo8NSObject", "destinationViewController"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
 - !private ["CSo8NSObject", "grayColor"]
@@ -607,8 +621,10 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "ViewMode"]
 - !private ["PSo16NSObjectProtocol", "addAction"]
 - !private ["PSo16NSObjectProtocol", "blackColor"]
+- !private ["PSo16NSObjectProtocol", "cellForRowAtIndexPath"]
 - ["PSo16NSObjectProtocol", "createAlertWithShow"]
 - !private ["PSo16NSObjectProtocol", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo16NSObjectProtocol", "deselectRowAtIndexPath"]
 - !private ["PSo16NSObjectProtocol", "destinationViewController"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
 - !private ["PSo16NSObjectProtocol", "grayColor"]
@@ -674,11 +690,9 @@ depends-member:
 - !private ["Ps12SequenceType", "_Element"]
 - !private ["Ps12SequenceType", "count"]
 - !private ["Ps12SequenceType", "subscript"]
-- !private ["C13InternetRadio4Show", "endTime"]
 - !private ["C13InternetRadio4Show", "endTimeStandardized"]
 - !private ["C13InternetRadio4Show", "hostImage"]
 - !private ["C13InternetRadio4Show", "hostName"]
-- !private ["C13InternetRadio4Show", "startTime"]
 - !private ["C13InternetRadio4Show", "startTimeStandardized"]
 - !private ["C13InternetRadio4Show", "weekend"]
 - !private ["C13InternetRadio17ShowTableViewCell", "hostDetailLabel"]
@@ -748,7 +762,9 @@ depends-member:
 - !private ["Ps24StringLiteralConvertible", "init"]
 - !private ["P13InternetRadio13TimerDelegate", "show"]
 - !private ["P13InternetRadio13TimerDelegate", "viewMode"]
+- !private ["PSo29UIAccessibilityIdentification", "cellForRowAtIndexPath"]
 - !private ["PSo29UIAccessibilityIdentification", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo29UIAccessibilityIdentification", "deselectRowAtIndexPath"]
 - !private ["PSo29UIAccessibilityIdentification", "hidden"]
 - !private ["PSo29UIAccessibilityIdentification", "hostDetailLabel"]
 - !private ["PSo29UIAccessibilityIdentification", "hostImageView"]
@@ -763,7 +779,9 @@ depends-member:
 - !private ["CSo17UIAlertController", "addAction"]
 - !private ["CSo17UIAlertController", "init"]
 - !private ["OSC22UIAlertControllerStyle", "Alert"]
+- !private ["PSo12UIAppearance", "cellForRowAtIndexPath"]
 - !private ["PSo12UIAppearance", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo12UIAppearance", "deselectRowAtIndexPath"]
 - !private ["PSo12UIAppearance", "hidden"]
 - !private ["PSo12UIAppearance", "hostDetailLabel"]
 - !private ["PSo12UIAppearance", "hostImageView"]
@@ -780,8 +798,10 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "UIColor"]
 - !private ["PSo21UIAppearanceContainer", "ViewMode"]
 - !private ["PSo21UIAppearanceContainer", "addAction"]
+- !private ["PSo21UIAppearanceContainer", "cellForRowAtIndexPath"]
 - ["PSo21UIAppearanceContainer", "createAlertWithShow"]
 - !private ["PSo21UIAppearanceContainer", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo21UIAppearanceContainer", "deselectRowAtIndexPath"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
 - !private ["PSo21UIAppearanceContainer", "hidden"]
 - !private ["PSo21UIAppearanceContainer", "hostDetailLabel"]
@@ -855,7 +875,9 @@ depends-member:
 - ["PSo18UIContentContainer", "viewForZoomingInScrollView"]
 - !private ["PSo18UIContentContainer", "viewMode"]
 - ["PSo18UIContentContainer", ""]
+- !private ["PSo17UICoordinateSpace", "cellForRowAtIndexPath"]
 - !private ["PSo17UICoordinateSpace", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo17UICoordinateSpace", "deselectRowAtIndexPath"]
 - !private ["PSo17UICoordinateSpace", "hidden"]
 - !private ["PSo17UICoordinateSpace", "hostDetailLabel"]
 - !private ["PSo17UICoordinateSpace", "hostImageView"]
@@ -865,7 +887,9 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "onAirLabel"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo17UICoordinateSpace", "textColor"]
+- !private ["PSo13UIDynamicItem", "cellForRowAtIndexPath"]
 - !private ["PSo13UIDynamicItem", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo13UIDynamicItem", "deselectRowAtIndexPath"]
 - !private ["PSo13UIDynamicItem", "hidden"]
 - !private ["PSo13UIDynamicItem", "hostDetailLabel"]
 - !private ["PSo13UIDynamicItem", "hostImageView"]
@@ -882,8 +906,10 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "UIColor"]
 - !private ["PSo18UIFocusEnvironment", "ViewMode"]
 - !private ["PSo18UIFocusEnvironment", "addAction"]
+- !private ["PSo18UIFocusEnvironment", "cellForRowAtIndexPath"]
 - ["PSo18UIFocusEnvironment", "createAlertWithShow"]
 - !private ["PSo18UIFocusEnvironment", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo18UIFocusEnvironment", "deselectRowAtIndexPath"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
 - !private ["PSo18UIFocusEnvironment", "hidden"]
 - !private ["PSo18UIFocusEnvironment", "hostDetailLabel"]
@@ -944,8 +970,10 @@ depends-member:
 - ["CSo11UIResponder", "UITableViewCell"]
 - !private ["CSo11UIResponder", "ViewMode"]
 - !private ["CSo11UIResponder", "addAction"]
+- !private ["CSo11UIResponder", "cellForRowAtIndexPath"]
 - ["CSo11UIResponder", "createAlertWithShow"]
 - !private ["CSo11UIResponder", "dequeueReusableCellWithIdentifier"]
+- !private ["CSo11UIResponder", "deselectRowAtIndexPath"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
 - !private ["CSo11UIResponder", "hidden"]
 - !private ["CSo11UIResponder", "hostDetailLabel"]
@@ -981,7 +1009,9 @@ depends-member:
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["CSo11UIResponder", "viewForZoomingInScrollView"]
 - !private ["CSo11UIResponder", "viewMode"]
+- !private ["CSo12UIScrollView", "cellForRowAtIndexPath"]
 - !private ["CSo12UIScrollView", "dequeueReusableCellWithIdentifier"]
+- !private ["CSo12UIScrollView", "deselectRowAtIndexPath"]
 - !private ["CSo12UIScrollView", "indexPathForCell"]
 - ["PSo20UIScrollViewDelegate", "DateStandardizer"]
 - !private ["PSo20UIScrollViewDelegate", "StationController"]
@@ -1047,7 +1077,9 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "viewMode"]
 - ["PSo16UIStateRestoring", ""]
 - !private ["CSo17UIStoryboardSegue", "destinationViewController"]
+- !private ["CSo11UITableView", "cellForRowAtIndexPath"]
 - !private ["CSo11UITableView", "dequeueReusableCellWithIdentifier"]
+- !private ["CSo11UITableView", "deselectRowAtIndexPath"]
 - !private ["CSo11UITableView", "indexPathForCell"]
 - !private ["CSo15UITableViewCell", "deinit"]
 - !private ["CSo15UITableViewCell", "hostDetailLabel"]
@@ -1117,8 +1149,10 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "UIColor"]
 - !private ["PSo18UITraitEnvironment", "ViewMode"]
 - !private ["PSo18UITraitEnvironment", "addAction"]
+- !private ["PSo18UITraitEnvironment", "cellForRowAtIndexPath"]
 - ["PSo18UITraitEnvironment", "createAlertWithShow"]
 - !private ["PSo18UITraitEnvironment", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo18UITraitEnvironment", "deselectRowAtIndexPath"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
 - !private ["PSo18UITraitEnvironment", "hidden"]
 - !private ["PSo18UITraitEnvironment", "hostDetailLabel"]
@@ -1155,7 +1189,9 @@ depends-member:
 - ["PSo18UITraitEnvironment", "viewForZoomingInScrollView"]
 - !private ["PSo18UITraitEnvironment", "viewMode"]
 - ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "cellForRowAtIndexPath"]
 - !private ["CSo6UIView", "dequeueReusableCellWithIdentifier"]
+- !private ["CSo6UIView", "deselectRowAtIndexPath"]
 - !private ["CSo6UIView", "hidden"]
 - !private ["CSo6UIView", "hostDetailLabel"]
 - !private ["CSo6UIView", "hostImageView"]
@@ -1261,8 +1297,10 @@ depends-member:
 - ["Ps12_Reflectable", "Some"]
 - !private ["Ps12_Reflectable", "SubSequence"]
 - !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["Ps12_Reflectable", "cellForRowAtIndexPath"]
 - !private ["Ps12_Reflectable", "count"]
 - !private ["Ps12_Reflectable", "dequeueReusableCellWithIdentifier"]
+- !private ["Ps12_Reflectable", "deselectRowAtIndexPath"]
 - !private ["Ps12_Reflectable", "hidden"]
 - !private ["Ps12_Reflectable", "hostDetailLabel"]
 - !private ["Ps12_Reflectable", "hostImageView"]

@@ -1,0 +1,245 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "StationTableViewCell"
+provides-nominal:
+- "C13InternetRadio20StationTableViewCell"
+provides-member:
+- ["C13InternetRadio20StationTableViewCell", ""]
+provides-dynamic-lookup:
+- "setSelected"
+- "awakeFromNib"
+- "stationImageView"
+- "stationDetailLabel"
+- "stationNameLabel"
+depends-top-level:
+- "UIImageView"
+- !private "BooleanLiteralType"
+- "UILabel"
+- "Bool"
+- "UITableViewCell"
+- "StationTableViewCell"
+depends-member:
+- !private ["Ps9AnyObject", "adjustsFontSizeToFitWidth"]
+- ["Ps9AnyObject", "awakeFromNib"]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "setSelected"]
+- ["Ps9AnyObject", "stationDetailLabel"]
+- ["Ps9AnyObject", "stationImageView"]
+- ["Ps9AnyObject", "stationNameLabel"]
+- ["Ps9AnyObject", ""]
+- !private ["Ps11CVarArgType", "adjustsFontSizeToFitWidth"]
+- ["Ps11CVarArgType", "awakeFromNib"]
+- ["Ps11CVarArgType", "init"]
+- ["Ps11CVarArgType", "setSelected"]
+- ["Ps11CVarArgType", "stationDetailLabel"]
+- ["Ps11CVarArgType", "stationImageView"]
+- ["Ps11CVarArgType", "stationNameLabel"]
+- ["Ps11CVarArgType", ""]
+- !private ["Ps28CustomDebugStringConvertible", "adjustsFontSizeToFitWidth"]
+- ["Ps28CustomDebugStringConvertible", "awakeFromNib"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "setSelected"]
+- ["Ps28CustomDebugStringConvertible", "stationDetailLabel"]
+- ["Ps28CustomDebugStringConvertible", "stationImageView"]
+- ["Ps28CustomDebugStringConvertible", "stationNameLabel"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "adjustsFontSizeToFitWidth"]
+- ["Ps23CustomStringConvertible", "awakeFromNib"]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "setSelected"]
+- ["Ps23CustomStringConvertible", "stationDetailLabel"]
+- ["Ps23CustomStringConvertible", "stationImageView"]
+- ["Ps23CustomStringConvertible", "stationNameLabel"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "adjustsFontSizeToFitWidth"]
+- ["Ps9Equatable", "awakeFromNib"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "setSelected"]
+- ["Ps9Equatable", "stationDetailLabel"]
+- ["Ps9Equatable", "stationImageView"]
+- ["Ps9Equatable", "stationNameLabel"]
+- ["Ps9Equatable", ""]
+- !private ["Ps8Hashable", "adjustsFontSizeToFitWidth"]
+- ["Ps8Hashable", "awakeFromNib"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "setSelected"]
+- ["Ps8Hashable", "stationDetailLabel"]
+- ["Ps8Hashable", "stationImageView"]
+- ["Ps8Hashable", "stationNameLabel"]
+- ["Ps8Hashable", ""]
+- !private ["PSo8NSCoding", "adjustsFontSizeToFitWidth"]
+- ["PSo8NSCoding", "awakeFromNib"]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "setSelected"]
+- ["PSo8NSCoding", "stationDetailLabel"]
+- ["PSo8NSCoding", "stationImageView"]
+- ["PSo8NSCoding", "stationNameLabel"]
+- ["PSo8NSCoding", ""]
+- ["CSo8NSObject", "Bool"]
+- ["CSo8NSObject", "UIImageView"]
+- ["CSo8NSObject", "UILabel"]
+- !private ["CSo8NSObject", "adjustsFontSizeToFitWidth"]
+- ["CSo8NSObject", "awakeFromNib"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "setSelected"]
+- ["CSo8NSObject", "stationDetailLabel"]
+- ["CSo8NSObject", "stationImageView"]
+- ["CSo8NSObject", "stationNameLabel"]
+- !private ["PSo16NSObjectProtocol", "adjustsFontSizeToFitWidth"]
+- ["PSo16NSObjectProtocol", "awakeFromNib"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "setSelected"]
+- ["PSo16NSObjectProtocol", "stationDetailLabel"]
+- ["PSo16NSObjectProtocol", "stationImageView"]
+- ["PSo16NSObjectProtocol", "stationNameLabel"]
+- ["PSo16NSObjectProtocol", ""]
+- ["C13InternetRadio20StationTableViewCell", "Bool"]
+- ["C13InternetRadio20StationTableViewCell", "UIImageView"]
+- ["C13InternetRadio20StationTableViewCell", "UILabel"]
+- ["C13InternetRadio20StationTableViewCell", "awakeFromNib"]
+- ["C13InternetRadio20StationTableViewCell", "deinit"]
+- ["C13InternetRadio20StationTableViewCell", "init"]
+- ["C13InternetRadio20StationTableViewCell", "setSelected"]
+- ["C13InternetRadio20StationTableViewCell", "stationDetailLabel"]
+- ["C13InternetRadio20StationTableViewCell", "stationImageView"]
+- ["C13InternetRadio20StationTableViewCell", "stationNameLabel"]
+- !private ["PSo29UIAccessibilityIdentification", "adjustsFontSizeToFitWidth"]
+- ["PSo29UIAccessibilityIdentification", "awakeFromNib"]
+- ["PSo29UIAccessibilityIdentification", "init"]
+- ["PSo29UIAccessibilityIdentification", "setSelected"]
+- ["PSo29UIAccessibilityIdentification", "stationDetailLabel"]
+- ["PSo29UIAccessibilityIdentification", "stationImageView"]
+- ["PSo29UIAccessibilityIdentification", "stationNameLabel"]
+- ["PSo29UIAccessibilityIdentification", ""]
+- !private ["PSo12UIAppearance", "adjustsFontSizeToFitWidth"]
+- ["PSo12UIAppearance", "awakeFromNib"]
+- ["PSo12UIAppearance", "init"]
+- ["PSo12UIAppearance", "setSelected"]
+- ["PSo12UIAppearance", "stationDetailLabel"]
+- ["PSo12UIAppearance", "stationImageView"]
+- ["PSo12UIAppearance", "stationNameLabel"]
+- ["PSo12UIAppearance", ""]
+- !private ["PSo21UIAppearanceContainer", "adjustsFontSizeToFitWidth"]
+- ["PSo21UIAppearanceContainer", "awakeFromNib"]
+- ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "setSelected"]
+- ["PSo21UIAppearanceContainer", "stationDetailLabel"]
+- ["PSo21UIAppearanceContainer", "stationImageView"]
+- ["PSo21UIAppearanceContainer", "stationNameLabel"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo17UICoordinateSpace", "adjustsFontSizeToFitWidth"]
+- ["PSo17UICoordinateSpace", "awakeFromNib"]
+- ["PSo17UICoordinateSpace", "init"]
+- ["PSo17UICoordinateSpace", "setSelected"]
+- ["PSo17UICoordinateSpace", "stationDetailLabel"]
+- ["PSo17UICoordinateSpace", "stationImageView"]
+- ["PSo17UICoordinateSpace", "stationNameLabel"]
+- ["PSo17UICoordinateSpace", ""]
+- !private ["PSo13UIDynamicItem", "adjustsFontSizeToFitWidth"]
+- ["PSo13UIDynamicItem", "awakeFromNib"]
+- ["PSo13UIDynamicItem", "init"]
+- ["PSo13UIDynamicItem", "setSelected"]
+- ["PSo13UIDynamicItem", "stationDetailLabel"]
+- ["PSo13UIDynamicItem", "stationImageView"]
+- ["PSo13UIDynamicItem", "stationNameLabel"]
+- ["PSo13UIDynamicItem", ""]
+- !private ["PSo18UIFocusEnvironment", "adjustsFontSizeToFitWidth"]
+- ["PSo18UIFocusEnvironment", "awakeFromNib"]
+- ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "setSelected"]
+- ["PSo18UIFocusEnvironment", "stationDetailLabel"]
+- ["PSo18UIFocusEnvironment", "stationImageView"]
+- ["PSo18UIFocusEnvironment", "stationNameLabel"]
+- ["PSo18UIFocusEnvironment", ""]
+- ["PSo27UIGestureRecognizerDelegate", "awakeFromNib"]
+- ["PSo27UIGestureRecognizerDelegate", "init"]
+- ["PSo27UIGestureRecognizerDelegate", "setSelected"]
+- ["PSo27UIGestureRecognizerDelegate", "stationDetailLabel"]
+- ["PSo27UIGestureRecognizerDelegate", "stationImageView"]
+- ["PSo27UIGestureRecognizerDelegate", "stationNameLabel"]
+- ["PSo27UIGestureRecognizerDelegate", ""]
+- !private ["CSo7UILabel", "adjustsFontSizeToFitWidth"]
+- ["CSo11UIResponder", "Bool"]
+- ["CSo11UIResponder", "UIImageView"]
+- ["CSo11UIResponder", "UILabel"]
+- !private ["CSo11UIResponder", "adjustsFontSizeToFitWidth"]
+- ["CSo11UIResponder", "awakeFromNib"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "setSelected"]
+- ["CSo11UIResponder", "stationDetailLabel"]
+- ["CSo11UIResponder", "stationImageView"]
+- ["CSo11UIResponder", "stationNameLabel"]
+- ["CSo15UITableViewCell", "Bool"]
+- ["CSo15UITableViewCell", "UIImageView"]
+- ["CSo15UITableViewCell", "UILabel"]
+- ["CSo15UITableViewCell", "awakeFromNib"]
+- ["CSo15UITableViewCell", "init"]
+- ["CSo15UITableViewCell", "setSelected"]
+- ["CSo15UITableViewCell", "stationDetailLabel"]
+- ["CSo15UITableViewCell", "stationImageView"]
+- ["CSo15UITableViewCell", "stationNameLabel"]
+- ["CSo15UITableViewCell", ""]
+- !private ["PSo18UITraitEnvironment", "adjustsFontSizeToFitWidth"]
+- ["PSo18UITraitEnvironment", "awakeFromNib"]
+- ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "setSelected"]
+- ["PSo18UITraitEnvironment", "stationDetailLabel"]
+- ["PSo18UITraitEnvironment", "stationImageView"]
+- ["PSo18UITraitEnvironment", "stationNameLabel"]
+- ["PSo18UITraitEnvironment", ""]
+- ["CSo6UIView", "Bool"]
+- ["CSo6UIView", "UIImageView"]
+- ["CSo6UIView", "UILabel"]
+- !private ["CSo6UIView", "adjustsFontSizeToFitWidth"]
+- ["CSo6UIView", "awakeFromNib"]
+- ["CSo6UIView", "init"]
+- ["CSo6UIView", "setSelected"]
+- ["CSo6UIView", "stationDetailLabel"]
+- ["CSo6UIView", "stationImageView"]
+- ["CSo6UIView", "stationNameLabel"]
+- !private ["Ps12_Reflectable", "adjustsFontSizeToFitWidth"]
+- ["Ps12_Reflectable", "awakeFromNib"]
+- ["Ps12_Reflectable", "init"]
+- ["Ps12_Reflectable", "setSelected"]
+- ["Ps12_Reflectable", "stationDetailLabel"]
+- ["Ps12_Reflectable", "stationImageView"]
+- ["Ps12_Reflectable", "stationNameLabel"]
+- ["Ps12_Reflectable", ""]
+depends-nominal:
+- "Ps9AnyObject"
+- "Ps11CVarArgType"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps8Hashable"
+- "PSo8NSCoding"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "C13InternetRadio20StationTableViewCell"
+- "PSo29UIAccessibilityIdentification"
+- "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "PSo17UICoordinateSpace"
+- "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- "PSo27UIGestureRecognizerDelegate"
+- !private "CSo7UILabel"
+- "CSo11UIResponder"
+- "CSo15UITableViewCell"
+- "PSo18UITraitEnvironment"
+- "CSo6UIView"
+- "Ps12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreAudio.swiftmodule"
+interface-hash: "b09e83bb4db28de7958349afec1fcc0d"

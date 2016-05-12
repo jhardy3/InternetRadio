@@ -16,6 +16,7 @@ class ShowsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
     }
 
@@ -70,18 +71,19 @@ extension ShowsViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: false)
         let show = StationController.sharedController.shows[indexPath.row]
         if StationController.sharedController.showIsValid(show) {
             StationController.sharedController.showSelected(show)
-            performSegueWithIdentifier("toDetail", sender: nil)
+            performSegueWithIdentifier("toDetail", sender: tableView.cellForRowAtIndexPath(indexPath))
         } else {
             createAlertWithShow(show)
         }
     }
     
     func createAlertWithShow(show: Show) {
-        let startTime = show.startTime
-        let endTime = show.endTime
+        let startTime = show.startTimeStandardized
+        let endTime = show.endTimeStandardized
         let host = show.hostName
         
         var weekdays = "weekdays"

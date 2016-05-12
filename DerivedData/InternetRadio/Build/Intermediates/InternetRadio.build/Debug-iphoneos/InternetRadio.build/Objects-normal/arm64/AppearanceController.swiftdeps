@@ -1,0 +1,278 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "AppearanceController"
+provides-nominal:
+- "C13InternetRadio20AppearanceController"
+provides-member:
+- ["C13InternetRadio20AppearanceController", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "Dictionary"
+- !private "UITabBarItem"
+- !private "NSForegroundColorAttributeName"
+- !private "StringLiteralType"
+- !private "UIBarButtonItem"
+- "AppearanceController"
+- !private "UINavigationBar"
+- !private "UIToolbar"
+- !private "UIColor"
+- !private "colorWithHexString"
+- !private "UITabBar"
+depends-member:
+- !private ["Ps9AnyObject", "NSForegroundColorAttributeName"]
+- !private ["Ps9AnyObject", "UIBarButtonItem"]
+- !private ["Ps9AnyObject", "UIColor"]
+- !private ["Ps9AnyObject", "UINavigationBar"]
+- !private ["Ps9AnyObject", "UITabBar"]
+- !private ["Ps9AnyObject", "UITabBarItem"]
+- !private ["Ps9AnyObject", "UIToolbar"]
+- !private ["Ps9AnyObject", "appearance"]
+- !private ["Ps9AnyObject", "backgroundColor"]
+- !private ["Ps9AnyObject", "barTintColor"]
+- !private ["Ps9AnyObject", "colorWithHexString"]
+- !private ["Ps9AnyObject", "setTitleTextAttributes"]
+- !private ["Ps9AnyObject", "tintColor"]
+- !private ["Ps9AnyObject", "titleTextAttributes"]
+- !private ["Ps9AnyObject", "whiteColor"]
+- ["Ps9AnyObject", ""]
+- !private ["C13InternetRadio20AppearanceController", "NSForegroundColorAttributeName"]
+- !private ["C13InternetRadio20AppearanceController", "UIBarButtonItem"]
+- !private ["C13InternetRadio20AppearanceController", "UIColor"]
+- !private ["C13InternetRadio20AppearanceController", "UINavigationBar"]
+- !private ["C13InternetRadio20AppearanceController", "UITabBar"]
+- !private ["C13InternetRadio20AppearanceController", "UITabBarItem"]
+- !private ["C13InternetRadio20AppearanceController", "UIToolbar"]
+- !private ["C13InternetRadio20AppearanceController", "colorWithHexString"]
+- ["C13InternetRadio20AppearanceController", "deinit"]
+- ["C13InternetRadio20AppearanceController", "init"]
+- ["C13InternetRadio20AppearanceController", "initializaeAppearanceDefaults"]
+- !private ["Ps23ArrayLiteralConvertible", "Application"]
+- !private ["Ps23ArrayLiteralConvertible", "Normal"]
+- !private ["Ps23ArrayLiteralConvertible", "Selected"]
+- !private ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["Ps11CVarArgType", "appearance"]
+- !private ["Ps11CVarArgType", "backgroundColor"]
+- !private ["Ps11CVarArgType", "barTintColor"]
+- !private ["Ps11CVarArgType", "setTitleTextAttributes"]
+- !private ["Ps11CVarArgType", "tintColor"]
+- !private ["Ps11CVarArgType", "titleTextAttributes"]
+- !private ["Ps11CVarArgType", "whiteColor"]
+- !private ["Ps14CollectionType", "Key"]
+- !private ["Ps14CollectionType", "Value"]
+- !private ["Ps28CustomDebugStringConvertible", "Key"]
+- !private ["Ps28CustomDebugStringConvertible", "Value"]
+- !private ["Ps28CustomDebugStringConvertible", "appearance"]
+- !private ["Ps28CustomDebugStringConvertible", "backgroundColor"]
+- !private ["Ps28CustomDebugStringConvertible", "barTintColor"]
+- !private ["Ps28CustomDebugStringConvertible", "setTitleTextAttributes"]
+- !private ["Ps28CustomDebugStringConvertible", "tintColor"]
+- !private ["Ps28CustomDebugStringConvertible", "titleTextAttributes"]
+- !private ["Ps28CustomDebugStringConvertible", "whiteColor"]
+- !private ["Ps23CustomStringConvertible", "Key"]
+- !private ["Ps23CustomStringConvertible", "Value"]
+- !private ["Ps23CustomStringConvertible", "appearance"]
+- !private ["Ps23CustomStringConvertible", "backgroundColor"]
+- !private ["Ps23CustomStringConvertible", "barTintColor"]
+- !private ["Ps23CustomStringConvertible", "setTitleTextAttributes"]
+- !private ["Ps23CustomStringConvertible", "tintColor"]
+- !private ["Ps23CustomStringConvertible", "titleTextAttributes"]
+- !private ["Ps23CustomStringConvertible", "whiteColor"]
+- !private ["Vs10Dictionary", "Key"]
+- !private ["Vs10Dictionary", "Value"]
+- !private ["Ps28DictionaryLiteralConvertible", "Key"]
+- !private ["Ps28DictionaryLiteralConvertible", "Value"]
+- !private ["Ps9Equatable", "Application"]
+- !private ["Ps9Equatable", "Normal"]
+- !private ["Ps9Equatable", "Selected"]
+- !private ["Ps9Equatable", "appearance"]
+- !private ["Ps9Equatable", "backgroundColor"]
+- !private ["Ps9Equatable", "barTintColor"]
+- !private ["Ps9Equatable", "setTitleTextAttributes"]
+- !private ["Ps9Equatable", "tintColor"]
+- !private ["Ps9Equatable", "titleTextAttributes"]
+- !private ["Ps9Equatable", "whiteColor"]
+- !private ["Ps8Hashable", "appearance"]
+- !private ["Ps8Hashable", "backgroundColor"]
+- !private ["Ps8Hashable", "barTintColor"]
+- !private ["Ps8Hashable", "setTitleTextAttributes"]
+- !private ["Ps8Hashable", "tintColor"]
+- !private ["Ps8Hashable", "titleTextAttributes"]
+- !private ["Ps8Hashable", "whiteColor"]
+- !private ["Ps9Indexable", "Key"]
+- !private ["Ps9Indexable", "Value"]
+- !private ["PSo8NSCoding", "appearance"]
+- !private ["PSo8NSCoding", "backgroundColor"]
+- !private ["PSo8NSCoding", "barTintColor"]
+- !private ["PSo8NSCoding", "setTitleTextAttributes"]
+- !private ["PSo8NSCoding", "tintColor"]
+- !private ["PSo8NSCoding", "titleTextAttributes"]
+- !private ["PSo8NSCoding", "whiteColor"]
+- !private ["PSo9NSCopying", "whiteColor"]
+- !private ["CSo8NSObject", "appearance"]
+- !private ["CSo8NSObject", "backgroundColor"]
+- !private ["CSo8NSObject", "barTintColor"]
+- !private ["CSo8NSObject", "setTitleTextAttributes"]
+- !private ["CSo8NSObject", "tintColor"]
+- !private ["CSo8NSObject", "titleTextAttributes"]
+- !private ["CSo8NSObject", "whiteColor"]
+- !private ["PSo16NSObjectProtocol", "appearance"]
+- !private ["PSo16NSObjectProtocol", "backgroundColor"]
+- !private ["PSo16NSObjectProtocol", "barTintColor"]
+- !private ["PSo16NSObjectProtocol", "setTitleTextAttributes"]
+- !private ["PSo16NSObjectProtocol", "tintColor"]
+- !private ["PSo16NSObjectProtocol", "titleTextAttributes"]
+- !private ["PSo16NSObjectProtocol", "whiteColor"]
+- !private ["PSo14NSSecureCoding", "whiteColor"]
+- !private ["Ps13OptionSetType", "Application"]
+- !private ["Ps13OptionSetType", "Normal"]
+- !private ["Ps13OptionSetType", "Selected"]
+- !private ["Sq", "deinit"]
+- !private ["Ps16RawRepresentable", "Application"]
+- !private ["Ps16RawRepresentable", "Normal"]
+- !private ["Ps16RawRepresentable", "Selected"]
+- !private ["Ps12SequenceType", "Key"]
+- !private ["Ps12SequenceType", "Value"]
+- !private ["Ps14SetAlgebraType", "Application"]
+- !private ["Ps14SetAlgebraType", "Normal"]
+- !private ["Ps14SetAlgebraType", "Selected"]
+- !private ["PSo29UIAccessibilityIdentification", "appearance"]
+- !private ["PSo29UIAccessibilityIdentification", "backgroundColor"]
+- !private ["PSo29UIAccessibilityIdentification", "barTintColor"]
+- !private ["PSo29UIAccessibilityIdentification", "setTitleTextAttributes"]
+- !private ["PSo29UIAccessibilityIdentification", "tintColor"]
+- !private ["PSo29UIAccessibilityIdentification", "titleTextAttributes"]
+- !private ["PSo12UIAppearance", "appearance"]
+- !private ["PSo12UIAppearance", "backgroundColor"]
+- !private ["PSo12UIAppearance", "barTintColor"]
+- !private ["PSo12UIAppearance", "setTitleTextAttributes"]
+- !private ["PSo12UIAppearance", "tintColor"]
+- !private ["PSo12UIAppearance", "titleTextAttributes"]
+- !private ["PSo21UIAppearanceContainer", "appearance"]
+- !private ["PSo21UIAppearanceContainer", "backgroundColor"]
+- !private ["PSo21UIAppearanceContainer", "barTintColor"]
+- !private ["PSo21UIAppearanceContainer", "tintColor"]
+- !private ["PSo21UIAppearanceContainer", "titleTextAttributes"]
+- !private ["CSo15UIBarButtonItem", "appearance"]
+- !private ["CSo15UIBarButtonItem", "setTitleTextAttributes"]
+- !private ["CSo9UIBarItem", "appearance"]
+- !private ["CSo9UIBarItem", "setTitleTextAttributes"]
+- !private ["PSo16UIBarPositioning", "appearance"]
+- !private ["PSo16UIBarPositioning", "backgroundColor"]
+- !private ["PSo16UIBarPositioning", "barTintColor"]
+- !private ["PSo16UIBarPositioning", "tintColor"]
+- !private ["PSo16UIBarPositioning", "titleTextAttributes"]
+- !private ["CSo7UIColor", "whiteColor"]
+- !private ["VSC14UIControlState", "Application"]
+- !private ["VSC14UIControlState", "Normal"]
+- !private ["VSC14UIControlState", "Selected"]
+- !private ["PSo17UICoordinateSpace", "appearance"]
+- !private ["PSo17UICoordinateSpace", "backgroundColor"]
+- !private ["PSo17UICoordinateSpace", "barTintColor"]
+- !private ["PSo17UICoordinateSpace", "tintColor"]
+- !private ["PSo17UICoordinateSpace", "titleTextAttributes"]
+- !private ["PSo13UIDynamicItem", "appearance"]
+- !private ["PSo13UIDynamicItem", "backgroundColor"]
+- !private ["PSo13UIDynamicItem", "barTintColor"]
+- !private ["PSo13UIDynamicItem", "tintColor"]
+- !private ["PSo13UIDynamicItem", "titleTextAttributes"]
+- !private ["PSo18UIFocusEnvironment", "appearance"]
+- !private ["PSo18UIFocusEnvironment", "backgroundColor"]
+- !private ["PSo18UIFocusEnvironment", "barTintColor"]
+- !private ["PSo18UIFocusEnvironment", "tintColor"]
+- !private ["PSo18UIFocusEnvironment", "titleTextAttributes"]
+- !private ["CSo15UINavigationBar", "appearance"]
+- !private ["CSo15UINavigationBar", "backgroundColor"]
+- !private ["CSo15UINavigationBar", "barTintColor"]
+- !private ["CSo15UINavigationBar", "tintColor"]
+- !private ["CSo15UINavigationBar", "titleTextAttributes"]
+- !private ["CSo11UIResponder", "appearance"]
+- !private ["CSo11UIResponder", "backgroundColor"]
+- !private ["CSo11UIResponder", "barTintColor"]
+- !private ["CSo11UIResponder", "tintColor"]
+- !private ["CSo11UIResponder", "titleTextAttributes"]
+- !private ["CSo8UITabBar", "appearance"]
+- !private ["CSo8UITabBar", "backgroundColor"]
+- !private ["CSo8UITabBar", "tintColor"]
+- !private ["CSo12UITabBarItem", "appearance"]
+- !private ["CSo12UITabBarItem", "setTitleTextAttributes"]
+- !private ["CSo9UIToolbar", "appearance"]
+- !private ["CSo9UIToolbar", "barTintColor"]
+- !private ["PSo18UITraitEnvironment", "appearance"]
+- !private ["PSo18UITraitEnvironment", "backgroundColor"]
+- !private ["PSo18UITraitEnvironment", "barTintColor"]
+- !private ["PSo18UITraitEnvironment", "tintColor"]
+- !private ["PSo18UITraitEnvironment", "titleTextAttributes"]
+- !private ["CSo6UIView", "appearance"]
+- !private ["CSo6UIView", "backgroundColor"]
+- !private ["CSo6UIView", "barTintColor"]
+- !private ["CSo6UIView", "tintColor"]
+- !private ["CSo6UIView", "titleTextAttributes"]
+- !private ["Ps24_ColorLiteralConvertible", "whiteColor"]
+- !private ["Ps21_ObjectiveCBridgeable", "Key"]
+- !private ["Ps21_ObjectiveCBridgeable", "Value"]
+- !private ["Ps12_Reflectable", "Key"]
+- !private ["Ps12_Reflectable", "Value"]
+- !private ["Ps12_Reflectable", "appearance"]
+- !private ["Ps12_Reflectable", "backgroundColor"]
+- !private ["Ps12_Reflectable", "barTintColor"]
+- !private ["Ps12_Reflectable", "tintColor"]
+- !private ["Ps12_Reflectable", "titleTextAttributes"]
+depends-nominal:
+- "Ps9AnyObject"
+- "C13InternetRadio20AppearanceController"
+- !private "Ps23ArrayLiteralConvertible"
+- !private "V12CoreGraphics7CGFloat"
+- !private "Ps11CVarArgType"
+- !private "Ps14CollectionType"
+- !private "Ps28CustomDebugStringConvertible"
+- !private "Ps23CustomStringConvertible"
+- !private "Vs10Dictionary"
+- !private "Ps28DictionaryLiteralConvertible"
+- !private "Ps9Equatable"
+- !private "Ps8Hashable"
+- !private "Ps9Indexable"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "CSo8NSObject"
+- !private "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "Ps13OptionSetType"
+- !private "Sq"
+- !private "Ps16RawRepresentable"
+- !private "Ps12SequenceType"
+- !private "Ps14SetAlgebraType"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- !private "PSo21UIAppearanceContainer"
+- !private "CSo15UIBarButtonItem"
+- !private "CSo9UIBarItem"
+- !private "PSo16UIBarPositioning"
+- !private "CSo7UIColor"
+- !private "VSC14UIControlState"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- !private "PSo18UIFocusEnvironment"
+- !private "CSo15UINavigationBar"
+- !private "CSo11UIResponder"
+- !private "CSo8UITabBar"
+- !private "CSo12UITabBarItem"
+- !private "CSo9UIToolbar"
+- !private "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- !private "Ps24_ColorLiteralConvertible"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
+interface-hash: "9dae05aed4bc6e162940d03281ce4c63"

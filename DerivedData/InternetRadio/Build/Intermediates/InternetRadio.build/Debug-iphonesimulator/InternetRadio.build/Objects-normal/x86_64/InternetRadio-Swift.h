@@ -119,8 +119,21 @@ SWIFT_CLASS("_TtC13InternetRadio11AppDelegate")
 - (NSString * _Nonnull)stringValue;
 @end
 
+@class UITableView;
 @class NSBundle;
 @class NSCoder;
+
+SWIFT_CLASS("_TtC13InternetRadio27SettingsTableViewController")
+@interface SettingsTableViewController : UITableViewController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC13InternetRadio22SettingsViewController")
 @interface SettingsViewController : UIViewController
@@ -146,7 +159,6 @@ SWIFT_CLASS("_TtC13InternetRadio17ShowTableViewCell")
 @end
 
 @class UIStoryboardSegue;
-@class UITableView;
 
 SWIFT_CLASS("_TtC13InternetRadio19ShowsViewController")
 @interface ShowsViewController : UIViewController

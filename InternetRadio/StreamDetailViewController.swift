@@ -50,12 +50,14 @@ class StreamDetailViewController: UIViewController {
     func updateWithShow(show: Show) {
         self.streamDetailLabel.text = show.hostName
         self.detailImageView.image = show.hostImage
+        listeningTimeLabel.text = show.showStation
         timer.startTimer()
     }
     
     func updateWithStation(station: Station) {
         streamProgressBar.progress = 1.0
         streamDetailLabel.text = station.stationName
+        listeningTimeLabel.text = station.stationDetail
         detailImageView.image = station.stationImage
         timer.startTimer()
     }
@@ -89,7 +91,7 @@ class StreamDetailViewController: UIViewController {
 extension StreamDetailViewController: TimerDelegate {
     
     func updatedTimeString(time: String) {
-        self.listeningTimeLabel.text = time
+//        self.listeningTimeLabel.text = time
     }
     
 }

@@ -1,0 +1,63 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Show"
+provides-nominal:
+- "C13InternetRadio4Show"
+provides-member:
+- ["C13InternetRadio4Show", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "Bool"
+- "String"
+- "GreenwichTime"
+- "UIImage"
+- "Show"
+depends-member:
+- !private ["Ps9AnyObject", "endTime"]
+- !private ["Ps9AnyObject", "hostImage"]
+- !private ["Ps9AnyObject", "hostName"]
+- !private ["Ps9AnyObject", "showStation"]
+- !private ["Ps9AnyObject", "startTime"]
+- !private ["Ps9AnyObject", "streamURL"]
+- !private ["Ps9AnyObject", "weekend"]
+- ["Ps9AnyObject", ""]
+- !private ["Ps9Equatable", "returnTimeBasedOnZone"]
+- !private ["O13InternetRadio13GreenwichTime", "returnTimeBasedOnZone"]
+- !private ["Ps8Hashable", "returnTimeBasedOnZone"]
+- !private ["Ps16RawRepresentable", "returnTimeBasedOnZone"]
+- ["C13InternetRadio4Show", "Bool"]
+- ["C13InternetRadio4Show", "GreenwichTime"]
+- ["C13InternetRadio4Show", "String"]
+- ["C13InternetRadio4Show", "UIImage"]
+- ["C13InternetRadio4Show", "deinit"]
+- ["C13InternetRadio4Show", "endTime"]
+- ["C13InternetRadio4Show", "endTimeStandardized"]
+- ["C13InternetRadio4Show", "hostImage"]
+- ["C13InternetRadio4Show", "hostName"]
+- ["C13InternetRadio4Show", "init"]
+- ["C13InternetRadio4Show", "showStation"]
+- ["C13InternetRadio4Show", "startTime"]
+- ["C13InternetRadio4Show", "startTimeStandardized"]
+- ["C13InternetRadio4Show", "streamURL"]
+- ["C13InternetRadio4Show", "weekend"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Ps9Equatable"
+- !private "O13InternetRadio13GreenwichTime"
+- !private "Ps8Hashable"
+- !private "Ps16RawRepresentable"
+- "C13InternetRadio4Show"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreAudio.swiftmodule"
+interface-hash: "8b043ffe57298734a74a4c685123cf62"

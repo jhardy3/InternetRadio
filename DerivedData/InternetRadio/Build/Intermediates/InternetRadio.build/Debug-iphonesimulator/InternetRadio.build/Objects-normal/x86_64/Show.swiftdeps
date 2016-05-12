@@ -7,11 +7,11 @@ provides-member:
 - ["C13InternetRadio4Show", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "GreenwichTime"
-- "Bool"
 - "String"
-- "Show"
+- "GreenwichTime"
 - "UIImage"
+- "Bool"
+- "Show"
 depends-member:
 - !private ["Ps9AnyObject", "endTime"]
 - !private ["Ps9AnyObject", "hostImage"]

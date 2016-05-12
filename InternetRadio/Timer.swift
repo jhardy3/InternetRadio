@@ -30,7 +30,7 @@ class Timer {
         
         var strMinutes = String(minutes)
         var strSeconds = String(seconds)
-        var strFraction = String(fraction)
+        _ = String(fraction)
         
         if minutes < 10 {
             strMinutes = "0" + strMinutes

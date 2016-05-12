@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		742C1F831CE403F9000FC1CB /* AppearanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742C1F821CE403F9000FC1CB /* AppearanceController.swift */; };
+		742C1F851CE4481B000FC1CB /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742C1F841CE4481B000FC1CB /* SettingsTableViewController.swift */; };
 		74C5BCA41CD16C520063E893 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C5BCA31CD16C520063E893 /* AppDelegate.swift */; };
 		74C5BCA91CD16C520063E893 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74C5BCA71CD16C520063E893 /* Main.storyboard */; };
 		74C5BCAB1CD16C520063E893 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74C5BCAA1CD16C520063E893 /* Assets.xcassets */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		742C1F821CE403F9000FC1CB /* AppearanceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppearanceController.swift; sourceTree = "<group>"; };
+		742C1F841CE4481B000FC1CB /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		74C5BCA01CD16C520063E893 /* InternetRadio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InternetRadio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74C5BCA31CD16C520063E893 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74C5BCA81CD16C520063E893 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -78,6 +82,7 @@
 				74FC42C61CD831D50022DD6C /* Controllers */,
 				74FC42C71CD831DD0022DD6C /* Model */,
 				74C5BCA31CD16C520063E893 /* AppDelegate.swift */,
+				742C1F821CE403F9000FC1CB /* AppearanceController.swift */,
 				74FC42D01CDAE6870022DD6C /* DateExtension.swift */,
 				74C5BCAA1CD16C520063E893 /* Assets.xcassets */,
 				74C5BCAC1CD16C520063E893 /* LaunchScreen.storyboard */,
@@ -96,6 +101,7 @@
 				74FC42C31CD831C20022DD6C /* SettingsViewController.swift */,
 				74FC42CA1CD9AF080022DD6C /* StationTableViewCell.swift */,
 				74FC42D21CDB22450022DD6C /* ShowTableViewCell.swift */,
+				742C1F841CE4481B000FC1CB /* SettingsTableViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -150,6 +156,11 @@
 				TargetAttributes = {
 					74C5BC9F1CD16C520063E893 = {
 						CreatedOnToolsVersion = 7.3;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -195,9 +206,11 @@
 				74FC42D51CDDCAD80022DD6C /* Timer.swift in Sources */,
 				74FC42C21CD831B50022DD6C /* ShowsViewController.swift in Sources */,
 				74C5BCA41CD16C520063E893 /* AppDelegate.swift in Sources */,
+				742C1F851CE4481B000FC1CB /* SettingsTableViewController.swift in Sources */,
 				74FC42D11CDAE6870022DD6C /* DateExtension.swift in Sources */,
 				74FC42D31CDB22450022DD6C /* ShowTableViewCell.swift in Sources */,
 				74C5BCB81CD170880063E893 /* Station.swift in Sources */,
+				742C1F831CE403F9000FC1CB /* AppearanceController.swift in Sources */,
 				74FC42CD1CDAD5C80022DD6C /* Show.swift in Sources */,
 				74FC42C01CD5C3E40022DD6C /* StationsViewController.swift in Sources */,
 				74FC42C41CD831C20022DD6C /* SettingsViewController.swift in Sources */,

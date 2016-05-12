@@ -12,36 +12,36 @@ provides-member:
 - ["O13InternetRadio9PlayState", ""]
 - ["C13InternetRadio26StreamDetailViewController", ""]
 provides-dynamic-lookup:
-- "streamDetailLabel"
-- "viewDidLoad"
 - "togglePlayButton"
-- "togglePlayButtonTapped"
-- "listeningTimeLabel"
-- "updatedTimeString"
-- "didReceiveMemoryWarning"
-- "detailImageView"
 - "volumeSliderFired"
+- "detailImageView"
+- "updatedTimeString"
+- "togglePlayButtonTapped"
 - "streamProgressBar"
+- "listeningTimeLabel"
+- "didReceiveMemoryWarning"
+- "viewDidLoad"
+- "streamDetailLabel"
 depends-top-level:
-- "UIImageView"
-- "UIProgressView"
-- "UILabel"
-- "TimerDelegate"
-- "Station"
-- "ViewMode"
-- "StreamDetailViewController"
-- !private "StationController"
-- "Timer"
-- "UIViewController"
-- !private "BooleanLiteralType"
-- !private "UIImage"
-- "String"
 - "UIButton"
+- "TimerDelegate"
 - "PlayState"
-- "Show"
+- "Timer"
 - "=="
-- "UISlider"
+- "UIProgressView"
 - !private "StringLiteralType"
+- !private "UIImage"
+- "Show"
+- "StreamDetailViewController"
+- "UIViewController"
+- "String"
+- !private "StationController"
+- "ViewMode"
+- "UIImageView"
+- "UILabel"
+- "Station"
+- "UISlider"
+- !private "BooleanLiteralType"
 depends-member:
 - ["Ps9AnyObject", "PlayState"]
 - !private ["Ps9AnyObject", "StationController"]
@@ -63,8 +63,10 @@ depends-member:
 - !private ["Ps9AnyObject", "setImage"]
 - !private ["Ps9AnyObject", "sharedController"]
 - ["Ps9AnyObject", "show"]
+- !private ["Ps9AnyObject", "showStation"]
 - !private ["Ps9AnyObject", "startTimer"]
 - ["Ps9AnyObject", "station"]
+- !private ["Ps9AnyObject", "stationDetail"]
 - !private ["Ps9AnyObject", "stationImage"]
 - !private ["Ps9AnyObject", "stationName"]
 - !private ["Ps9AnyObject", "stationPaused"]
@@ -398,8 +400,10 @@ depends-member:
 - !private ["Ps14SetAlgebraType", "Normal"]
 - !private ["C13InternetRadio4Show", "hostImage"]
 - !private ["C13InternetRadio4Show", "hostName"]
+- !private ["C13InternetRadio4Show", "showStation"]
 - !private ["Ps17SignedIntegerType", "hashValue"]
 - !private ["Ps16SignedNumberType", "hashValue"]
+- !private ["C13InternetRadio7Station", "stationDetail"]
 - !private ["C13InternetRadio7Station", "stationImage"]
 - !private ["C13InternetRadio7Station", "stationName"]
 - !private ["C13InternetRadio17StationController", "audioVolumeChanged"]

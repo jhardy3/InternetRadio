@@ -9,30 +9,31 @@ provides-member:
 - ["C13InternetRadio17StationController", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- "AVPlayer"
+- !private ">"
+- !private "=="
+- "GreenwichTime"
+- "Bool"
+- !private "NSURL"
+- "STATIONS_ARRAY"
+- !private "+"
 - "Station"
-- !private "NSDate"
-- "SHOWS_ARRAY"
-- "UIImage"
+- "StringLiteralType"
+- !private "&&"
 - "Array"
-- !private "NSCalendarUnit"
 - !private "<="
 - !private "NSCalendar"
-- !private ">="
 - !private "NSCalendarIdentifierGregorian"
-- "AVPlayer"
 - "BooleanLiteralType"
-- "StationController"
-- !private "&&"
-- !private "||"
-- !private "NSURL"
-- !private "=="
+- "SHOWS_ARRAY"
 - "Show"
-- "Bool"
-- "StringLiteralType"
-- "STATIONS_ARRAY"
-- !private ">"
-- "GreenwichTime"
+- "UIImage"
+- "StationController"
+- !private "NSCalendarUnit"
 - "Float"
+- !private "<"
+- !private "NSDate"
+- !private "||"
 - !private "!"
 depends-member:
 - !private ["CSo8AVPlayer", "init"]
@@ -85,13 +86,16 @@ depends-member:
 - ["Vs10ArraySlice", "Index"]
 - ["Ps22BidirectionalIndexType", "Distance"]
 - ["Ps22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["Ps22BidirectionalIndexType", "Stride"]
 - ["Ps21BitwiseOperationsType", "Distance"]
 - ["Ps21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["Ps21BitwiseOperationsType", "Stride"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
 - ["Ps11CVarArgType", "Distance"]
 - ["Ps11CVarArgType", "IntegerLiteralType"]
+- !private ["Ps11CVarArgType", "Stride"]
 - !private ["Ps11CVarArgType", "component"]
 - ["Ps11CVarArgType", "init"]
 - !private ["Ps11CVarArgType", "pause"]
@@ -106,6 +110,7 @@ depends-member:
 - ["Ps14CollectionType", "init"]
 - ["Ps10Comparable", "Distance"]
 - ["Ps10Comparable", "IntegerLiteralType"]
+- !private ["Ps10Comparable", "Stride"]
 - ["Ps28CustomDebugStringConvertible", "Element"]
 - ["Ps28CustomDebugStringConvertible", "Generator"]
 - ["Ps28CustomDebugStringConvertible", "Index"]
@@ -123,6 +128,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "Generator"]
 - ["Ps23CustomStringConvertible", "Index"]
 - ["Ps23CustomStringConvertible", "IntegerLiteralType"]
+- !private ["Ps23CustomStringConvertible", "Stride"]
 - ["Ps23CustomStringConvertible", "SubSequence"]
 - ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
@@ -142,6 +148,7 @@ depends-member:
 - ["Ps9Equatable", "OnePM"]
 - ["Ps9Equatable", "SevenAM"]
 - ["Ps9Equatable", "SevenPM"]
+- !private ["Ps9Equatable", "Stride"]
 - ["Ps9Equatable", "TenPM"]
 - ["Ps9Equatable", "TwelveAM"]
 - !private ["Ps9Equatable", "Weekday"]
@@ -154,6 +161,7 @@ depends-member:
 - !private ["Ps9Equatable", "volume"]
 - ["Ps16ForwardIndexType", "Distance"]
 - ["Ps16ForwardIndexType", "IntegerLiteralType"]
+- !private ["Ps16ForwardIndexType", "Stride"]
 - ["Ps13GeneratorType", "Element"]
 - ["O13InternetRadio13GreenwichTime", "FourAM"]
 - ["O13InternetRadio13GreenwichTime", "FourPM"]
@@ -175,6 +183,7 @@ depends-member:
 - ["Ps8Hashable", "OnePM"]
 - ["Ps8Hashable", "SevenAM"]
 - ["Ps8Hashable", "SevenPM"]
+- !private ["Ps8Hashable", "Stride"]
 - ["Ps8Hashable", "TenPM"]
 - ["Ps8Hashable", "TwelveAM"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
@@ -194,14 +203,20 @@ depends-member:
 - ["Vs17IndexingGenerator", "Element"]
 - ["Si", "Distance"]
 - ["Si", "IntegerLiteralType"]
+- !private ["Si", "Stride"]
+- !private ["Si", "deinit"]
 - ["Ps21IntegerArithmeticType", "Distance"]
 - ["Ps21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["Ps21IntegerArithmeticType", "Stride"]
 - ["Ps25IntegerLiteralConvertible", "Distance"]
 - ["Ps25IntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["Ps25IntegerLiteralConvertible", "Stride"]
 - ["Ps11IntegerType", "Distance"]
 - ["Ps11IntegerType", "IntegerLiteralType"]
+- !private ["Ps11IntegerType", "Stride"]
 - ["Ps14MirrorPathType", "Distance"]
 - ["Ps14MirrorPathType", "IntegerLiteralType"]
+- !private ["Ps14MirrorPathType", "Stride"]
 - ["Ps21MutableCollectionType", "Element"]
 - ["Ps21MutableCollectionType", "Generator"]
 - ["Ps21MutableCollectionType", "Index"]
@@ -252,6 +267,7 @@ depends-member:
 - !private ["Sq", "deinit"]
 - ["Ps21RandomAccessIndexType", "Distance"]
 - ["Ps21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["Ps21RandomAccessIndexType", "Stride"]
 - ["Ps30RangeReplaceableCollectionType", "Element"]
 - ["Ps30RangeReplaceableCollectionType", "Generator"]
 - ["Ps30RangeReplaceableCollectionType", "Index"]
@@ -287,8 +303,10 @@ depends-member:
 - !private ["C13InternetRadio4Show", "weekend"]
 - ["Ps17SignedIntegerType", "Distance"]
 - ["Ps17SignedIntegerType", "IntegerLiteralType"]
+- !private ["Ps17SignedIntegerType", "Stride"]
 - ["Ps16SignedNumberType", "Distance"]
 - ["Ps16SignedNumberType", "IntegerLiteralType"]
+- !private ["Ps16SignedNumberType", "Stride"]
 - !private ["C13InternetRadio7Station", "init"]
 - !private ["C13InternetRadio7Station", "stationStream"]
 - ["C13InternetRadio17StationController", "AVPlayer"]
@@ -319,8 +337,11 @@ depends-member:
 - ["C13InternetRadio17StationController", "stations"]
 - ["Ps10Strideable", "Distance"]
 - ["Ps10Strideable", "IntegerLiteralType"]
+- !private ["Ps10Strideable", "Stride"]
 - ["PSo29UIAccessibilityIdentification", "init"]
 - ["CSo7UIImage", "init"]
+- !private ["Sp", "deinit"]
+- !private ["SP", "deinit"]
 - ["Ps10_ArrayType", "Element"]
 - ["Ps10_ArrayType", "Generator"]
 - ["Ps10_ArrayType", "Index"]
@@ -331,6 +352,7 @@ depends-member:
 - !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - ["Ps33_BuiltinIntegerLiteralConvertible", "Distance"]
 - ["Ps33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "Stride"]
 - ["Ps24_DestructorSafeContainer", "Element"]
 - ["Ps24_DestructorSafeContainer", "Generator"]
 - ["Ps24_DestructorSafeContainer", "Index"]
@@ -342,15 +364,19 @@ depends-member:
 - ["Ps24_ImageLiteralConvertible", "init"]
 - ["Ps14_Incrementable", "Distance"]
 - ["Ps14_Incrementable", "IntegerLiteralType"]
+- !private ["Ps14_Incrementable", "Stride"]
 - ["Ps22_IntegerArithmeticType", "Distance"]
 - ["Ps22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["Ps22_IntegerArithmeticType", "Stride"]
 - ["Ps12_IntegerType", "Distance"]
 - ["Ps12_IntegerType", "IntegerLiteralType"]
+- !private ["Ps12_IntegerType", "Stride"]
 - ["Ps21_ObjectiveCBridgeable", "Distance"]
 - ["Ps21_ObjectiveCBridgeable", "Element"]
 - ["Ps21_ObjectiveCBridgeable", "Generator"]
 - ["Ps21_ObjectiveCBridgeable", "Index"]
 - ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["Ps21_ObjectiveCBridgeable", "Stride"]
 - ["Ps21_ObjectiveCBridgeable", "SubSequence"]
 - ["Ps21_ObjectiveCBridgeable", "_Element"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
@@ -358,12 +384,14 @@ depends-member:
 - ["Ps21_ObjectiveCBridgeable", "init"]
 - ["Ps22_RandomAccessAmbiguity", "Distance"]
 - ["Ps22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- !private ["Ps22_RandomAccessAmbiguity", "Stride"]
 - ["Ps12_Reflectable", "Distance"]
 - ["Ps12_Reflectable", "Element"]
 - ["Ps12_Reflectable", "Generator"]
 - ["Ps12_Reflectable", "Index"]
 - ["Ps12_Reflectable", "IntegerLiteralType"]
 - ["Ps12_Reflectable", "Some"]
+- !private ["Ps12_Reflectable", "Stride"]
 - ["Ps12_Reflectable", "SubSequence"]
 - ["Ps12_Reflectable", "_Element"]
 - !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
@@ -371,6 +399,7 @@ depends-member:
 - ["Ps12_Reflectable", "init"]
 - ["Ps18_SignedIntegerType", "Distance"]
 - ["Ps18_SignedIntegerType", "IntegerLiteralType"]
+- !private ["Ps18_SignedIntegerType", "Stride"]
 depends-nominal:
 - !private "CSo8AVPlayer"
 - "Ps9AnyObject"
@@ -427,6 +456,8 @@ depends-nominal:
 - "Ps10Strideable"
 - "PSo29UIAccessibilityIdentification"
 - "CSo7UIImage"
+- !private "Sp"
+- !private "SP"
 - "Ps10_ArrayType"
 - !private "Ps33_BuiltinBooleanLiteralConvertible"
 - "Ps33_BuiltinIntegerLiteralConvertible"

@@ -90,6 +90,9 @@ class StationController {
         guard let url = NSURL(string: stationStream) else { return }
         let audioPlayer = AVPlayer(URL: url)
         
+        try! AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback, withOptions: [])
+        try! AVAudioSession.sharedInstance().setActive(true)
+        
         self.audioPlayer = audioPlayer
         
         audioPlayer.volume = 1.0
@@ -106,8 +109,14 @@ class StationController {
         let hour = calendar?.component(NSCalendarUnit.Hour, fromDate: NSDate())
         
         if onWeekend && isTheWeekend() {
-            return (startTime <= hour) && (endTime >= hour)
+            if endTime < startTime {
+                return (startTime <= hour) && ((endTime + 24) > hour)
+            }
+            return (startTime <= hour) && (endTime > hour)
         } else if !isTheWeekend() && !onWeekend {
+            if endTime < startTime {
+                return (startTime <= (hour! + 24)) && ((endTime + 24) > hour)
+            }
             return (startTime <= hour) && (endTime > hour)
         } else {
             return false
@@ -132,6 +141,9 @@ class StationController {
         let stationStream = show.streamURL
         guard let url = NSURL(string: stationStream) else { return }
         let audioPlayer = AVPlayer(URL: url)
+        
+        try! AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback, withOptions: [])
+        try! AVAudioSession.sharedInstance().setActive(true)
         
         self.audioPlayer = audioPlayer
         
