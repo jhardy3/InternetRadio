@@ -94,6 +94,8 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
 @import Foundation;
+@import MessageUI;
+@import StoreKit;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -120,25 +122,19 @@ SWIFT_CLASS("_TtC13InternetRadio11AppDelegate")
 @end
 
 @class UITableView;
+@class NSIndexPath;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC13InternetRadio27SettingsTableViewController")
-@interface SettingsTableViewController : UITableViewController
+@interface SettingsTableViewController : UITableViewController <MFMailComposeViewControllerDelegate>
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
-- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
-- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)configureMailView;
+- (void)configureActivityView;
+- (void)configureSafariView;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC13InternetRadio22SettingsViewController")
-@interface SettingsViewController : UIViewController
-- (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -165,13 +161,29 @@ SWIFT_CLASS("_TtC13InternetRadio19ShowsViewController")
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
 @property (nonatomic, readonly, copy) NSString * _Nonnull timeZoneAbbreviation;
 - (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
 - (void)didReceiveMemoryWarning;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSIndexPath;
+@class SKProduct;
+@class SKProductsRequest;
+@class SKProductsResponse;
+@class SKRequest;
+@class NSError;
+@class SKPaymentQueue;
+@class SKPaymentTransaction;
+
+@interface ShowsViewController (SWIFT_EXTENSION(InternetRadio)) <SKProductsRequestDelegate, SKRequestDelegate, SKPaymentTransactionObserver>
+- (void)fetchProducts;
+- (void)buyProduct:(SKProduct * _Nonnull)product;
+- (void)productsRequest:(SKProductsRequest * _Nonnull)request didReceiveResponse:(SKProductsResponse * _Nonnull)response;
+- (void)request:(SKRequest * _Nonnull)request didFailWithError:(NSError * _Nonnull)error;
+- (void)paymentQueue:(SKPaymentQueue * _Nonnull)queue updatedTransactions:(NSArray<SKPaymentTransaction *> * _Nonnull)transactions;
+@end
+
 
 @interface ShowsViewController (SWIFT_EXTENSION(InternetRadio)) <UITableViewDelegate, UIScrollViewDelegate, UITableViewDataSource>
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;

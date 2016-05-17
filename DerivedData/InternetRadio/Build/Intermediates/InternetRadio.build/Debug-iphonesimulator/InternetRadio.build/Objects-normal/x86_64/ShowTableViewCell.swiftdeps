@@ -7,20 +7,20 @@ provides-member:
 - ["C13InternetRadio17ShowTableViewCell", ""]
 provides-dynamic-lookup:
 - "hostImageView"
+- "hostDetailLabel"
 - "onAirLabel"
 - "hostNameLabel"
 - "awakeFromNib"
-- "hostDetailLabel"
 - "setSelected"
 depends-top-level:
+- "ShowTableViewCell"
+- "UILabel"
+- !private "StringLiteralType"
+- "Bool"
+- "UITableViewCell"
+- "UIImageView"
 - !private "BooleanLiteralType"
 - !private "colorWithHexString"
-- "UITableViewCell"
-- "ShowTableViewCell"
-- "Bool"
-- !private "StringLiteralType"
-- "UILabel"
-- "UIImageView"
 depends-member:
 - ["Ps9AnyObject", "awakeFromNib"]
 - !private ["Ps9AnyObject", "backgroundColor"]

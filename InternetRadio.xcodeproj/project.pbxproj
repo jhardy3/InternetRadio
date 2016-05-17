@@ -17,7 +17,6 @@
 		74C5BCBA1CD170E10063E893 /* StationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C5BCB91CD170E10063E893 /* StationController.swift */; };
 		74FC42C01CD5C3E40022DD6C /* StationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FC42BF1CD5C3E40022DD6C /* StationsViewController.swift */; };
 		74FC42C21CD831B50022DD6C /* ShowsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FC42C11CD831B50022DD6C /* ShowsViewController.swift */; };
-		74FC42C41CD831C20022DD6C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FC42C31CD831C20022DD6C /* SettingsViewController.swift */; };
 		74FC42C91CD83CC80022DD6C /* StreamDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FC42C81CD83CC80022DD6C /* StreamDetailViewController.swift */; };
 		74FC42CB1CD9AF080022DD6C /* StationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FC42CA1CD9AF080022DD6C /* StationTableViewCell.swift */; };
 		74FC42CD1CDAD5C80022DD6C /* Show.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FC42CC1CDAD5C80022DD6C /* Show.swift */; };
@@ -39,7 +38,6 @@
 		74C5BCB91CD170E10063E893 /* StationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationController.swift; sourceTree = "<group>"; };
 		74FC42BF1CD5C3E40022DD6C /* StationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationsViewController.swift; sourceTree = "<group>"; };
 		74FC42C11CD831B50022DD6C /* ShowsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowsViewController.swift; sourceTree = "<group>"; };
-		74FC42C31CD831C20022DD6C /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		74FC42C81CD83CC80022DD6C /* StreamDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamDetailViewController.swift; sourceTree = "<group>"; };
 		74FC42CA1CD9AF080022DD6C /* StationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationTableViewCell.swift; sourceTree = "<group>"; };
 		74FC42CC1CDAD5C80022DD6C /* Show.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Show.swift; sourceTree = "<group>"; };
@@ -82,7 +80,6 @@
 				74FC42C61CD831D50022DD6C /* Controllers */,
 				74FC42C71CD831DD0022DD6C /* Model */,
 				74C5BCA31CD16C520063E893 /* AppDelegate.swift */,
-				742C1F821CE403F9000FC1CB /* AppearanceController.swift */,
 				74FC42D01CDAE6870022DD6C /* DateExtension.swift */,
 				74C5BCAA1CD16C520063E893 /* Assets.xcassets */,
 				74C5BCAC1CD16C520063E893 /* LaunchScreen.storyboard */,
@@ -98,7 +95,6 @@
 				74FC42BF1CD5C3E40022DD6C /* StationsViewController.swift */,
 				74FC42C11CD831B50022DD6C /* ShowsViewController.swift */,
 				74FC42C81CD83CC80022DD6C /* StreamDetailViewController.swift */,
-				74FC42C31CD831C20022DD6C /* SettingsViewController.swift */,
 				74FC42CA1CD9AF080022DD6C /* StationTableViewCell.swift */,
 				74FC42D21CDB22450022DD6C /* ShowTableViewCell.swift */,
 				742C1F841CE4481B000FC1CB /* SettingsTableViewController.swift */,
@@ -110,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				74C5BCB91CD170E10063E893 /* StationController.swift */,
+				742C1F821CE403F9000FC1CB /* AppearanceController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -213,7 +210,6 @@
 				742C1F831CE403F9000FC1CB /* AppearanceController.swift in Sources */,
 				74FC42CD1CDAD5C80022DD6C /* Show.swift in Sources */,
 				74FC42C01CD5C3E40022DD6C /* StationsViewController.swift in Sources */,
-				74FC42C41CD831C20022DD6C /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

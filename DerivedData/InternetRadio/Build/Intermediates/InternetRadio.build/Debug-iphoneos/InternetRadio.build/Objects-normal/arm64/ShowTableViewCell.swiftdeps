@@ -6,21 +6,21 @@ provides-nominal:
 provides-member:
 - ["C13InternetRadio17ShowTableViewCell", ""]
 provides-dynamic-lookup:
-- "hostImageView"
-- "hostNameLabel"
-- "hostDetailLabel"
-- "awakeFromNib"
 - "setSelected"
+- "awakeFromNib"
+- "hostNameLabel"
 - "onAirLabel"
+- "hostDetailLabel"
+- "hostImageView"
 depends-top-level:
-- !private "colorWithHexString"
+- "Bool"
+- "ShowTableViewCell"
 - !private "StringLiteralType"
 - "UILabel"
-- "ShowTableViewCell"
 - "UIImageView"
-- "Bool"
 - "UITableViewCell"
 - !private "BooleanLiteralType"
+- !private "colorWithHexString"
 depends-member:
 - ["Ps9AnyObject", "awakeFromNib"]
 - !private ["Ps9AnyObject", "backgroundColor"]

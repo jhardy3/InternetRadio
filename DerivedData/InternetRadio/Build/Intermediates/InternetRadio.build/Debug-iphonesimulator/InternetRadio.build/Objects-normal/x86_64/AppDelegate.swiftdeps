@@ -6,24 +6,24 @@ provides-nominal:
 provides-member:
 - ["C13InternetRadio11AppDelegate", ""]
 provides-dynamic-lookup:
-- "applicationDidBecomeActive"
-- "window"
 - "applicationWillResignActive"
+- "applicationDidBecomeActive"
 - "applicationWillTerminate"
-- "applicationDidEnterBackground"
+- "window"
 - "applicationWillEnterForeground"
 - "application"
+- "applicationDidEnterBackground"
 depends-top-level:
-- "Bool"
-- "UIApplicationDelegate"
-- "UIApplication"
-- "UIResponder"
-- "AnyObject"
-- "NSObject"
 - "AppDelegate"
 - "UIWindow"
-- !private "AppearanceController"
+- "UIApplicationDelegate"
+- "UIApplication"
+- "NSObject"
+- "UIResponder"
+- "AnyObject"
 - !private "BooleanLiteralType"
+- "Bool"
+- !private "AppearanceController"
 depends-member:
 - !private ["Ps9AnyObject", "AppearanceController"]
 - ["Ps9AnyObject", "application"]

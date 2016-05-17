@@ -10,6 +10,9 @@ import Foundation
 import AVKit
 import AVFoundation
 
+// Station / Show IDs
+
+let productIDOne = ""
 
 // Add Station Streams to this array
 let STATIONS_ARRAY = [
@@ -106,16 +109,16 @@ class StationController {
         let onWeekend = show.weekend
         
         let calendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)
-        let hour = calendar?.component(NSCalendarUnit.Hour, fromDate: NSDate())
+        guard let hour = calendar?.component(NSCalendarUnit.Hour, fromDate: NSDate()) else { return false }
         
         if onWeekend && isTheWeekend() {
             if endTime < startTime {
-                return (startTime <= hour) && ((endTime + 24) > hour)
+                return (startTime <= hour) || (endTime > (hour % 12))
             }
             return (startTime <= hour) && (endTime > hour)
         } else if !isTheWeekend() && !onWeekend {
             if endTime < startTime {
-                return (startTime <= (hour! + 24)) && ((endTime + 24) > hour)
+                return (startTime <= hour) || (endTime > (hour % 12))
             }
             return (startTime <= hour) && (endTime > hour)
         } else {
@@ -165,6 +168,25 @@ class StationController {
     
     func audioVolumeChanged(volumeFloat: Float) {
         self.audioPlayer?.volume = volumeFloat
+    }
+    
+    func sortShows() {
+        var sortedShows = [Show]()
+        
+        shows.sortInPlace { $0.0.startTimeStandardized.rawValue < $0.1.startTimeStandardized.rawValue }
+        
+        for show in self.shows {
+            if showIsValid(show) {
+                sortedShows.append(show)
+            }
+        }
+        for show in self.shows {
+            if !showIsValid(show) {
+                sortedShows.append(show)
+            }
+        }
+        
+        self.shows = sortedShows
     }
 }
 

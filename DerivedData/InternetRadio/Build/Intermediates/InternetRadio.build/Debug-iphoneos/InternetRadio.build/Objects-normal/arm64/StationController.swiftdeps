@@ -1,5 +1,6 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
+- "productIDOne"
 - "STATIONS_ARRAY"
 - "SHOWS_ARRAY"
 - "StationController"
@@ -9,34 +10,35 @@ provides-member:
 - ["C13InternetRadio17StationController", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "<"
-- "StationController"
-- !private "=="
-- "Station"
-- !private "NSCalendarUnit"
-- !private ">"
-- !private "AVAudioSessionCategoryPlayback"
-- "AVPlayer"
-- !private "NSDate"
 - "GreenwichTime"
-- !private "<="
-- "Array"
-- "StringLiteralType"
-- "STATIONS_ARRAY"
+- "Station"
+- !private "=="
 - !private "NSURL"
-- !private "AVAudioSession"
-- "SHOWS_ARRAY"
-- "Show"
 - !private "||"
 - "UIImage"
-- !private "NSCalendar"
-- !private "!"
-- !private "NSCalendarIdentifierGregorian"
-- "BooleanLiteralType"
 - "Float"
-- "Bool"
+- !private "NSCalendar"
+- !private "NSCalendarIdentifierGregorian"
+- !private ">"
+- "SHOWS_ARRAY"
+- "Array"
+- !private "NSDate"
+- !private "%"
+- "StringLiteralType"
+- !private "AVAudioSession"
+- "STATIONS_ARRAY"
+- !private "!"
+- !private "NSCalendarUnit"
+- "productIDOne"
+- "Show"
+- !private "<"
 - !private "&&"
-- !private "+"
+- "BooleanLiteralType"
+- "AVPlayer"
+- "Bool"
+- !private "AVAudioSessionCategoryPlayback"
+- !private "<="
+- "StationController"
 depends-member:
 - !private ["CSo14AVAudioSession", "setActive"]
 - !private ["CSo14AVAudioSession", "setCategory"]
@@ -69,6 +71,7 @@ depends-member:
 - !private ["Ps9AnyObject", "setActive"]
 - !private ["Ps9AnyObject", "setCategory"]
 - !private ["Ps9AnyObject", "sharedInstance"]
+- !private ["Ps9AnyObject", "showIsValid"]
 - !private ["Ps9AnyObject", "shows"]
 - !private ["Ps9AnyObject", "startTimeStandardized"]
 - !private ["Ps9AnyObject", "stationStream"]
@@ -84,6 +87,7 @@ depends-member:
 - ["Sa", "_Element"]
 - !private ["Sa", "append"]
 - ["Sa", "init"]
+- !private ["Sa", "sortInPlace"]
 - ["Ps23ArrayLiteralConvertible", "Element"]
 - ["Ps23ArrayLiteralConvertible", "Generator"]
 - !private ["Ps23ArrayLiteralConvertible", "Hour"]
@@ -93,8 +97,10 @@ depends-member:
 - ["Ps23ArrayLiteralConvertible", "_Element"]
 - !private ["Ps23ArrayLiteralConvertible", "append"]
 - ["Ps23ArrayLiteralConvertible", "init"]
+- !private ["Ps23ArrayLiteralConvertible", "sortInPlace"]
 - ["Vs10ArraySlice", "Generator"]
 - ["Vs10ArraySlice", "Index"]
+- !private ["Vs10ArraySlice", "SubSequence"]
 - ["Ps22BidirectionalIndexType", "Distance"]
 - ["Ps22BidirectionalIndexType", "IntegerLiteralType"]
 - !private ["Ps22BidirectionalIndexType", "Stride"]
@@ -122,6 +128,7 @@ depends-member:
 - ["Ps14CollectionType", "_Element"]
 - !private ["Ps14CollectionType", "append"]
 - ["Ps14CollectionType", "init"]
+- !private ["Ps14CollectionType", "sortInPlace"]
 - ["Ps10Comparable", "Distance"]
 - ["Ps10Comparable", "IntegerLiteralType"]
 - !private ["Ps10Comparable", "Stride"]
@@ -139,6 +146,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "setActive"]
 - !private ["Ps28CustomDebugStringConvertible", "setCategory"]
 - !private ["Ps28CustomDebugStringConvertible", "sharedInstance"]
+- !private ["Ps28CustomDebugStringConvertible", "sortInPlace"]
 - !private ["Ps28CustomDebugStringConvertible", "volume"]
 - ["Ps23CustomStringConvertible", "Distance"]
 - ["Ps23CustomStringConvertible", "Element"]
@@ -157,6 +165,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "setActive"]
 - !private ["Ps23CustomStringConvertible", "setCategory"]
 - !private ["Ps23CustomStringConvertible", "sharedInstance"]
+- !private ["Ps23CustomStringConvertible", "sortInPlace"]
 - !private ["Ps23CustomStringConvertible", "volume"]
 - ["Ps9Equatable", "Distance"]
 - !private ["Ps9Equatable", "Element"]
@@ -227,11 +236,11 @@ depends-member:
 - ["Ps9Indexable", "_Element"]
 - !private ["Ps9Indexable", "append"]
 - ["Ps9Indexable", "init"]
+- !private ["Ps9Indexable", "sortInPlace"]
 - ["Vs17IndexingGenerator", "Element"]
 - ["Si", "Distance"]
 - ["Si", "IntegerLiteralType"]
 - !private ["Si", "Stride"]
-- !private ["Si", "deinit"]
 - ["Ps21IntegerArithmeticType", "Distance"]
 - ["Ps21IntegerArithmeticType", "IntegerLiteralType"]
 - !private ["Ps21IntegerArithmeticType", "Stride"]
@@ -251,6 +260,7 @@ depends-member:
 - ["Ps21MutableCollectionType", "_Element"]
 - !private ["Ps21MutableCollectionType", "append"]
 - ["Ps21MutableCollectionType", "init"]
+- !private ["Ps21MutableCollectionType", "sortInPlace"]
 - ["Ps16MutableIndexable", "Element"]
 - ["Ps16MutableIndexable", "Generator"]
 - ["Ps16MutableIndexable", "Index"]
@@ -258,6 +268,7 @@ depends-member:
 - ["Ps16MutableIndexable", "_Element"]
 - !private ["Ps16MutableIndexable", "append"]
 - ["Ps16MutableIndexable", "init"]
+- !private ["Ps16MutableIndexable", "sortInPlace"]
 - ["Ps16MutableSliceable", "Element"]
 - ["Ps16MutableSliceable", "Generator"]
 - ["Ps16MutableSliceable", "Index"]
@@ -265,6 +276,7 @@ depends-member:
 - ["Ps16MutableSliceable", "_Element"]
 - !private ["Ps16MutableSliceable", "append"]
 - ["Ps16MutableSliceable", "init"]
+- !private ["Ps16MutableSliceable", "sortInPlace"]
 - !private ["CSo10NSCalendar", "component"]
 - !private ["CSo10NSCalendar", "init"]
 - !private ["VSC14NSCalendarUnit", "Hour"]
@@ -298,7 +310,6 @@ depends-member:
 - !private ["Ps13OptionSetType", "Hour"]
 - !private ["Ps13OptionSetType", "Weekday"]
 - ["Sq", "Some"]
-- !private ["Sq", "deinit"]
 - ["Ps21RandomAccessIndexType", "Distance"]
 - ["Ps21RandomAccessIndexType", "IntegerLiteralType"]
 - !private ["Ps21RandomAccessIndexType", "Stride"]
@@ -309,6 +320,7 @@ depends-member:
 - ["Ps30RangeReplaceableCollectionType", "_Element"]
 - !private ["Ps30RangeReplaceableCollectionType", "append"]
 - ["Ps30RangeReplaceableCollectionType", "init"]
+- !private ["Ps30RangeReplaceableCollectionType", "sortInPlace"]
 - !private ["Ps16RawRepresentable", "Element"]
 - ["Ps16RawRepresentable", "FourAM"]
 - ["Ps16RawRepresentable", "FourPM"]
@@ -329,6 +341,7 @@ depends-member:
 - ["Ps12SequenceType", "_Element"]
 - !private ["Ps12SequenceType", "append"]
 - ["Ps12SequenceType", "init"]
+- !private ["Ps12SequenceType", "sortInPlace"]
 - !private ["Ps14SetAlgebraType", "Element"]
 - !private ["Ps14SetAlgebraType", "Hour"]
 - !private ["Ps14SetAlgebraType", "Weekday"]
@@ -369,6 +382,7 @@ depends-member:
 - ["C13InternetRadio17StationController", "showIsValid"]
 - ["C13InternetRadio17StationController", "showSelected"]
 - ["C13InternetRadio17StationController", "shows"]
+- ["C13InternetRadio17StationController", "sortShows"]
 - ["C13InternetRadio17StationController", "stationPaused"]
 - ["C13InternetRadio17StationController", "stationSelected"]
 - ["C13InternetRadio17StationController", "stationStarted"]
@@ -378,8 +392,6 @@ depends-member:
 - !private ["Ps10Strideable", "Stride"]
 - ["PSo29UIAccessibilityIdentification", "init"]
 - ["CSo7UIImage", "init"]
-- !private ["Sp", "deinit"]
-- !private ["SP", "deinit"]
 - ["Ps10_ArrayType", "Element"]
 - ["Ps10_ArrayType", "Generator"]
 - ["Ps10_ArrayType", "Index"]
@@ -387,6 +399,7 @@ depends-member:
 - ["Ps10_ArrayType", "_Element"]
 - !private ["Ps10_ArrayType", "append"]
 - ["Ps10_ArrayType", "init"]
+- !private ["Ps10_ArrayType", "sortInPlace"]
 - !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - ["Ps33_BuiltinIntegerLiteralConvertible", "Distance"]
 - ["Ps33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
@@ -398,6 +411,7 @@ depends-member:
 - ["Ps24_DestructorSafeContainer", "_Element"]
 - !private ["Ps24_DestructorSafeContainer", "append"]
 - ["Ps24_DestructorSafeContainer", "init"]
+- !private ["Ps24_DestructorSafeContainer", "sortInPlace"]
 - !private ["Ps32_FileReferenceLiteralConvertible", "init"]
 - ["Ps24_ImageLiteralConvertible", "init"]
 - ["Ps14_Incrementable", "Distance"]
@@ -420,6 +434,7 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "append"]
 - ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "sortInPlace"]
 - ["Ps22_RandomAccessAmbiguity", "Distance"]
 - ["Ps22_RandomAccessAmbiguity", "IntegerLiteralType"]
 - !private ["Ps22_RandomAccessAmbiguity", "Stride"]
@@ -435,6 +450,7 @@ depends-member:
 - !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
 - !private ["Ps12_Reflectable", "append"]
 - ["Ps12_Reflectable", "init"]
+- !private ["Ps12_Reflectable", "sortInPlace"]
 - ["Ps18_SignedIntegerType", "Distance"]
 - ["Ps18_SignedIntegerType", "IntegerLiteralType"]
 - !private ["Ps18_SignedIntegerType", "Stride"]
@@ -496,8 +512,6 @@ depends-nominal:
 - "Ps10Strideable"
 - "PSo29UIAccessibilityIdentification"
 - "CSo7UIImage"
-- !private "Sp"
-- !private "SP"
 - "Ps10_ArrayType"
 - !private "Ps33_BuiltinBooleanLiteralConvertible"
 - "Ps33_BuiltinIntegerLiteralConvertible"
@@ -524,4 +538,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
-interface-hash: "7c9b7a8cbdc0995a04ae63ec26c9ae91"
+interface-hash: "409916e52bd62a33fb761ddbd947c579"

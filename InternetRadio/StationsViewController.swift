@@ -11,9 +11,16 @@ import UIKit
 class StationsViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-
+    var currentIndex: Int?
+    var lastIndex: Int?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(true)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -59,8 +66,14 @@ extension StationsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let station = StationController.sharedController.stations[indexPath.row]
-        StationController.sharedController.stationSelected(station)
-        print(station.stationName)
+        lastIndex = currentIndex
+        currentIndex = indexPath.row
+        if lastIndex == currentIndex && globalState == .Stations {
+            
+        } else {
+            StationController.sharedController.stationSelected(station)
+        }
+        globalState = .Stations
     }
     
 }

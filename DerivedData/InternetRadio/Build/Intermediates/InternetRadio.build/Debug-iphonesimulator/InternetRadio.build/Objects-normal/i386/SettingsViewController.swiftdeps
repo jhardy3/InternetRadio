@@ -6,80 +6,101 @@ provides-nominal:
 provides-member:
 - ["C13InternetRadio22SettingsViewController", ""]
 provides-dynamic-lookup:
-- "didReceiveMemoryWarning"
 - "viewDidLoad"
+- "didReceiveMemoryWarning"
 depends-top-level:
 - "UIViewController"
+- "MFMailComposeViewControllerDelegate"
 - "SettingsViewController"
 depends-member:
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
 - ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "mailComposeController"]
 - ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", ""]
 - ["Ps11CVarArgType", "didReceiveMemoryWarning"]
 - ["Ps11CVarArgType", "init"]
+- ["Ps11CVarArgType", "mailComposeController"]
 - ["Ps11CVarArgType", "viewDidLoad"]
 - ["Ps11CVarArgType", ""]
 - ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
 - ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "mailComposeController"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
 - ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "mailComposeController"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", ""]
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
 - ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "mailComposeController"]
 - ["Ps9Equatable", "viewDidLoad"]
 - ["Ps9Equatable", ""]
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
 - ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "mailComposeController"]
 - ["Ps8Hashable", "viewDidLoad"]
 - ["Ps8Hashable", ""]
+- ["PSo35MFMailComposeViewControllerDelegate", "mailComposeController"]
+- ["PSo35MFMailComposeViewControllerDelegate", ""]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
 - ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "mailComposeController"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", ""]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
 - ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "mailComposeController"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
 - ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "mailComposeController"]
 - ["CSo8NSObject", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
 - ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "mailComposeController"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", ""]
 - ["C13InternetRadio22SettingsViewController", "deinit"]
 - ["C13InternetRadio22SettingsViewController", "didReceiveMemoryWarning"]
 - ["C13InternetRadio22SettingsViewController", "init"]
+- ["C13InternetRadio22SettingsViewController", "mailComposeController"]
 - ["C13InternetRadio22SettingsViewController", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
 - ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "mailComposeController"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", ""]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
 - ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "mailComposeController"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", ""]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
 - ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "mailComposeController"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", ""]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
 - ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "mailComposeController"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
 - ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "mailComposeController"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", ""]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
 - ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "mailComposeController"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", ""]
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
 - ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "mailComposeController"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", ""]
 depends-nominal:
@@ -89,6 +110,7 @@ depends-nominal:
 - "Ps23CustomStringConvertible"
 - "Ps9Equatable"
 - "Ps8Hashable"
+- "PSo35MFMailComposeViewControllerDelegate"
 - "PSo8NSCoding"
 - "PSo26NSExtensionRequestHandling"
 - "CSo8NSObject"
@@ -114,4 +136,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreAudio.swiftmodule"
-interface-hash: "40f36505d78807b69e806a85b934856e"
+interface-hash: "548bbac77d8b94473f3b66b5906687e2"

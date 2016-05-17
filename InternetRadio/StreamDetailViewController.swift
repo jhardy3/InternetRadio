@@ -21,6 +21,7 @@ enum PlayState {
 
 class StreamDetailViewController: UIViewController {
     
+//    @IBOutlet weak var pauseButtonYConstraint: NSLayoutConstraint!
     @IBOutlet weak var streamProgressBar: UIProgressView!
     @IBOutlet weak var streamDetailLabel: UILabel!
     @IBOutlet weak var detailImageView: UIImageView!
@@ -36,6 +37,9 @@ class StreamDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+//        pauseButtonYConstraint.constant = (self.view.frame.height / 30)
+        
+        
         timer.delegate = self
         streamDetailLabel.adjustsFontSizeToFitWidth = true
         

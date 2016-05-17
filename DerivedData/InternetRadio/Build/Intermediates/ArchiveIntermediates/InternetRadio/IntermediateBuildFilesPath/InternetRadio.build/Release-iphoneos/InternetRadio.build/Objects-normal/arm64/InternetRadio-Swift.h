@@ -122,6 +122,16 @@ SWIFT_CLASS("_TtC13InternetRadio11AppDelegate")
 @class NSBundle;
 @class NSCoder;
 
+SWIFT_CLASS("_TtC13InternetRadio27SettingsTableViewController")
+@interface SettingsTableViewController : UITableViewController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC13InternetRadio22SettingsViewController")
 @interface SettingsViewController : UIViewController
 - (void)viewDidLoad;
@@ -138,6 +148,7 @@ SWIFT_CLASS("_TtC13InternetRadio17ShowTableViewCell")
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified hostImageView;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified hostNameLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified hostDetailLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified onAirLabel;
 - (void)awakeFromNib;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
@@ -150,7 +161,9 @@ SWIFT_CLASS("_TtC13InternetRadio17ShowTableViewCell")
 SWIFT_CLASS("_TtC13InternetRadio19ShowsViewController")
 @interface ShowsViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
+@property (nonatomic, readonly, copy) NSString * _Nonnull timeZoneAbbreviation;
 - (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
 - (void)didReceiveMemoryWarning;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
