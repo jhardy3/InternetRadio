@@ -11,6 +11,9 @@ import UIKit
 class StationsViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    
+    // Current implementation uses current and last index to distinguish if stream
+    // Must be reloaded
     var currentIndex: Int?
     var lastIndex: Int?
     

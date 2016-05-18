@@ -210,6 +210,7 @@ SWIFT_CLASS("_TtC13InternetRadio22StationsViewController")
 @interface StationsViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
 - (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
 - (void)didReceiveMemoryWarning;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -228,6 +229,7 @@ SWIFT_CLASS("_TtC13InternetRadio22StationsViewController")
 @class UIButton;
 @class UISlider;
 @class UIProgressView;
+@class UIActivityIndicatorView;
 
 SWIFT_CLASS("_TtC13InternetRadio26StreamDetailViewController")
 @interface StreamDetailViewController : UIViewController
@@ -236,7 +238,9 @@ SWIFT_CLASS("_TtC13InternetRadio26StreamDetailViewController")
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified detailImageView;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified togglePlayButton;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified listeningTimeLabel;
+@property (nonatomic, weak) IBOutlet UIActivityIndicatorView * _Null_unspecified bufferingIndicator;
 - (void)viewDidLoad;
+- (void)viewWillDisappear:(BOOL)animated;
 - (void)didReceiveMemoryWarning;
 - (IBAction)togglePlayButtonTapped:(UIButton * _Nonnull)sender;
 - (IBAction)volumeSliderFired:(UISlider * _Nonnull)sender;
@@ -246,7 +250,8 @@ SWIFT_CLASS("_TtC13InternetRadio26StreamDetailViewController")
 
 
 @interface StreamDetailViewController (SWIFT_EXTENSION(InternetRadio))
-- (void)updatedTimeString:(NSString * _Nonnull)time;
+- (void)startBufferingAnimation;
+- (void)stopBufferingAnimation;
 @end
 
 #pragma clang diagnostic pop

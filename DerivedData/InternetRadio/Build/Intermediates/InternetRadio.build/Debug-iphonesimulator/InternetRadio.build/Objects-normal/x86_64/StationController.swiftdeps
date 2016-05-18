@@ -4,79 +4,109 @@ provides-top-level:
 - "STATIONS_ARRAY"
 - "SHOWS_ARRAY"
 - "StationController"
+- "StationAudioBuffering"
 provides-nominal:
 - "C13InternetRadio17StationController"
+- "P13InternetRadio21StationAudioBuffering"
 provides-member:
 - ["C13InternetRadio17StationController", ""]
+- ["P13InternetRadio21StationAudioBuffering", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Array"
-- !private ">"
-- "Bool"
-- "Station"
-- !private "NSURL"
-- !private "||"
-- !private "!"
-- !private "AVAudioSession"
-- "Float"
-- !private "&&"
-- "BooleanLiteralType"
-- "productIDOne"
-- !private "%"
-- !private "<"
 - "GreenwichTime"
-- !private "NSCalendarUnit"
-- "STATIONS_ARRAY"
-- "Show"
-- !private "NSDate"
+- "AVPlayer"
 - !private "NSCalendar"
 - "StringLiteralType"
-- !private "NSCalendarIdentifierGregorian"
-- "UIImage"
-- "SHOWS_ARRAY"
-- "AVPlayer"
-- !private "=="
-- "StationController"
-- !private "AVAudioSessionCategoryPlayback"
+- !private "NSDate"
+- !private "<"
 - !private "<="
+- !private "NSCalendarUnit"
+- !private "||"
+- "StationController"
+- "Show"
+- "SHOWS_ARRAY"
+- !private "=="
+- !private "AVPlayerItemStatus"
+- !private ">"
+- "Bool"
+- "productIDOne"
+- !private "Void"
+- "TimerDelegate"
+- !private "&&"
+- !private "NSURLSession"
+- !private "AVAudioSession"
+- !private "print"
+- "STATIONS_ARRAY"
+- !private "%"
+- "BooleanLiteralType"
+- "Timer"
+- "NSURL"
+- !private "NSURLSessionDownloadTask"
+- "UIImage"
+- "StationAudioBuffering"
+- !private "AVAudioSessionCategoryPlayback"
+- "Array"
+- "Station"
+- !private "!"
+- "Float"
+- !private "NSCalendarIdentifierGregorian"
 depends-member:
 - !private ["CSo14AVAudioSession", "setActive"]
 - !private ["CSo14AVAudioSession", "setCategory"]
 - !private ["CSo14AVAudioSession", "sharedInstance"]
 - !private ["VSC29AVAudioSessionCategoryOptions", "Element"]
+- !private ["CSo8AVPlayer", "currentItem"]
 - !private ["CSo8AVPlayer", "init"]
 - !private ["CSo8AVPlayer", "pause"]
 - !private ["CSo8AVPlayer", "play"]
 - !private ["CSo8AVPlayer", "volume"]
+- !private ["CSo12AVPlayerItem", "status"]
+- !private ["OSC18AVPlayerItemStatus", "RawValue"]
+- !private ["OSC18AVPlayerItemStatus", "ReadyToPlay"]
+- !private ["OSC18AVPlayerItemStatus", "deinit"]
 - !private ["Ps9AnyObject", "AVAudioSession"]
 - !private ["Ps9AnyObject", "AVAudioSessionCategoryPlayback"]
 - !private ["Ps9AnyObject", "AVPlayer"]
+- !private ["Ps9AnyObject", "AVPlayerItemStatus"]
 - !private ["Ps9AnyObject", "NSCalendar"]
 - !private ["Ps9AnyObject", "NSCalendarIdentifierGregorian"]
 - !private ["Ps9AnyObject", "NSCalendarUnit"]
 - !private ["Ps9AnyObject", "NSDate"]
 - !private ["Ps9AnyObject", "NSURL"]
+- !private ["Ps9AnyObject", "NSURLSession"]
 - !private ["Ps9AnyObject", "SHOWS_ARRAY"]
 - !private ["Ps9AnyObject", "STATIONS_ARRAY"]
 - ["Ps9AnyObject", "Show"]
 - ["Ps9AnyObject", "Station"]
 - ["Ps9AnyObject", "StationController"]
+- !private ["Ps9AnyObject", "Timer"]
 - !private ["Ps9AnyObject", "audioPlayer"]
 - !private ["Ps9AnyObject", "component"]
+- !private ["Ps9AnyObject", "currentItem"]
+- !private ["Ps9AnyObject", "delegate"]
+- !private ["Ps9AnyObject", "downloadTaskWithURL"]
 - !private ["Ps9AnyObject", "endTimeStandardized"]
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "isTheWeekend"]
 - !private ["Ps9AnyObject", "pause"]
+- ["Ps9AnyObject", "pingMe"]
 - !private ["Ps9AnyObject", "play"]
+- !private ["Ps9AnyObject", "print"]
+- !private ["Ps9AnyObject", "resume"]
 - !private ["Ps9AnyObject", "setActive"]
 - !private ["Ps9AnyObject", "setCategory"]
 - !private ["Ps9AnyObject", "sharedInstance"]
+- !private ["Ps9AnyObject", "sharedSession"]
 - !private ["Ps9AnyObject", "showIsValid"]
 - !private ["Ps9AnyObject", "shows"]
 - !private ["Ps9AnyObject", "startTimeStandardized"]
+- !private ["Ps9AnyObject", "startTimer"]
 - !private ["Ps9AnyObject", "stationStream"]
 - !private ["Ps9AnyObject", "stations"]
+- !private ["Ps9AnyObject", "status"]
+- !private ["Ps9AnyObject", "stopTimer"]
 - !private ["Ps9AnyObject", "streamURL"]
+- !private ["Ps9AnyObject", "timer"]
 - !private ["Ps9AnyObject", "volume"]
 - !private ["Ps9AnyObject", "weekend"]
 - ["Ps9AnyObject", ""]
@@ -114,12 +144,17 @@ depends-member:
 - ["Ps11CVarArgType", "IntegerLiteralType"]
 - !private ["Ps11CVarArgType", "Stride"]
 - !private ["Ps11CVarArgType", "component"]
+- !private ["Ps11CVarArgType", "currentItem"]
+- !private ["Ps11CVarArgType", "downloadTaskWithURL"]
 - ["Ps11CVarArgType", "init"]
 - !private ["Ps11CVarArgType", "pause"]
 - !private ["Ps11CVarArgType", "play"]
+- !private ["Ps11CVarArgType", "resume"]
 - !private ["Ps11CVarArgType", "setActive"]
 - !private ["Ps11CVarArgType", "setCategory"]
 - !private ["Ps11CVarArgType", "sharedInstance"]
+- !private ["Ps11CVarArgType", "sharedSession"]
+- !private ["Ps11CVarArgType", "status"]
 - !private ["Ps11CVarArgType", "volume"]
 - ["Ps14CollectionType", "Element"]
 - ["Ps14CollectionType", "Generator"]
@@ -140,13 +175,18 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "_Element"]
 - !private ["Ps28CustomDebugStringConvertible", "append"]
 - !private ["Ps28CustomDebugStringConvertible", "component"]
+- !private ["Ps28CustomDebugStringConvertible", "currentItem"]
+- !private ["Ps28CustomDebugStringConvertible", "downloadTaskWithURL"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "pause"]
 - !private ["Ps28CustomDebugStringConvertible", "play"]
+- !private ["Ps28CustomDebugStringConvertible", "resume"]
 - !private ["Ps28CustomDebugStringConvertible", "setActive"]
 - !private ["Ps28CustomDebugStringConvertible", "setCategory"]
 - !private ["Ps28CustomDebugStringConvertible", "sharedInstance"]
+- !private ["Ps28CustomDebugStringConvertible", "sharedSession"]
 - !private ["Ps28CustomDebugStringConvertible", "sortInPlace"]
+- !private ["Ps28CustomDebugStringConvertible", "status"]
 - !private ["Ps28CustomDebugStringConvertible", "volume"]
 - ["Ps23CustomStringConvertible", "Distance"]
 - ["Ps23CustomStringConvertible", "Element"]
@@ -159,13 +199,18 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "append"]
 - !private ["Ps23CustomStringConvertible", "component"]
+- !private ["Ps23CustomStringConvertible", "currentItem"]
+- !private ["Ps23CustomStringConvertible", "downloadTaskWithURL"]
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "pause"]
 - !private ["Ps23CustomStringConvertible", "play"]
+- !private ["Ps23CustomStringConvertible", "resume"]
 - !private ["Ps23CustomStringConvertible", "setActive"]
 - !private ["Ps23CustomStringConvertible", "setCategory"]
 - !private ["Ps23CustomStringConvertible", "sharedInstance"]
+- !private ["Ps23CustomStringConvertible", "sharedSession"]
 - !private ["Ps23CustomStringConvertible", "sortInPlace"]
+- !private ["Ps23CustomStringConvertible", "status"]
 - !private ["Ps23CustomStringConvertible", "volume"]
 - ["Ps9Equatable", "Distance"]
 - !private ["Ps9Equatable", "Element"]
@@ -176,6 +221,8 @@ depends-member:
 - ["Ps9Equatable", "NinePM"]
 - ["Ps9Equatable", "OneAM"]
 - ["Ps9Equatable", "OnePM"]
+- !private ["Ps9Equatable", "RawValue"]
+- !private ["Ps9Equatable", "ReadyToPlay"]
 - ["Ps9Equatable", "SevenAM"]
 - ["Ps9Equatable", "SevenPM"]
 - !private ["Ps9Equatable", "Stride"]
@@ -184,13 +231,18 @@ depends-member:
 - !private ["Ps9Equatable", "Weekday"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "component"]
+- !private ["Ps9Equatable", "currentItem"]
+- !private ["Ps9Equatable", "downloadTaskWithURL"]
 - ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "pause"]
 - !private ["Ps9Equatable", "play"]
 - !private ["Ps9Equatable", "rawValue"]
+- !private ["Ps9Equatable", "resume"]
 - !private ["Ps9Equatable", "setActive"]
 - !private ["Ps9Equatable", "setCategory"]
 - !private ["Ps9Equatable", "sharedInstance"]
+- !private ["Ps9Equatable", "sharedSession"]
+- !private ["Ps9Equatable", "status"]
 - !private ["Ps9Equatable", "volume"]
 - ["Ps16ForwardIndexType", "Distance"]
 - ["Ps16ForwardIndexType", "IntegerLiteralType"]
@@ -214,6 +266,8 @@ depends-member:
 - ["Ps8Hashable", "NinePM"]
 - ["Ps8Hashable", "OneAM"]
 - ["Ps8Hashable", "OnePM"]
+- !private ["Ps8Hashable", "RawValue"]
+- !private ["Ps8Hashable", "ReadyToPlay"]
 - ["Ps8Hashable", "SevenAM"]
 - ["Ps8Hashable", "SevenPM"]
 - !private ["Ps8Hashable", "Stride"]
@@ -221,13 +275,18 @@ depends-member:
 - ["Ps8Hashable", "TwelveAM"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "component"]
+- !private ["Ps8Hashable", "currentItem"]
+- !private ["Ps8Hashable", "downloadTaskWithURL"]
 - ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "pause"]
 - !private ["Ps8Hashable", "play"]
 - !private ["Ps8Hashable", "rawValue"]
+- !private ["Ps8Hashable", "resume"]
 - !private ["Ps8Hashable", "setActive"]
 - !private ["Ps8Hashable", "setCategory"]
 - !private ["Ps8Hashable", "sharedInstance"]
+- !private ["Ps8Hashable", "sharedSession"]
+- !private ["Ps8Hashable", "status"]
 - !private ["Ps8Hashable", "volume"]
 - ["Ps9Indexable", "Element"]
 - ["Ps9Indexable", "Generator"]
@@ -285,31 +344,48 @@ depends-member:
 - ["PSo8NSCoding", "init"]
 - !private ["PSo9NSCopying", "component"]
 - !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "resume"]
+- !private ["PSo9NSCopying", "status"]
 - !private ["CSo6NSDate", "init"]
 - !private ["CSo8NSObject", "component"]
+- !private ["CSo8NSObject", "currentItem"]
+- !private ["CSo8NSObject", "downloadTaskWithURL"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "pause"]
 - !private ["CSo8NSObject", "play"]
+- !private ["CSo8NSObject", "resume"]
 - !private ["CSo8NSObject", "setActive"]
 - !private ["CSo8NSObject", "setCategory"]
 - !private ["CSo8NSObject", "sharedInstance"]
+- !private ["CSo8NSObject", "sharedSession"]
+- !private ["CSo8NSObject", "status"]
 - !private ["CSo8NSObject", "volume"]
 - !private ["PSo16NSObjectProtocol", "component"]
+- !private ["PSo16NSObjectProtocol", "currentItem"]
+- !private ["PSo16NSObjectProtocol", "downloadTaskWithURL"]
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "pause"]
 - !private ["PSo16NSObjectProtocol", "play"]
+- !private ["PSo16NSObjectProtocol", "resume"]
 - !private ["PSo16NSObjectProtocol", "setActive"]
 - !private ["PSo16NSObjectProtocol", "setCategory"]
 - !private ["PSo16NSObjectProtocol", "sharedInstance"]
+- !private ["PSo16NSObjectProtocol", "sharedSession"]
+- !private ["PSo16NSObjectProtocol", "status"]
 - !private ["PSo16NSObjectProtocol", "volume"]
 - !private ["PSo14NSSecureCoding", "component"]
 - ["PSo14NSSecureCoding", "init"]
 - !private ["CSo5NSURL", "init"]
+- !private ["CSo12NSURLSession", "downloadTaskWithURL"]
+- !private ["CSo12NSURLSession", "sharedSession"]
+- !private ["CSo24NSURLSessionDownloadTask", "resume"]
+- !private ["CSo16NSURLSessionTask", "resume"]
 - ["Ps21NilLiteralConvertible", "Some"]
 - !private ["Ps13OptionSetType", "Element"]
 - !private ["Ps13OptionSetType", "Hour"]
 - !private ["Ps13OptionSetType", "Weekday"]
 - ["Sq", "Some"]
+- !private ["Sq", "deinit"]
 - ["Ps21RandomAccessIndexType", "Distance"]
 - ["Ps21RandomAccessIndexType", "IntegerLiteralType"]
 - !private ["Ps21RandomAccessIndexType", "Stride"]
@@ -328,6 +404,8 @@ depends-member:
 - ["Ps16RawRepresentable", "NinePM"]
 - ["Ps16RawRepresentable", "OneAM"]
 - ["Ps16RawRepresentable", "OnePM"]
+- !private ["Ps16RawRepresentable", "RawValue"]
+- !private ["Ps16RawRepresentable", "ReadyToPlay"]
 - ["Ps16RawRepresentable", "SevenAM"]
 - ["Ps16RawRepresentable", "SevenPM"]
 - ["Ps16RawRepresentable", "TenPM"]
@@ -358,26 +436,38 @@ depends-member:
 - !private ["Ps16SignedNumberType", "Stride"]
 - !private ["C13InternetRadio7Station", "init"]
 - !private ["C13InternetRadio7Station", "stationStream"]
+- ["P13InternetRadio21StationAudioBuffering", "startBufferingAnimation"]
+- ["P13InternetRadio21StationAudioBuffering", "stopBufferingAnimation"]
 - !private ["C13InternetRadio17StationController", "AVAudioSession"]
 - !private ["C13InternetRadio17StationController", "AVAudioSessionCategoryPlayback"]
 - ["C13InternetRadio17StationController", "AVPlayer"]
+- !private ["C13InternetRadio17StationController", "AVPlayerItemStatus"]
 - ["C13InternetRadio17StationController", "Bool"]
 - ["C13InternetRadio17StationController", "Float"]
 - !private ["C13InternetRadio17StationController", "NSCalendar"]
 - !private ["C13InternetRadio17StationController", "NSCalendarIdentifierGregorian"]
 - !private ["C13InternetRadio17StationController", "NSCalendarUnit"]
 - !private ["C13InternetRadio17StationController", "NSDate"]
-- !private ["C13InternetRadio17StationController", "NSURL"]
+- ["C13InternetRadio17StationController", "NSURL"]
+- !private ["C13InternetRadio17StationController", "NSURLSession"]
+- !private ["C13InternetRadio17StationController", "NSURLSessionDownloadTask"]
 - !private ["C13InternetRadio17StationController", "SHOWS_ARRAY"]
 - !private ["C13InternetRadio17StationController", "STATIONS_ARRAY"]
 - ["C13InternetRadio17StationController", "Show"]
 - ["C13InternetRadio17StationController", "Station"]
+- ["C13InternetRadio17StationController", "StationAudioBuffering"]
 - ["C13InternetRadio17StationController", "StationController"]
+- ["C13InternetRadio17StationController", "Timer"]
+- !private ["C13InternetRadio17StationController", "Void"]
 - ["C13InternetRadio17StationController", "audioPlayer"]
 - ["C13InternetRadio17StationController", "audioVolumeChanged"]
 - ["C13InternetRadio17StationController", "deinit"]
+- ["C13InternetRadio17StationController", "delegate"]
+- ["C13InternetRadio17StationController", "downloadFileFromURL"]
 - ["C13InternetRadio17StationController", "init"]
 - ["C13InternetRadio17StationController", "isTheWeekend"]
+- ["C13InternetRadio17StationController", "pingMe"]
+- !private ["C13InternetRadio17StationController", "print"]
 - ["C13InternetRadio17StationController", "sharedController"]
 - ["C13InternetRadio17StationController", "showIsValid"]
 - ["C13InternetRadio17StationController", "showSelected"]
@@ -387,9 +477,41 @@ depends-member:
 - ["C13InternetRadio17StationController", "stationSelected"]
 - ["C13InternetRadio17StationController", "stationStarted"]
 - ["C13InternetRadio17StationController", "stations"]
+- ["C13InternetRadio17StationController", "timer"]
 - ["Ps10Strideable", "Distance"]
 - ["Ps10Strideable", "IntegerLiteralType"]
 - !private ["Ps10Strideable", "Stride"]
+- !private ["C13InternetRadio5Timer", "delegate"]
+- !private ["C13InternetRadio5Timer", "init"]
+- !private ["C13InternetRadio5Timer", "startTimer"]
+- !private ["C13InternetRadio5Timer", "stopTimer"]
+- !private ["P13InternetRadio13TimerDelegate", "AVAudioSession"]
+- !private ["P13InternetRadio13TimerDelegate", "AVAudioSessionCategoryPlayback"]
+- !private ["P13InternetRadio13TimerDelegate", "AVPlayer"]
+- !private ["P13InternetRadio13TimerDelegate", "AVPlayerItemStatus"]
+- !private ["P13InternetRadio13TimerDelegate", "NSCalendar"]
+- !private ["P13InternetRadio13TimerDelegate", "NSCalendarIdentifierGregorian"]
+- !private ["P13InternetRadio13TimerDelegate", "NSCalendarUnit"]
+- !private ["P13InternetRadio13TimerDelegate", "NSDate"]
+- !private ["P13InternetRadio13TimerDelegate", "NSURL"]
+- !private ["P13InternetRadio13TimerDelegate", "NSURLSession"]
+- !private ["P13InternetRadio13TimerDelegate", "SHOWS_ARRAY"]
+- !private ["P13InternetRadio13TimerDelegate", "STATIONS_ARRAY"]
+- ["P13InternetRadio13TimerDelegate", "Show"]
+- ["P13InternetRadio13TimerDelegate", "Station"]
+- ["P13InternetRadio13TimerDelegate", "StationController"]
+- !private ["P13InternetRadio13TimerDelegate", "Timer"]
+- !private ["P13InternetRadio13TimerDelegate", "audioPlayer"]
+- !private ["P13InternetRadio13TimerDelegate", "delegate"]
+- ["P13InternetRadio13TimerDelegate", "init"]
+- !private ["P13InternetRadio13TimerDelegate", "isTheWeekend"]
+- ["P13InternetRadio13TimerDelegate", "pingMe"]
+- !private ["P13InternetRadio13TimerDelegate", "print"]
+- !private ["P13InternetRadio13TimerDelegate", "showIsValid"]
+- !private ["P13InternetRadio13TimerDelegate", "shows"]
+- !private ["P13InternetRadio13TimerDelegate", "stations"]
+- !private ["P13InternetRadio13TimerDelegate", "timer"]
+- ["P13InternetRadio13TimerDelegate", ""]
 - ["PSo29UIAccessibilityIdentification", "init"]
 - ["CSo7UIImage", "init"]
 - ["Ps10_ArrayType", "Element"]
@@ -458,6 +580,8 @@ depends-nominal:
 - !private "CSo14AVAudioSession"
 - !private "VSC29AVAudioSessionCategoryOptions"
 - !private "CSo8AVPlayer"
+- !private "CSo12AVPlayerItem"
+- !private "OSC18AVPlayerItemStatus"
 - "Ps9AnyObject"
 - "Sa"
 - "Ps23ArrayLiteralConvertible"
@@ -496,6 +620,9 @@ depends-nominal:
 - "PSo16NSObjectProtocol"
 - "PSo14NSSecureCoding"
 - !private "CSo5NSURL"
+- !private "CSo12NSURLSession"
+- !private "CSo24NSURLSessionDownloadTask"
+- !private "CSo16NSURLSessionTask"
 - "Ps21NilLiteralConvertible"
 - !private "Ps13OptionSetType"
 - "Sq"
@@ -508,8 +635,11 @@ depends-nominal:
 - "Ps17SignedIntegerType"
 - "Ps16SignedNumberType"
 - !private "C13InternetRadio7Station"
+- "P13InternetRadio21StationAudioBuffering"
 - "C13InternetRadio17StationController"
 - "Ps10Strideable"
+- !private "C13InternetRadio5Timer"
+- "P13InternetRadio13TimerDelegate"
 - "PSo29UIAccessibilityIdentification"
 - "CSo7UIImage"
 - "Ps10_ArrayType"
@@ -538,4 +668,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
-interface-hash: "409916e52bd62a33fb761ddbd947c579"
+interface-hash: "9d765ef9329a4bc5a15321ef777e272e"

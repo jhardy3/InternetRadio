@@ -10,66 +10,66 @@ provides-member:
 - ["O13InternetRadio9ViewState", ""]
 - ["C13InternetRadio19ShowsViewController", ""]
 provides-dynamic-lookup:
-- "buyProduct"
-- "fetchProducts"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
 - "didReceiveMemoryWarning"
-- "timeZoneAbbreviation"
 - "request"
-- "prepareForSegue"
-- "paymentQueue"
-- "viewWillAppear"
-- "numberOfSectionsInTableView"
+- "buyProduct"
 - "productsRequest"
 - "viewDidLoad"
+- "numberOfSectionsInTableView"
+- "fetchProducts"
+- "viewWillAppear"
+- "prepareForSegue"
+- "paymentQueue"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "timeZoneAbbreviation"
 depends-top-level:
-- !private "BooleanLiteralType"
-- !private "StationController"
-- !private "&&"
-- "Bool"
-- "=="
-- !private "SKPayment"
-- "DateStandardizer"
-- "UIStoryboardSegue"
+- "globalState"
+- "NSError"
+- "UITableViewDelegate"
 - "SKPaymentTransaction"
-- "AnyObject"
+- !private "UIAlertAction"
+- "UITableViewDataSource"
+- "SKProduct"
+- !private "SKPayment"
+- "UITableViewCell"
+- "NSIndexPath"
+- "UITableView"
+- "Bool"
+- "UIStoryboardSegue"
+- "SKProductsRequest"
+- !private "print"
+- "ShowsViewController"
+- "SKRequest"
+- "UIViewController"
+- "=="
+- !private "ShowTableViewCell"
 - !private "StringLiteralType"
 - "SKProductsResponse"
-- !private "UnicodeScalarType"
-- !private "UIAlertController"
-- !private "UIColor"
-- "UIViewController"
-- "NSError"
-- "UITableView"
-- "UITableViewDataSource"
-- !private ">"
-- "SKProductsRequestDelegate"
-- "SKProduct"
-- "UITableViewDelegate"
-- "SKRequest"
-- "SKPaymentTransactionObserver"
-- "Show"
-- !private "ViewMode"
-- !private "productIDOne"
-- "SKProductsRequest"
-- !private "NSSet"
-- "ShowsViewController"
-- !private "print"
 - !private "Set"
-- !private "String"
+- "AnyObject"
+- !private "NSSet"
+- !private "ViewMode"
+- !private "&&"
+- "SKPaymentTransactionObserver"
+- !private "productIDOne"
 - "ViewState"
-- "UITableViewCell"
-- !private "StreamDetailViewController"
-- !private "ShowTableViewCell"
-- "NSIndexPath"
+- "SKProductsRequestDelegate"
+- !private "StationController"
+- !private ">"
+- !private "UnicodeScalarType"
 - "SKPaymentQueue"
-- "globalState"
-- !private "UIAlertAction"
+- "DateStandardizer"
+- !private "UIColor"
 - "Int"
+- !private "UIAlertController"
+- !private "BooleanLiteralType"
+- "Show"
+- !private "String"
+- !private "StreamDetailViewController"
 depends-member:
 - ["Ps9AnyObject", "DateStandardizer"]
 - !private ["Ps9AnyObject", "NSSet"]
@@ -1301,6 +1301,8 @@ depends-member:
 - !private ["Vs5Slice", "Index"]
 - !private ["Vs5Slice", "SubSequence"]
 - !private ["Vs5Slice", "_Element"]
+- !private ["P13InternetRadio21StationAudioBuffering", "show"]
+- !private ["P13InternetRadio21StationAudioBuffering", "viewMode"]
 - !private ["C13InternetRadio17StationController", "sharedController"]
 - !private ["C13InternetRadio17StationController", "showIsValid"]
 - !private ["C13InternetRadio17StationController", "showSelected"]
@@ -1316,8 +1318,11 @@ depends-member:
 - !private ["SS", "init"]
 - !private ["Ps30StringInterpolationConvertible", "init"]
 - !private ["Ps24StringLiteralConvertible", "init"]
-- !private ["P13InternetRadio13TimerDelegate", "show"]
-- !private ["P13InternetRadio13TimerDelegate", "viewMode"]
+- !private ["P13InternetRadio13TimerDelegate", "sharedController"]
+- !private ["P13InternetRadio13TimerDelegate", "showIsValid"]
+- !private ["P13InternetRadio13TimerDelegate", "showSelected"]
+- !private ["P13InternetRadio13TimerDelegate", "shows"]
+- !private ["P13InternetRadio13TimerDelegate", "sortShows"]
 - !private ["PSo29UIAccessibilityIdentification", "cellForRowAtIndexPath"]
 - !private ["PSo29UIAccessibilityIdentification", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo29UIAccessibilityIdentification", "deselectRowAtIndexPath"]
@@ -2150,6 +2155,7 @@ depends-nominal:
 - !private "Ps17SignedIntegerType"
 - !private "Ps16SignedNumberType"
 - !private "Vs5Slice"
+- !private "P13InternetRadio21StationAudioBuffering"
 - !private "C13InternetRadio17StationController"
 - !private "C13InternetRadio26StreamDetailViewController"
 - !private "Ps10Streamable"

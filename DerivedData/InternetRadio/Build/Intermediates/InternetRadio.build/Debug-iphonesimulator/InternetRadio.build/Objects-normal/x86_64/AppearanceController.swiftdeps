@@ -7,17 +7,17 @@ provides-member:
 - ["C13InternetRadio20AppearanceController", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "UIToolbar"
 - !private "UITabBar"
+- !private "UIColor"
+- !private "Dictionary"
+- !private "NSForegroundColorAttributeName"
 - !private "UINavigationBar"
 - !private "StringLiteralType"
-- !private "UITabBarItem"
-- !private "UIBarButtonItem"
-- !private "UIColor"
-- !private "colorWithHexString"
-- !private "NSForegroundColorAttributeName"
+- !private "UIToolbar"
 - "AppearanceController"
-- !private "Dictionary"
+- !private "colorWithHexString"
+- !private "UIBarButtonItem"
+- !private "UITabBarItem"
 depends-member:
 - !private ["Ps9AnyObject", "NSForegroundColorAttributeName"]
 - !private ["Ps9AnyObject", "UIBarButtonItem"]

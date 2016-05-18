@@ -7,36 +7,36 @@ provides-member:
 - ["C13InternetRadio22StationsViewController", ""]
 provides-dynamic-lookup:
 - "prepareForSegue"
-- "viewWillAppear"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
 - "numberOfSectionsInTableView"
-- "viewDidLoad"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
+- "viewWillAppear"
 - "didReceiveMemoryWarning"
+- "viewDidLoad"
 depends-top-level:
-- !private "StationController"
-- "UIStoryboardSegue"
-- "Bool"
-- !private "&&"
-- "UITableViewDelegate"
-- !private "globalState"
-- !private "=="
-- "UITableViewDataSource"
-- "UITableView"
-- !private "StringLiteralType"
-- "UIViewController"
-- "Int"
 - "AnyObject"
-- "StationsViewController"
-- !private "StationTableViewCell"
-- "UITableViewCell"
-- !private "ViewMode"
+- !private "=="
+- "Int"
 - !private "StreamDetailViewController"
-- "NSIndexPath"
+- !private "StationTableViewCell"
+- "Bool"
+- "UITableViewDelegate"
+- !private "ViewMode"
+- "UITableViewDataSource"
+- !private "StringLiteralType"
+- "UIStoryboardSegue"
+- "UITableView"
+- "StationsViewController"
+- !private "&&"
+- "UIViewController"
+- !private "StationController"
 - !private "BooleanLiteralType"
+- !private "globalState"
+- "NSIndexPath"
+- "UITableViewCell"
 depends-member:
 - !private ["Ps9AnyObject", "StationController"]
 - !private ["Ps9AnyObject", "ViewMode"]
@@ -555,6 +555,8 @@ depends-member:
 - !private ["C13InternetRadio7Station", "stationDetail"]
 - !private ["C13InternetRadio7Station", "stationImage"]
 - !private ["C13InternetRadio7Station", "stationName"]
+- !private ["P13InternetRadio21StationAudioBuffering", "station"]
+- !private ["P13InternetRadio21StationAudioBuffering", "viewMode"]
 - !private ["C13InternetRadio17StationController", "sharedController"]
 - !private ["C13InternetRadio17StationController", "stationSelected"]
 - !private ["C13InternetRadio17StationController", "stations"]
@@ -602,8 +604,9 @@ depends-member:
 - !private ["C13InternetRadio26StreamDetailViewController", "viewMode"]
 - !private ["Ps10Strideable", "Distance"]
 - !private ["Ps10Strideable", "IntegerLiteralType"]
-- !private ["P13InternetRadio13TimerDelegate", "station"]
-- !private ["P13InternetRadio13TimerDelegate", "viewMode"]
+- !private ["P13InternetRadio13TimerDelegate", "sharedController"]
+- !private ["P13InternetRadio13TimerDelegate", "stationSelected"]
+- !private ["P13InternetRadio13TimerDelegate", "stations"]
 - !private ["PSo29UIAccessibilityIdentification", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo29UIAccessibilityIdentification", "image"]
 - !private ["PSo29UIAccessibilityIdentification", "indexPathForCell"]
@@ -1075,6 +1078,7 @@ depends-nominal:
 - !private "Ps16SignedNumberType"
 - !private "Vs5Slice"
 - !private "C13InternetRadio7Station"
+- !private "P13InternetRadio21StationAudioBuffering"
 - !private "C13InternetRadio17StationController"
 - !private "C13InternetRadio20StationTableViewCell"
 - "C13InternetRadio22StationsViewController"

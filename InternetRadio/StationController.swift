@@ -62,7 +62,7 @@ let SHOWS_ARRAY = [
     
 ]
 
-class StationController {
+class StationController: TimerDelegate {
     
     // MARK: - Class Properties
     
@@ -72,10 +72,17 @@ class StationController {
     
     var stations = [Station]()
     var shows = [Show]()
+    var delegate: StationAudioBuffering?
+    
+    var timer: Timer?
     
     // MARK: - Class Initialization
     
     init() {
+        timer = Timer()
+        timer?.delegate = self
+        
+        
         for station in STATIONS_ARRAY {
             stations.append(Station(stationStream: station.1, stationName: station.0, stationImage: station.2, stationDetail: station.3))
         }
@@ -90,8 +97,13 @@ class StationController {
     func stationSelected(station: Station) {
         
         let stationStream = station.stationStream
+        
         guard let url = NSURL(string: stationStream) else { return }
         let audioPlayer = AVPlayer(URL: url)
+        
+        
+        delegate?.startBufferingAnimation()
+        timer?.startTimer()
         
         try! AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback, withOptions: [])
         try! AVAudioSession.sharedInstance().setActive(true)
@@ -100,6 +112,20 @@ class StationController {
         
         audioPlayer.volume = 1.0
         audioPlayer.play()
+        
+    }
+    
+    func pingMe() {
+        
+        
+        
+        if audioPlayer!.currentItem?.status == AVPlayerItemStatus.ReadyToPlay {
+            print("rdy")
+            delegate?.stopBufferingAnimation()
+            timer?.stopTimer()
+        } else {
+            print("fishy")
+        }
     }
     
     func showIsValid(show: Show) -> Bool {
@@ -139,11 +165,26 @@ class StationController {
         }
     }
     
+    func downloadFileFromURL(url:NSURL){
+        var downloadTask:NSURLSessionDownloadTask
+        downloadTask = NSURLSession.sharedSession().downloadTaskWithURL(url, completionHandler: { (URL, response, error) -> Void in
+            
+            print("the ticket")
+            
+        })
+        
+        downloadTask.resume()
+        
+    }
+    
     func showSelected(show: Show) {
         
         let stationStream = show.streamURL
         guard let url = NSURL(string: stationStream) else { return }
         let audioPlayer = AVPlayer(URL: url)
+        
+        delegate?.startBufferingAnimation()
+        timer?.startTimer()
         
         try! AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback, withOptions: [])
         try! AVAudioSession.sharedInstance().setActive(true)
@@ -190,3 +231,9 @@ class StationController {
     }
 }
 
+protocol StationAudioBuffering {
+    
+    func startBufferingAnimation()
+    func stopBufferingAnimation()
+    
+}

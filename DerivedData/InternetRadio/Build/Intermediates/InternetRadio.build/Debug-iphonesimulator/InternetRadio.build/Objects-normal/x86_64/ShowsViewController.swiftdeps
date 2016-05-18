@@ -1,68 +1,75 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
+- "ViewState"
+- "globalState"
 - "ShowsViewController"
 provides-nominal:
+- "O13InternetRadio9ViewState"
 - "C13InternetRadio19ShowsViewController"
 provides-member:
+- ["O13InternetRadio9ViewState", ""]
 - ["C13InternetRadio19ShowsViewController", ""]
 provides-dynamic-lookup:
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "paymentQueue"
-- "numberOfSectionsInTableView"
-- "productsRequest"
-- "didReceiveMemoryWarning"
-- "request"
 - "buyProduct"
+- "request"
+- "timeZoneAbbreviation"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "productsRequest"
+- "fetchProducts"
 - "viewWillAppear"
 - "prepareForSegue"
-- "fetchProducts"
-- "timeZoneAbbreviation"
+- "didReceiveMemoryWarning"
+- "numberOfSectionsInTableView"
+- "paymentQueue"
 - "viewDidLoad"
 depends-top-level:
-- "UIViewController"
-- "UITableViewCell"
-- "Show"
-- !private "Set"
-- "UITableViewDelegate"
-- "SKProductsRequestDelegate"
-- !private "ShowTableViewCell"
-- "UITableViewDataSource"
-- "SKPaymentTransactionObserver"
-- "SKRequest"
-- !private "StringLiteralType"
-- !private "NSSet"
-- "SKProductsRequest"
-- !private "=="
-- "UIStoryboardSegue"
-- !private "productIDOne"
-- !private "ViewMode"
 - !private "print"
-- !private "StationController"
-- !private "UnicodeScalarType"
-- !private "String"
-- "ShowsViewController"
-- !private "UIColor"
-- !private "SKPayment"
-- !private "BooleanLiteralType"
-- !private "UIAlertAction"
-- "AnyObject"
-- !private "UIAlertController"
-- "NSError"
-- "UITableView"
+- !private "Set"
+- !private "&&"
+- !private "productIDOne"
 - "SKProductsResponse"
-- "SKProduct"
-- "NSIndexPath"
-- "Int"
-- !private "StreamDetailViewController"
-- !private ">"
-- "Bool"
 - "SKPaymentQueue"
+- "Int"
+- !private "UnicodeScalarType"
+- !private "SKPayment"
 - "DateStandardizer"
+- !private "StringLiteralType"
+- "=="
+- !private "String"
+- "UITableViewDelegate"
+- "UITableViewDataSource"
+- !private ">"
+- "UITableViewCell"
+- !private "ShowTableViewCell"
+- "Show"
+- !private "StreamDetailViewController"
+- "SKPaymentTransactionObserver"
+- "NSError"
+- !private "ViewMode"
+- "SKProductsRequestDelegate"
+- "globalState"
+- !private "UIAlertAction"
+- !private "NSSet"
+- !private "UIAlertController"
+- "Bool"
+- "NSIndexPath"
+- "ViewState"
+- "UITableView"
+- "ShowsViewController"
+- "AnyObject"
+- "SKProductsRequest"
+- "SKProduct"
+- "SKRequest"
+- !private "StationController"
 - "SKPaymentTransaction"
+- "UIViewController"
+- !private "UIColor"
+- !private "BooleanLiteralType"
+- "UIStoryboardSegue"
 depends-member:
 - ["Ps9AnyObject", "DateStandardizer"]
 - !private ["Ps9AnyObject", "NSSet"]
@@ -74,6 +81,7 @@ depends-member:
 - !private ["Ps9AnyObject", "UIAlertController"]
 - !private ["Ps9AnyObject", "UIColor"]
 - !private ["Ps9AnyObject", "ViewMode"]
+- !private ["Ps9AnyObject", "ViewState"]
 - !private ["Ps9AnyObject", "addAction"]
 - !private ["Ps9AnyObject", "addPayment"]
 - !private ["Ps9AnyObject", "addTransactionObserver"]
@@ -92,6 +100,7 @@ depends-member:
 - !private ["Ps9AnyObject", "endTimeStandardized"]
 - ["Ps9AnyObject", "fetchProducts"]
 - !private ["Ps9AnyObject", "finishTransaction"]
+- !private ["Ps9AnyObject", "globalState"]
 - !private ["Ps9AnyObject", "grayColor"]
 - !private ["Ps9AnyObject", "hidden"]
 - !private ["Ps9AnyObject", "hostDetailLabel"]
@@ -174,8 +183,10 @@ depends-member:
 - !private ["Vs10ArraySlice", "Index"]
 - !private ["Ps22BidirectionalIndexType", "Distance"]
 - !private ["Ps22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["Ps22BidirectionalIndexType", "hashValue"]
 - !private ["Ps21BitwiseOperationsType", "Distance"]
 - !private ["Ps21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["Ps21BitwiseOperationsType", "hashValue"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["Sb", "deinit"]
 - !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
@@ -192,6 +203,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "UIAlertController"]
 - !private ["Ps11CVarArgType", "UIColor"]
 - !private ["Ps11CVarArgType", "ViewMode"]
+- !private ["Ps11CVarArgType", "ViewState"]
 - !private ["Ps11CVarArgType", "addAction"]
 - !private ["Ps11CVarArgType", "addPayment"]
 - !private ["Ps11CVarArgType", "addTransactionObserver"]
@@ -209,7 +221,9 @@ depends-member:
 - ["Ps11CVarArgType", "didReceiveMemoryWarning"]
 - ["Ps11CVarArgType", "fetchProducts"]
 - !private ["Ps11CVarArgType", "finishTransaction"]
+- !private ["Ps11CVarArgType", "globalState"]
 - !private ["Ps11CVarArgType", "grayColor"]
+- !private ["Ps11CVarArgType", "hashValue"]
 - !private ["Ps11CVarArgType", "hidden"]
 - !private ["Ps11CVarArgType", "hostDetailLabel"]
 - !private ["Ps11CVarArgType", "hostImageView"]
@@ -272,6 +286,7 @@ depends-member:
 - !private ["Ps14CollectionType", "subscript"]
 - !private ["Ps10Comparable", "Distance"]
 - !private ["Ps10Comparable", "IntegerLiteralType"]
+- !private ["Ps10Comparable", "hashValue"]
 - !private ["Ps10Comparable", "init"]
 - ["Ps28CustomDebugStringConvertible", "DateStandardizer"]
 - !private ["Ps28CustomDebugStringConvertible", "Generator"]
@@ -287,6 +302,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "UIAlertController"]
 - !private ["Ps28CustomDebugStringConvertible", "UIColor"]
 - !private ["Ps28CustomDebugStringConvertible", "ViewMode"]
+- !private ["Ps28CustomDebugStringConvertible", "ViewState"]
 - !private ["Ps28CustomDebugStringConvertible", "_Element"]
 - !private ["Ps28CustomDebugStringConvertible", "addAction"]
 - !private ["Ps28CustomDebugStringConvertible", "addPayment"]
@@ -306,6 +322,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
 - ["Ps28CustomDebugStringConvertible", "fetchProducts"]
 - !private ["Ps28CustomDebugStringConvertible", "finishTransaction"]
+- !private ["Ps28CustomDebugStringConvertible", "globalState"]
 - !private ["Ps28CustomDebugStringConvertible", "grayColor"]
 - !private ["Ps28CustomDebugStringConvertible", "hidden"]
 - !private ["Ps28CustomDebugStringConvertible", "hostDetailLabel"]
@@ -376,6 +393,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "UIAlertController"]
 - !private ["Ps23CustomStringConvertible", "UIColor"]
 - !private ["Ps23CustomStringConvertible", "ViewMode"]
+- !private ["Ps23CustomStringConvertible", "ViewState"]
 - !private ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "addAction"]
@@ -396,7 +414,9 @@ depends-member:
 - ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
 - ["Ps23CustomStringConvertible", "fetchProducts"]
 - !private ["Ps23CustomStringConvertible", "finishTransaction"]
+- !private ["Ps23CustomStringConvertible", "globalState"]
 - !private ["Ps23CustomStringConvertible", "grayColor"]
+- !private ["Ps23CustomStringConvertible", "hashValue"]
 - !private ["Ps23CustomStringConvertible", "hidden"]
 - !private ["Ps23CustomStringConvertible", "hostDetailLabel"]
 - !private ["Ps23CustomStringConvertible", "hostImageView"]
@@ -466,11 +486,13 @@ depends-member:
 - !private ["Ps9Equatable", "SKPaymentQueue"]
 - !private ["Ps9Equatable", "SKProductsRequest"]
 - !private ["Ps9Equatable", "Show"]
+- ["Ps9Equatable", "Shows"]
 - !private ["Ps9Equatable", "StationController"]
 - !private ["Ps9Equatable", "UIAlertAction"]
 - !private ["Ps9Equatable", "UIAlertController"]
 - !private ["Ps9Equatable", "UIColor"]
 - !private ["Ps9Equatable", "ViewMode"]
+- !private ["Ps9Equatable", "ViewState"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "addAction"]
 - !private ["Ps9Equatable", "addPayment"]
@@ -489,7 +511,9 @@ depends-member:
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
 - ["Ps9Equatable", "fetchProducts"]
 - !private ["Ps9Equatable", "finishTransaction"]
+- !private ["Ps9Equatable", "globalState"]
 - !private ["Ps9Equatable", "grayColor"]
+- ["Ps9Equatable", "hashValue"]
 - !private ["Ps9Equatable", "hidden"]
 - !private ["Ps9Equatable", "hostDetailLabel"]
 - !private ["Ps9Equatable", "hostImageView"]
@@ -548,6 +572,7 @@ depends-member:
 - !private ["Sf", "deinit"]
 - !private ["Ps16ForwardIndexType", "Distance"]
 - !private ["Ps16ForwardIndexType", "IntegerLiteralType"]
+- !private ["Ps16ForwardIndexType", "hashValue"]
 - !private ["Ps13GeneratorType", "Element"]
 - !private ["O13InternetRadio13GreenwichTime", "returnTimeString"]
 - !private ["Ps8Hashable", "Alert"]
@@ -563,11 +588,13 @@ depends-member:
 - !private ["Ps8Hashable", "SKPaymentQueue"]
 - !private ["Ps8Hashable", "SKProductsRequest"]
 - !private ["Ps8Hashable", "Show"]
+- ["Ps8Hashable", "Shows"]
 - !private ["Ps8Hashable", "StationController"]
 - !private ["Ps8Hashable", "UIAlertAction"]
 - !private ["Ps8Hashable", "UIAlertController"]
 - !private ["Ps8Hashable", "UIColor"]
 - !private ["Ps8Hashable", "ViewMode"]
+- !private ["Ps8Hashable", "ViewState"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "addAction"]
 - !private ["Ps8Hashable", "addPayment"]
@@ -586,7 +613,9 @@ depends-member:
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
 - ["Ps8Hashable", "fetchProducts"]
 - !private ["Ps8Hashable", "finishTransaction"]
+- !private ["Ps8Hashable", "globalState"]
 - !private ["Ps8Hashable", "grayColor"]
+- ["Ps8Hashable", "hashValue"]
 - !private ["Ps8Hashable", "hidden"]
 - !private ["Ps8Hashable", "hostDetailLabel"]
 - !private ["Ps8Hashable", "hostImageView"]
@@ -651,18 +680,23 @@ depends-member:
 - !private ["Si", "Distance"]
 - !private ["Si", "IntegerLiteralType"]
 - !private ["Si", "deinit"]
+- !private ["Si", "hashValue"]
 - !private ["Vs5Int16", "deinit"]
 - !private ["Vs5Int32", "deinit"]
 - !private ["Vs5Int64", "deinit"]
 - !private ["Vs4Int8", "deinit"]
 - !private ["Ps21IntegerArithmeticType", "Distance"]
 - !private ["Ps21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["Ps21IntegerArithmeticType", "hashValue"]
 - !private ["Ps25IntegerLiteralConvertible", "Distance"]
 - !private ["Ps25IntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["Ps25IntegerLiteralConvertible", "hashValue"]
 - !private ["Ps11IntegerType", "Distance"]
 - !private ["Ps11IntegerType", "IntegerLiteralType"]
+- !private ["Ps11IntegerType", "hashValue"]
 - !private ["Ps14MirrorPathType", "Distance"]
 - !private ["Ps14MirrorPathType", "IntegerLiteralType"]
+- !private ["Ps14MirrorPathType", "hashValue"]
 - !private ["Ps14MirrorPathType", "init"]
 - !private ["Ps21MutableCollectionType", "Generator"]
 - !private ["Ps21MutableCollectionType", "Index"]
@@ -692,6 +726,7 @@ depends-member:
 - !private ["PSo8NSCoding", "UIAlertController"]
 - !private ["PSo8NSCoding", "UIColor"]
 - !private ["PSo8NSCoding", "ViewMode"]
+- !private ["PSo8NSCoding", "ViewState"]
 - !private ["PSo8NSCoding", "addAction"]
 - !private ["PSo8NSCoding", "blackColor"]
 - ["PSo8NSCoding", "buyProduct"]
@@ -702,6 +737,7 @@ depends-member:
 - !private ["PSo8NSCoding", "deselectRowAtIndexPath"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
 - ["PSo8NSCoding", "fetchProducts"]
+- !private ["PSo8NSCoding", "globalState"]
 - !private ["PSo8NSCoding", "grayColor"]
 - !private ["PSo8NSCoding", "hidden"]
 - !private ["PSo8NSCoding", "hostDetailLabel"]
@@ -762,12 +798,14 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "UIAlertController"]
 - !private ["PSo26NSExtensionRequestHandling", "UIColor"]
 - !private ["PSo26NSExtensionRequestHandling", "ViewMode"]
+- !private ["PSo26NSExtensionRequestHandling", "ViewState"]
 - !private ["PSo26NSExtensionRequestHandling", "addAction"]
 - ["PSo26NSExtensionRequestHandling", "buyProduct"]
 - ["PSo26NSExtensionRequestHandling", "createAlertWithShow"]
 - ["PSo26NSExtensionRequestHandling", "currentIndex"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
 - ["PSo26NSExtensionRequestHandling", "fetchProducts"]
+- !private ["PSo26NSExtensionRequestHandling", "globalState"]
 - ["PSo26NSExtensionRequestHandling", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo26NSExtensionRequestHandling", "init"]
 - ["PSo26NSExtensionRequestHandling", "lastIndex"]
@@ -833,6 +871,7 @@ depends-member:
 - ["CSo8NSObject", "UITableView"]
 - ["CSo8NSObject", "UITableViewCell"]
 - !private ["CSo8NSObject", "ViewMode"]
+- !private ["CSo8NSObject", "ViewState"]
 - !private ["CSo8NSObject", "addAction"]
 - !private ["CSo8NSObject", "addPayment"]
 - !private ["CSo8NSObject", "addTransactionObserver"]
@@ -850,6 +889,7 @@ depends-member:
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
 - ["CSo8NSObject", "fetchProducts"]
 - !private ["CSo8NSObject", "finishTransaction"]
+- !private ["CSo8NSObject", "globalState"]
 - !private ["CSo8NSObject", "grayColor"]
 - !private ["CSo8NSObject", "hidden"]
 - !private ["CSo8NSObject", "hostDetailLabel"]
@@ -913,6 +953,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "UIAlertController"]
 - !private ["PSo16NSObjectProtocol", "UIColor"]
 - !private ["PSo16NSObjectProtocol", "ViewMode"]
+- !private ["PSo16NSObjectProtocol", "ViewState"]
 - !private ["PSo16NSObjectProtocol", "addAction"]
 - !private ["PSo16NSObjectProtocol", "addPayment"]
 - !private ["PSo16NSObjectProtocol", "addTransactionObserver"]
@@ -930,6 +971,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
 - ["PSo16NSObjectProtocol", "fetchProducts"]
 - !private ["PSo16NSObjectProtocol", "finishTransaction"]
+- !private ["PSo16NSObjectProtocol", "globalState"]
 - !private ["PSo16NSObjectProtocol", "grayColor"]
 - !private ["PSo16NSObjectProtocol", "hidden"]
 - !private ["PSo16NSObjectProtocol", "hostDetailLabel"]
@@ -997,6 +1039,7 @@ depends-member:
 - !private ["Ps16OutputStreamType", "init"]
 - !private ["Ps21RandomAccessIndexType", "Distance"]
 - !private ["Ps21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["Ps21RandomAccessIndexType", "hashValue"]
 - !private ["Ps30RangeReplaceableCollectionType", "Generator"]
 - !private ["Ps30RangeReplaceableCollectionType", "Index"]
 - !private ["Ps30RangeReplaceableCollectionType", "SubSequence"]
@@ -1028,9 +1071,11 @@ depends-member:
 - !private ["PSo28SKPaymentTransactionObserver", "UIAlertController"]
 - !private ["PSo28SKPaymentTransactionObserver", "UIColor"]
 - !private ["PSo28SKPaymentTransactionObserver", "ViewMode"]
+- !private ["PSo28SKPaymentTransactionObserver", "ViewState"]
 - !private ["PSo28SKPaymentTransactionObserver", "buyProduct"]
 - !private ["PSo28SKPaymentTransactionObserver", "createAlertWithShow"]
 - !private ["PSo28SKPaymentTransactionObserver", "currentIndex"]
+- !private ["PSo28SKPaymentTransactionObserver", "globalState"]
 - ["PSo28SKPaymentTransactionObserver", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo28SKPaymentTransactionObserver", "lastIndex"]
 - ["PSo28SKPaymentTransactionObserver", "numberOfSectionsInTableView"]
@@ -1080,9 +1125,11 @@ depends-member:
 - !private ["PSo25SKProductsRequestDelegate", "UIAlertController"]
 - !private ["PSo25SKProductsRequestDelegate", "UIColor"]
 - !private ["PSo25SKProductsRequestDelegate", "ViewMode"]
+- !private ["PSo25SKProductsRequestDelegate", "ViewState"]
 - !private ["PSo25SKProductsRequestDelegate", "buyProduct"]
 - !private ["PSo25SKProductsRequestDelegate", "createAlertWithShow"]
 - !private ["PSo25SKProductsRequestDelegate", "currentIndex"]
+- !private ["PSo25SKProductsRequestDelegate", "globalState"]
 - ["PSo25SKProductsRequestDelegate", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo25SKProductsRequestDelegate", "lastIndex"]
 - ["PSo25SKProductsRequestDelegate", "numberOfSectionsInTableView"]
@@ -1126,9 +1173,11 @@ depends-member:
 - !private ["PSo17SKRequestDelegate", "UIAlertController"]
 - !private ["PSo17SKRequestDelegate", "UIColor"]
 - !private ["PSo17SKRequestDelegate", "ViewMode"]
+- !private ["PSo17SKRequestDelegate", "ViewState"]
 - !private ["PSo17SKRequestDelegate", "buyProduct"]
 - !private ["PSo17SKRequestDelegate", "createAlertWithShow"]
 - !private ["PSo17SKRequestDelegate", "currentIndex"]
+- !private ["PSo17SKRequestDelegate", "globalState"]
 - ["PSo17SKRequestDelegate", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo17SKRequestDelegate", "lastIndex"]
 - ["PSo17SKRequestDelegate", "numberOfSectionsInTableView"]
@@ -1202,12 +1251,14 @@ depends-member:
 - ["C13InternetRadio19ShowsViewController", "UITableView"]
 - ["C13InternetRadio19ShowsViewController", "UITableViewCell"]
 - !private ["C13InternetRadio19ShowsViewController", "ViewMode"]
+- !private ["C13InternetRadio19ShowsViewController", "ViewState"]
 - ["C13InternetRadio19ShowsViewController", "buyProduct"]
 - ["C13InternetRadio19ShowsViewController", "createAlertWithShow"]
 - ["C13InternetRadio19ShowsViewController", "currentIndex"]
 - ["C13InternetRadio19ShowsViewController", "deinit"]
 - ["C13InternetRadio19ShowsViewController", "didReceiveMemoryWarning"]
 - ["C13InternetRadio19ShowsViewController", "fetchProducts"]
+- !private ["C13InternetRadio19ShowsViewController", "globalState"]
 - ["C13InternetRadio19ShowsViewController", "indexPathForPreferredFocusedViewInTableView"]
 - ["C13InternetRadio19ShowsViewController", "init"]
 - ["C13InternetRadio19ShowsViewController", "lastIndex"]
@@ -1242,12 +1293,16 @@ depends-member:
 - ["C13InternetRadio19ShowsViewController", "viewWillAppear"]
 - !private ["Ps17SignedIntegerType", "Distance"]
 - !private ["Ps17SignedIntegerType", "IntegerLiteralType"]
+- !private ["Ps17SignedIntegerType", "hashValue"]
 - !private ["Ps16SignedNumberType", "Distance"]
 - !private ["Ps16SignedNumberType", "IntegerLiteralType"]
+- !private ["Ps16SignedNumberType", "hashValue"]
 - !private ["Vs5Slice", "Generator"]
 - !private ["Vs5Slice", "Index"]
 - !private ["Vs5Slice", "SubSequence"]
 - !private ["Vs5Slice", "_Element"]
+- !private ["P13InternetRadio21StationAudioBuffering", "show"]
+- !private ["P13InternetRadio21StationAudioBuffering", "viewMode"]
 - !private ["C13InternetRadio17StationController", "sharedController"]
 - !private ["C13InternetRadio17StationController", "showIsValid"]
 - !private ["C13InternetRadio17StationController", "showSelected"]
@@ -1258,12 +1313,16 @@ depends-member:
 - !private ["Ps10Streamable", "init"]
 - !private ["Ps10Strideable", "Distance"]
 - !private ["Ps10Strideable", "IntegerLiteralType"]
+- !private ["Ps10Strideable", "hashValue"]
 - !private ["SS", "deinit"]
 - !private ["SS", "init"]
 - !private ["Ps30StringInterpolationConvertible", "init"]
 - !private ["Ps24StringLiteralConvertible", "init"]
-- !private ["P13InternetRadio13TimerDelegate", "show"]
-- !private ["P13InternetRadio13TimerDelegate", "viewMode"]
+- !private ["P13InternetRadio13TimerDelegate", "sharedController"]
+- !private ["P13InternetRadio13TimerDelegate", "showIsValid"]
+- !private ["P13InternetRadio13TimerDelegate", "showSelected"]
+- !private ["P13InternetRadio13TimerDelegate", "shows"]
+- !private ["P13InternetRadio13TimerDelegate", "sortShows"]
 - !private ["PSo29UIAccessibilityIdentification", "cellForRowAtIndexPath"]
 - !private ["PSo29UIAccessibilityIdentification", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo29UIAccessibilityIdentification", "deselectRowAtIndexPath"]
@@ -1303,6 +1362,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "UIAlertController"]
 - !private ["PSo21UIAppearanceContainer", "UIColor"]
 - !private ["PSo21UIAppearanceContainer", "ViewMode"]
+- !private ["PSo21UIAppearanceContainer", "ViewState"]
 - !private ["PSo21UIAppearanceContainer", "addAction"]
 - ["PSo21UIAppearanceContainer", "buyProduct"]
 - !private ["PSo21UIAppearanceContainer", "cellForRowAtIndexPath"]
@@ -1312,6 +1372,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "deselectRowAtIndexPath"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
 - ["PSo21UIAppearanceContainer", "fetchProducts"]
+- !private ["PSo21UIAppearanceContainer", "globalState"]
 - !private ["PSo21UIAppearanceContainer", "hidden"]
 - !private ["PSo21UIAppearanceContainer", "hostDetailLabel"]
 - !private ["PSo21UIAppearanceContainer", "hostImageView"]
@@ -1368,12 +1429,14 @@ depends-member:
 - !private ["PSo18UIContentContainer", "UIAlertController"]
 - !private ["PSo18UIContentContainer", "UIColor"]
 - !private ["PSo18UIContentContainer", "ViewMode"]
+- !private ["PSo18UIContentContainer", "ViewState"]
 - !private ["PSo18UIContentContainer", "addAction"]
 - ["PSo18UIContentContainer", "buyProduct"]
 - ["PSo18UIContentContainer", "createAlertWithShow"]
 - ["PSo18UIContentContainer", "currentIndex"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
 - ["PSo18UIContentContainer", "fetchProducts"]
+- !private ["PSo18UIContentContainer", "globalState"]
 - ["PSo18UIContentContainer", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo18UIContentContainer", "init"]
 - ["PSo18UIContentContainer", "lastIndex"]
@@ -1443,6 +1506,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "UIAlertController"]
 - !private ["PSo18UIFocusEnvironment", "UIColor"]
 - !private ["PSo18UIFocusEnvironment", "ViewMode"]
+- !private ["PSo18UIFocusEnvironment", "ViewState"]
 - !private ["PSo18UIFocusEnvironment", "addAction"]
 - ["PSo18UIFocusEnvironment", "buyProduct"]
 - !private ["PSo18UIFocusEnvironment", "cellForRowAtIndexPath"]
@@ -1452,6 +1516,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "deselectRowAtIndexPath"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
 - ["PSo18UIFocusEnvironment", "fetchProducts"]
+- !private ["PSo18UIFocusEnvironment", "globalState"]
 - !private ["PSo18UIFocusEnvironment", "hidden"]
 - !private ["PSo18UIFocusEnvironment", "hostDetailLabel"]
 - !private ["PSo18UIFocusEnvironment", "hostImageView"]
@@ -1531,6 +1596,7 @@ depends-member:
 - ["CSo11UIResponder", "UITableView"]
 - ["CSo11UIResponder", "UITableViewCell"]
 - !private ["CSo11UIResponder", "ViewMode"]
+- !private ["CSo11UIResponder", "ViewState"]
 - !private ["CSo11UIResponder", "addAction"]
 - ["CSo11UIResponder", "buyProduct"]
 - !private ["CSo11UIResponder", "cellForRowAtIndexPath"]
@@ -1540,6 +1606,7 @@ depends-member:
 - !private ["CSo11UIResponder", "deselectRowAtIndexPath"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
 - ["CSo11UIResponder", "fetchProducts"]
+- !private ["CSo11UIResponder", "globalState"]
 - !private ["CSo11UIResponder", "hidden"]
 - !private ["CSo11UIResponder", "hostDetailLabel"]
 - !private ["CSo11UIResponder", "hostImageView"]
@@ -1597,9 +1664,11 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "UIAlertController"]
 - !private ["PSo20UIScrollViewDelegate", "UIColor"]
 - !private ["PSo20UIScrollViewDelegate", "ViewMode"]
+- !private ["PSo20UIScrollViewDelegate", "ViewState"]
 - !private ["PSo20UIScrollViewDelegate", "buyProduct"]
 - !private ["PSo20UIScrollViewDelegate", "createAlertWithShow"]
 - !private ["PSo20UIScrollViewDelegate", "currentIndex"]
+- !private ["PSo20UIScrollViewDelegate", "globalState"]
 - ["PSo20UIScrollViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo20UIScrollViewDelegate", "lastIndex"]
 - ["PSo20UIScrollViewDelegate", "numberOfSectionsInTableView"]
@@ -1639,12 +1708,14 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "UIAlertController"]
 - !private ["PSo16UIStateRestoring", "UIColor"]
 - !private ["PSo16UIStateRestoring", "ViewMode"]
+- !private ["PSo16UIStateRestoring", "ViewState"]
 - !private ["PSo16UIStateRestoring", "addAction"]
 - ["PSo16UIStateRestoring", "buyProduct"]
 - ["PSo16UIStateRestoring", "createAlertWithShow"]
 - ["PSo16UIStateRestoring", "currentIndex"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
 - ["PSo16UIStateRestoring", "fetchProducts"]
+- !private ["PSo16UIStateRestoring", "globalState"]
 - ["PSo16UIStateRestoring", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo16UIStateRestoring", "init"]
 - ["PSo16UIStateRestoring", "lastIndex"]
@@ -1700,9 +1771,11 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "UIAlertController"]
 - !private ["PSo21UITableViewDataSource", "UIColor"]
 - !private ["PSo21UITableViewDataSource", "ViewMode"]
+- !private ["PSo21UITableViewDataSource", "ViewState"]
 - !private ["PSo21UITableViewDataSource", "buyProduct"]
 - !private ["PSo21UITableViewDataSource", "createAlertWithShow"]
 - !private ["PSo21UITableViewDataSource", "currentIndex"]
+- !private ["PSo21UITableViewDataSource", "globalState"]
 - ["PSo21UITableViewDataSource", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo21UITableViewDataSource", "lastIndex"]
 - ["PSo21UITableViewDataSource", "numberOfSectionsInTableView"]
@@ -1742,9 +1815,11 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "UIAlertController"]
 - !private ["PSo19UITableViewDelegate", "UIColor"]
 - !private ["PSo19UITableViewDelegate", "ViewMode"]
+- !private ["PSo19UITableViewDelegate", "ViewState"]
 - !private ["PSo19UITableViewDelegate", "buyProduct"]
 - !private ["PSo19UITableViewDelegate", "createAlertWithShow"]
 - !private ["PSo19UITableViewDelegate", "currentIndex"]
+- !private ["PSo19UITableViewDelegate", "globalState"]
 - ["PSo19UITableViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo19UITableViewDelegate", "lastIndex"]
 - ["PSo19UITableViewDelegate", "numberOfSectionsInTableView"]
@@ -1784,6 +1859,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "UIAlertController"]
 - !private ["PSo18UITraitEnvironment", "UIColor"]
 - !private ["PSo18UITraitEnvironment", "ViewMode"]
+- !private ["PSo18UITraitEnvironment", "ViewState"]
 - !private ["PSo18UITraitEnvironment", "addAction"]
 - ["PSo18UITraitEnvironment", "buyProduct"]
 - !private ["PSo18UITraitEnvironment", "cellForRowAtIndexPath"]
@@ -1793,6 +1869,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "deselectRowAtIndexPath"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
 - ["PSo18UITraitEnvironment", "fetchProducts"]
+- !private ["PSo18UITraitEnvironment", "globalState"]
 - !private ["PSo18UITraitEnvironment", "hidden"]
 - !private ["PSo18UITraitEnvironment", "hostDetailLabel"]
 - !private ["PSo18UITraitEnvironment", "hostImageView"]
@@ -1876,6 +1953,7 @@ depends-member:
 - ["CSo16UIViewController", "UITableView"]
 - ["CSo16UIViewController", "UITableViewCell"]
 - !private ["CSo16UIViewController", "ViewMode"]
+- !private ["CSo16UIViewController", "ViewState"]
 - !private ["CSo16UIViewController", "addAction"]
 - ["CSo16UIViewController", "buyProduct"]
 - ["CSo16UIViewController", "createAlertWithShow"]
@@ -1883,6 +1961,7 @@ depends-member:
 - !private ["CSo16UIViewController", "deinit"]
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
 - ["CSo16UIViewController", "fetchProducts"]
+- !private ["CSo16UIViewController", "globalState"]
 - ["CSo16UIViewController", "indexPathForPreferredFocusedViewInTableView"]
 - ["CSo16UIViewController", "init"]
 - ["CSo16UIViewController", "lastIndex"]
@@ -1926,6 +2005,10 @@ depends-member:
 - !private ["Sc", "deinit"]
 - !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
 - !private ["O13InternetRadio8ViewMode", "Show"]
+- ["O13InternetRadio9ViewState", "Shows"]
+- ["O13InternetRadio9ViewState", "Stations"]
+- ["O13InternetRadio9ViewState", "deinit"]
+- ["O13InternetRadio9ViewState", "hashValue"]
 - !private ["Ps10_ArrayType", "Generator"]
 - !private ["Ps10_ArrayType", "Index"]
 - !private ["Ps10_ArrayType", "SubSequence"]
@@ -1936,6 +2019,7 @@ depends-member:
 - !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
 - !private ["Ps33_BuiltinIntegerLiteralConvertible", "Distance"]
 - !private ["Ps33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "hashValue"]
 - !private ["Ps32_BuiltinStringLiteralConvertible", "init"]
 - !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "init"]
 - !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "init"]
@@ -1949,10 +2033,13 @@ depends-member:
 - !private ["Ps24_DestructorSafeContainer", "subscript"]
 - !private ["Ps14_Incrementable", "Distance"]
 - !private ["Ps14_Incrementable", "IntegerLiteralType"]
+- !private ["Ps14_Incrementable", "hashValue"]
 - !private ["Ps22_IntegerArithmeticType", "Distance"]
 - !private ["Ps22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["Ps22_IntegerArithmeticType", "hashValue"]
 - !private ["Ps12_IntegerType", "Distance"]
 - !private ["Ps12_IntegerType", "IntegerLiteralType"]
+- !private ["Ps12_IntegerType", "hashValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "Distance"]
 - !private ["Ps21_ObjectiveCBridgeable", "Generator"]
 - !private ["Ps21_ObjectiveCBridgeable", "Index"]
@@ -1961,10 +2048,12 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "_Element"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "count"]
+- !private ["Ps21_ObjectiveCBridgeable", "hashValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "subscript"]
 - !private ["Ps22_RandomAccessAmbiguity", "Distance"]
 - !private ["Ps22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- !private ["Ps22_RandomAccessAmbiguity", "hashValue"]
 - !private ["Ps12_Reflectable", "Distance"]
 - !private ["Ps12_Reflectable", "Generator"]
 - !private ["Ps12_Reflectable", "Index"]
@@ -1977,6 +2066,7 @@ depends-member:
 - !private ["Ps12_Reflectable", "count"]
 - !private ["Ps12_Reflectable", "dequeueReusableCellWithIdentifier"]
 - !private ["Ps12_Reflectable", "deselectRowAtIndexPath"]
+- !private ["Ps12_Reflectable", "hashValue"]
 - !private ["Ps12_Reflectable", "hidden"]
 - !private ["Ps12_Reflectable", "hostDetailLabel"]
 - !private ["Ps12_Reflectable", "hostImageView"]
@@ -1990,6 +2080,7 @@ depends-member:
 - !private ["Ps12_Reflectable", "textColor"]
 - !private ["Ps18_SignedIntegerType", "Distance"]
 - !private ["Ps18_SignedIntegerType", "IntegerLiteralType"]
+- !private ["Ps18_SignedIntegerType", "hashValue"]
 depends-nominal:
 - "Ps9AnyObject"
 - !private "Sa"
@@ -2064,6 +2155,7 @@ depends-nominal:
 - !private "Ps17SignedIntegerType"
 - !private "Ps16SignedNumberType"
 - !private "Vs5Slice"
+- !private "P13InternetRadio21StationAudioBuffering"
 - !private "C13InternetRadio17StationController"
 - !private "C13InternetRadio26StreamDetailViewController"
 - !private "Ps10Streamable"
@@ -2107,6 +2199,7 @@ depends-nominal:
 - !private "Sc"
 - !private "Ps31UnicodeScalarLiteralConvertible"
 - !private "O13InternetRadio8ViewMode"
+- "O13InternetRadio9ViewState"
 - !private "Ps10_ArrayType"
 - !private "Ps33_BuiltinBooleanLiteralConvertible"
 - !private "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
@@ -2136,4 +2229,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
-interface-hash: "d07118e58a1b1afeb6e7d596d072da54"
+interface-hash: "5f1682ec1d9fd8fd59ee03d42ae5ca4c"

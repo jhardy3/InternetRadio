@@ -27,7 +27,6 @@ class ShowsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
         SKPaymentQueue.defaultQueue().addTransactionObserver(self)
     }
     

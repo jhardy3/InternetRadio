@@ -41,7 +41,7 @@ class Timer {
         }
         
         
-        delegate?.updatedTimeString("\(strMinutes):\(strSeconds)")
+        delegate?.pingMe()
     }
     
     func startTimer() {
@@ -54,7 +54,7 @@ class Timer {
 }
 
 protocol TimerDelegate {
-    func updatedTimeString(time: String)
+    func pingMe()
 }
 
 func colorWithHexString(hexString: String, alpha:CGFloat? = 1.0) -> UIColor {

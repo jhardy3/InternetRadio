@@ -13,31 +13,31 @@ provides-member:
 provides-dynamic-lookup:
 - "updateTime"
 depends-top-level:
-- "CGFloat"
-- "String"
-- "Timer"
-- !private "+"
-- "colorWithHexString"
 - "intFromHexString"
-- !private "NSScanner"
-- !private "Int"
-- !private "UInt8"
-- !private ">>"
-- !private "&"
-- !private "/"
-- !private "StringLiteralType"
-- !private "+="
-- !private "NSCharacterSet"
-- !private "<"
-- "TimerDelegate"
-- "NSTimer"
-- !private "NSTimeInterval"
-- !private "-="
-- "UInt32"
-- !private "BooleanLiteralType"
-- "UIColor"
-- !private "*"
+- "Timer"
 - !private "UnicodeScalarType"
+- !private "Int"
+- "CGFloat"
+- !private "/"
+- !private ">>"
+- "UIColor"
+- "colorWithHexString"
+- !private "+="
+- "UInt32"
+- !private "UInt8"
+- !private "NSCharacterSet"
+- "TimerDelegate"
+- !private "BooleanLiteralType"
+- !private "*"
+- !private "<"
+- "String"
+- !private "NSScanner"
+- !private "NSTimeInterval"
+- !private "+"
+- !private "StringLiteralType"
+- !private "&"
+- !private "-="
+- "NSTimer"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "IntegerLiteralType"]
 - !private ["Ps16AbsoluteValuable", "Stride"]
@@ -67,7 +67,6 @@ depends-member:
 - !private ["Ps21BitwiseOperationsType", "_DisallowMixedSignArithmetic"]
 - !private ["Ps21BitwiseOperationsType", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
-- !private ["Sb", "deinit"]
 - !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
 - !private ["V12CoreGraphics7CGFloat", "deinit"]
@@ -81,7 +80,6 @@ depends-member:
 - !private ["Ps11CVarArgType", "invalidate"]
 - !private ["Ps11CVarArgType", "scanHexInt"]
 - !private ["Ps11CVarArgType", "scheduledTimerWithTimeInterval"]
-- !private ["Vs9Character", "deinit"]
 - !private ["Ps10Comparable", "Distance"]
 - !private ["Ps10Comparable", "IntegerLiteralType"]
 - !private ["Ps10Comparable", "Stride"]
@@ -119,7 +117,6 @@ depends-member:
 - !private ["Ps9Equatable", "scanHexInt"]
 - !private ["Ps9Equatable", "scheduledTimerWithTimeInterval"]
 - !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
-- !private ["Sf", "deinit"]
 - !private ["Ps23FloatLiteralConvertible", "IntegerLiteralType"]
 - !private ["Ps23FloatLiteralConvertible", "Stride"]
 - !private ["Ps23FloatLiteralConvertible", "init"]
@@ -144,12 +141,7 @@ depends-member:
 - !private ["Si", "Distance"]
 - !private ["Si", "IntegerLiteralType"]
 - !private ["Si", "Stride"]
-- !private ["Si", "deinit"]
 - !private ["Si", "init"]
-- !private ["Vs5Int16", "deinit"]
-- !private ["Vs5Int32", "deinit"]
-- !private ["Vs5Int64", "deinit"]
-- !private ["Vs4Int8", "deinit"]
 - !private ["Ps21IntegerArithmeticType", "Distance"]
 - !private ["Ps21IntegerArithmeticType", "IntegerLiteralType"]
 - !private ["Ps21IntegerArithmeticType", "Stride"]
@@ -189,7 +181,6 @@ depends-member:
 - !private ["CSo9NSScanner", "init"]
 - !private ["CSo9NSScanner", "scanHexInt"]
 - !private ["PSo14NSSecureCoding", "init"]
-- !private ["CSo8NSString", "init"]
 - !private ["CSo7NSTimer", "invalidate"]
 - !private ["CSo7NSTimer", "scheduledTimerWithTimeInterval"]
 - !private ["Sq", "deinit"]
@@ -229,20 +220,14 @@ depends-member:
 - ["C13InternetRadio5Timer", "time"]
 - ["C13InternetRadio5Timer", "timer"]
 - ["C13InternetRadio5Timer", "updateTime"]
-- ["P13InternetRadio13TimerDelegate", "String"]
-- ["P13InternetRadio13TimerDelegate", "updatedTimeString"]
+- ["P13InternetRadio13TimerDelegate", "pingMe"]
 - !private ["CSo7UIColor", "init"]
-- !private ["Su", "deinit"]
-- !private ["Vs6UInt16", "deinit"]
-- !private ["Vs6UInt32", "deinit"]
-- !private ["Vs6UInt64", "deinit"]
 - !private ["Vs5UInt8", "Distance"]
 - !private ["Vs5UInt8", "IntegerLiteralType"]
 - !private ["Vs5UInt8", "Stride"]
 - !private ["Vs5UInt8", "_DisallowMixedSignArithmetic"]
 - !private ["Vs5UInt8", "deinit"]
 - !private ["Vs5UInt8", "init"]
-- !private ["Sc", "deinit"]
 - !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
 - !private ["Ps19UnsignedIntegerType", "Distance"]
 - !private ["Ps19UnsignedIntegerType", "IntegerLiteralType"]
@@ -324,23 +309,17 @@ depends-nominal:
 - !private "Ps11BooleanType"
 - !private "V12CoreGraphics7CGFloat"
 - !private "Ps11CVarArgType"
-- !private "Vs9Character"
 - !private "Ps10Comparable"
 - !private "Ps28CustomDebugStringConvertible"
 - !private "Ps23CustomStringConvertible"
 - !private "Sd"
 - !private "Ps9Equatable"
 - !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
-- !private "Sf"
 - !private "Ps23FloatLiteralConvertible"
 - !private "Ps17FloatingPointType"
 - !private "Ps16ForwardIndexType"
 - !private "Ps8Hashable"
 - !private "Si"
-- !private "Vs5Int16"
-- !private "Vs5Int32"
-- !private "Vs5Int64"
-- !private "Vs4Int8"
 - !private "Ps21IntegerArithmeticType"
 - !private "Ps25IntegerLiteralConvertible"
 - !private "Ps11IntegerType"
@@ -353,7 +332,6 @@ depends-nominal:
 - !private "PSo16NSObjectProtocol"
 - !private "CSo9NSScanner"
 - !private "PSo14NSSecureCoding"
-- !private "CSo8NSString"
 - !private "CSo7NSTimer"
 - !private "Sq"
 - !private "Ps16OutputStreamType"
@@ -368,12 +346,7 @@ depends-nominal:
 - "C13InternetRadio5Timer"
 - "P13InternetRadio13TimerDelegate"
 - !private "CSo7UIColor"
-- !private "Su"
-- !private "Vs6UInt16"
-- !private "Vs6UInt32"
-- !private "Vs6UInt64"
 - !private "Vs5UInt8"
-- !private "Sc"
 - !private "Ps31UnicodeScalarLiteralConvertible"
 - !private "Ps19UnsignedIntegerType"
 - !private "Ps33_BuiltinBooleanLiteralConvertible"
@@ -408,4 +381,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
-interface-hash: "7c5b967a88d1be2896ad521ab16cf304"
+interface-hash: "57d60c7873a68baff532b1b06aeb9aec"
