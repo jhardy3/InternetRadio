@@ -239,6 +239,7 @@ SWIFT_CLASS("_TtC13InternetRadio26StreamDetailViewController")
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified togglePlayButton;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified listeningTimeLabel;
 @property (nonatomic, weak) IBOutlet UIActivityIndicatorView * _Null_unspecified bufferingIndicator;
+- (void)viewWillAppear:(BOOL)animated;
 - (void)viewDidLoad;
 - (void)viewWillDisappear:(BOOL)animated;
 - (void)didReceiveMemoryWarning;

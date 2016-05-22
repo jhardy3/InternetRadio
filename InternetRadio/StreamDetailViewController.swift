@@ -33,13 +33,20 @@ class StreamDetailViewController: UIViewController {
     var station: Station?
     var viewMode = ViewMode.Show
     var playState = PlayState.Streaming
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        StationController.sharedController.delegate = self
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        StationController.sharedController.delegate = self
+        bufferingIndicator.hidden = true
 
+        bufferingIndicator.color = UIColor.redColor()
+        
         tabBarController?.tabBar.hidden = true
         
 //        pauseButtonYConstraint.constant = (self.view.frame.height / 30)
@@ -51,7 +58,7 @@ class StreamDetailViewController: UIViewController {
             updateWithShow(show)
         } else if let station = station where viewMode == .Station {
             updateWithStation(station)
-        }
+        } 
         
     }
     
@@ -104,6 +111,7 @@ class StreamDetailViewController: UIViewController {
 extension StreamDetailViewController: StationAudioBuffering {
     
     func startBufferingAnimation() {
+        bufferingIndicator.hidden = false
         bufferingIndicator.startAnimating()
     }
     

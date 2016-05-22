@@ -116,9 +116,6 @@ class StationController: TimerDelegate {
     }
     
     func pingMe() {
-        
-        
-        
         if audioPlayer!.currentItem?.status == AVPlayerItemStatus.ReadyToPlay {
             print("rdy")
             delegate?.stopBufferingAnimation()
@@ -163,18 +160,6 @@ class StationController: TimerDelegate {
         } else {
             return false
         }
-    }
-    
-    func downloadFileFromURL(url:NSURL){
-        var downloadTask:NSURLSessionDownloadTask
-        downloadTask = NSURLSession.sharedSession().downloadTaskWithURL(url, completionHandler: { (URL, response, error) -> Void in
-            
-            print("the ticket")
-            
-        })
-        
-        downloadTask.resume()
-        
     }
     
     func showSelected(show: Show) {

@@ -12,47 +12,51 @@ provides-member:
 - ["O13InternetRadio9PlayState", ""]
 - ["C13InternetRadio26StreamDetailViewController", ""]
 provides-dynamic-lookup:
-- "listeningTimeLabel"
 - "viewDidLoad"
-- "viewWillDisappear"
-- "togglePlayButtonTapped"
-- "streamDetailLabel"
 - "streamProgressBar"
-- "startBufferingAnimation"
-- "bufferingIndicator"
-- "didReceiveMemoryWarning"
-- "togglePlayButton"
-- "detailImageView"
 - "stopBufferingAnimation"
+- "bufferingIndicator"
 - "volumeSliderFired"
+- "togglePlayButton"
+- "didReceiveMemoryWarning"
+- "streamDetailLabel"
+- "togglePlayButtonTapped"
+- "viewWillAppear"
+- "listeningTimeLabel"
+- "viewWillDisappear"
+- "startBufferingAnimation"
+- "detailImageView"
 depends-top-level:
-- "StreamDetailViewController"
-- "ViewMode"
-- "UIButton"
-- "UIProgressView"
-- "UIActivityIndicatorView"
-- !private "UIImage"
 - "Station"
-- !private "StringLiteralType"
 - "=="
 - "StationAudioBuffering"
-- "Bool"
-- !private "StationController"
-- "UIViewController"
-- "UILabel"
-- "PlayState"
-- "UIImageView"
+- "ViewMode"
 - "UISlider"
+- "UIActivityIndicatorView"
+- "Bool"
+- "UILabel"
+- !private "StringLiteralType"
+- "UIButton"
+- "StreamDetailViewController"
 - "Show"
+- "UIViewController"
 - !private "BooleanLiteralType"
+- "PlayState"
+- "UIProgressView"
+- !private "UIImage"
+- "UIImageView"
+- !private "StationController"
+- !private "UIColor"
 depends-member:
 - ["Ps9AnyObject", "PlayState"]
 - !private ["Ps9AnyObject", "StationController"]
+- !private ["Ps9AnyObject", "UIColor"]
 - !private ["Ps9AnyObject", "UIImage"]
 - ["Ps9AnyObject", "ViewMode"]
 - !private ["Ps9AnyObject", "adjustsFontSizeToFitWidth"]
 - !private ["Ps9AnyObject", "audioVolumeChanged"]
 - ["Ps9AnyObject", "bufferingIndicator"]
+- !private ["Ps9AnyObject", "color"]
 - !private ["Ps9AnyObject", "delegate"]
 - ["Ps9AnyObject", "detailImageView"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
@@ -65,6 +69,7 @@ depends-member:
 - ["Ps9AnyObject", "listeningTimeLabel"]
 - ["Ps9AnyObject", "playState"]
 - !private ["Ps9AnyObject", "progress"]
+- !private ["Ps9AnyObject", "redColor"]
 - !private ["Ps9AnyObject", "setImage"]
 - !private ["Ps9AnyObject", "sharedController"]
 - ["Ps9AnyObject", "show"]
@@ -91,6 +96,7 @@ depends-member:
 - !private ["Ps9AnyObject", "value"]
 - ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", "viewMode"]
+- ["Ps9AnyObject", "viewWillAppear"]
 - ["Ps9AnyObject", "viewWillDisappear"]
 - ["Ps9AnyObject", "volumeSliderFired"]
 - ["Ps9AnyObject", ""]
@@ -102,10 +108,12 @@ depends-member:
 - !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
 - ["Ps11CVarArgType", "PlayState"]
 - !private ["Ps11CVarArgType", "StationController"]
+- !private ["Ps11CVarArgType", "UIColor"]
 - !private ["Ps11CVarArgType", "UIImage"]
 - ["Ps11CVarArgType", "ViewMode"]
 - !private ["Ps11CVarArgType", "adjustsFontSizeToFitWidth"]
 - ["Ps11CVarArgType", "bufferingIndicator"]
+- !private ["Ps11CVarArgType", "color"]
 - ["Ps11CVarArgType", "detailImageView"]
 - ["Ps11CVarArgType", "didReceiveMemoryWarning"]
 - !private ["Ps11CVarArgType", "hashValue"]
@@ -116,6 +124,7 @@ depends-member:
 - ["Ps11CVarArgType", "listeningTimeLabel"]
 - ["Ps11CVarArgType", "playState"]
 - !private ["Ps11CVarArgType", "progress"]
+- !private ["Ps11CVarArgType", "redColor"]
 - !private ["Ps11CVarArgType", "setImage"]
 - ["Ps11CVarArgType", "show"]
 - !private ["Ps11CVarArgType", "startAnimating"]
@@ -135,6 +144,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "value"]
 - ["Ps11CVarArgType", "viewDidLoad"]
 - ["Ps11CVarArgType", "viewMode"]
+- ["Ps11CVarArgType", "viewWillAppear"]
 - ["Ps11CVarArgType", "viewWillDisappear"]
 - ["Ps11CVarArgType", "volumeSliderFired"]
 - ["Ps11CVarArgType", ""]
@@ -142,10 +152,12 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "PlayState"]
 - ["Ps28CustomDebugStringConvertible", "Some"]
 - !private ["Ps28CustomDebugStringConvertible", "StationController"]
+- !private ["Ps28CustomDebugStringConvertible", "UIColor"]
 - !private ["Ps28CustomDebugStringConvertible", "UIImage"]
 - ["Ps28CustomDebugStringConvertible", "ViewMode"]
 - !private ["Ps28CustomDebugStringConvertible", "adjustsFontSizeToFitWidth"]
 - ["Ps28CustomDebugStringConvertible", "bufferingIndicator"]
+- !private ["Ps28CustomDebugStringConvertible", "color"]
 - ["Ps28CustomDebugStringConvertible", "detailImageView"]
 - ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
 - !private ["Ps28CustomDebugStringConvertible", "hidden"]
@@ -155,6 +167,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "listeningTimeLabel"]
 - ["Ps28CustomDebugStringConvertible", "playState"]
 - !private ["Ps28CustomDebugStringConvertible", "progress"]
+- !private ["Ps28CustomDebugStringConvertible", "redColor"]
 - !private ["Ps28CustomDebugStringConvertible", "setImage"]
 - ["Ps28CustomDebugStringConvertible", "show"]
 - !private ["Ps28CustomDebugStringConvertible", "startAnimating"]
@@ -174,16 +187,19 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "value"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - ["Ps28CustomDebugStringConvertible", "viewMode"]
+- ["Ps28CustomDebugStringConvertible", "viewWillAppear"]
 - ["Ps28CustomDebugStringConvertible", "viewWillDisappear"]
 - ["Ps28CustomDebugStringConvertible", "volumeSliderFired"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - ["Ps23CustomStringConvertible", "PlayState"]
 - !private ["Ps23CustomStringConvertible", "StationController"]
+- !private ["Ps23CustomStringConvertible", "UIColor"]
 - !private ["Ps23CustomStringConvertible", "UIImage"]
 - ["Ps23CustomStringConvertible", "ViewMode"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "adjustsFontSizeToFitWidth"]
 - ["Ps23CustomStringConvertible", "bufferingIndicator"]
+- !private ["Ps23CustomStringConvertible", "color"]
 - ["Ps23CustomStringConvertible", "detailImageView"]
 - ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
 - !private ["Ps23CustomStringConvertible", "hashValue"]
@@ -194,6 +210,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "listeningTimeLabel"]
 - ["Ps23CustomStringConvertible", "playState"]
 - !private ["Ps23CustomStringConvertible", "progress"]
+- !private ["Ps23CustomStringConvertible", "redColor"]
 - !private ["Ps23CustomStringConvertible", "setImage"]
 - ["Ps23CustomStringConvertible", "show"]
 - !private ["Ps23CustomStringConvertible", "startAnimating"]
@@ -213,6 +230,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "value"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", "viewMode"]
+- ["Ps23CustomStringConvertible", "viewWillAppear"]
 - ["Ps23CustomStringConvertible", "viewWillDisappear"]
 - ["Ps23CustomStringConvertible", "volumeSliderFired"]
 - ["Ps23CustomStringConvertible", ""]
@@ -223,11 +241,13 @@ depends-member:
 - !private ["Ps9Equatable", "Station"]
 - !private ["Ps9Equatable", "StationController"]
 - ["Ps9Equatable", "Streaming"]
+- !private ["Ps9Equatable", "UIColor"]
 - !private ["Ps9Equatable", "UIImage"]
 - ["Ps9Equatable", "ViewMode"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "adjustsFontSizeToFitWidth"]
 - ["Ps9Equatable", "bufferingIndicator"]
+- !private ["Ps9Equatable", "color"]
 - ["Ps9Equatable", "detailImageView"]
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
 - ["Ps9Equatable", "hashValue"]
@@ -238,6 +258,7 @@ depends-member:
 - ["Ps9Equatable", "listeningTimeLabel"]
 - ["Ps9Equatable", "playState"]
 - !private ["Ps9Equatable", "progress"]
+- !private ["Ps9Equatable", "redColor"]
 - !private ["Ps9Equatable", "setImage"]
 - ["Ps9Equatable", "show"]
 - !private ["Ps9Equatable", "startAnimating"]
@@ -257,6 +278,7 @@ depends-member:
 - !private ["Ps9Equatable", "value"]
 - ["Ps9Equatable", "viewDidLoad"]
 - ["Ps9Equatable", "viewMode"]
+- ["Ps9Equatable", "viewWillAppear"]
 - ["Ps9Equatable", "viewWillDisappear"]
 - ["Ps9Equatable", "volumeSliderFired"]
 - ["Ps9Equatable", ""]
@@ -267,11 +289,13 @@ depends-member:
 - !private ["Ps8Hashable", "Station"]
 - !private ["Ps8Hashable", "StationController"]
 - ["Ps8Hashable", "Streaming"]
+- !private ["Ps8Hashable", "UIColor"]
 - !private ["Ps8Hashable", "UIImage"]
 - ["Ps8Hashable", "ViewMode"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "adjustsFontSizeToFitWidth"]
 - ["Ps8Hashable", "bufferingIndicator"]
+- !private ["Ps8Hashable", "color"]
 - ["Ps8Hashable", "detailImageView"]
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
 - ["Ps8Hashable", "hashValue"]
@@ -282,6 +306,7 @@ depends-member:
 - ["Ps8Hashable", "listeningTimeLabel"]
 - ["Ps8Hashable", "playState"]
 - !private ["Ps8Hashable", "progress"]
+- !private ["Ps8Hashable", "redColor"]
 - !private ["Ps8Hashable", "setImage"]
 - ["Ps8Hashable", "show"]
 - !private ["Ps8Hashable", "startAnimating"]
@@ -301,6 +326,7 @@ depends-member:
 - !private ["Ps8Hashable", "value"]
 - ["Ps8Hashable", "viewDidLoad"]
 - ["Ps8Hashable", "viewMode"]
+- ["Ps8Hashable", "viewWillAppear"]
 - ["Ps8Hashable", "viewWillDisappear"]
 - ["Ps8Hashable", "volumeSliderFired"]
 - ["Ps8Hashable", ""]
@@ -311,10 +337,12 @@ depends-member:
 - !private ["Ps14MirrorPathType", "hashValue"]
 - ["PSo8NSCoding", "PlayState"]
 - !private ["PSo8NSCoding", "StationController"]
+- !private ["PSo8NSCoding", "UIColor"]
 - !private ["PSo8NSCoding", "UIImage"]
 - ["PSo8NSCoding", "ViewMode"]
 - !private ["PSo8NSCoding", "adjustsFontSizeToFitWidth"]
 - ["PSo8NSCoding", "bufferingIndicator"]
+- !private ["PSo8NSCoding", "color"]
 - ["PSo8NSCoding", "detailImageView"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
 - !private ["PSo8NSCoding", "hidden"]
@@ -324,6 +352,7 @@ depends-member:
 - ["PSo8NSCoding", "listeningTimeLabel"]
 - ["PSo8NSCoding", "playState"]
 - !private ["PSo8NSCoding", "progress"]
+- !private ["PSo8NSCoding", "redColor"]
 - !private ["PSo8NSCoding", "setImage"]
 - ["PSo8NSCoding", "show"]
 - !private ["PSo8NSCoding", "startAnimating"]
@@ -343,11 +372,14 @@ depends-member:
 - !private ["PSo8NSCoding", "value"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", "viewMode"]
+- ["PSo8NSCoding", "viewWillAppear"]
 - ["PSo8NSCoding", "viewWillDisappear"]
 - ["PSo8NSCoding", "volumeSliderFired"]
 - ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "redColor"]
 - ["PSo26NSExtensionRequestHandling", "PlayState"]
 - !private ["PSo26NSExtensionRequestHandling", "StationController"]
+- !private ["PSo26NSExtensionRequestHandling", "UIColor"]
 - !private ["PSo26NSExtensionRequestHandling", "UIImage"]
 - ["PSo26NSExtensionRequestHandling", "ViewMode"]
 - ["PSo26NSExtensionRequestHandling", "bufferingIndicator"]
@@ -370,6 +402,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "updateWithStation"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", "viewMode"]
+- ["PSo26NSExtensionRequestHandling", "viewWillAppear"]
 - ["PSo26NSExtensionRequestHandling", "viewWillDisappear"]
 - ["PSo26NSExtensionRequestHandling", "volumeSliderFired"]
 - ["PSo26NSExtensionRequestHandling", ""]
@@ -380,6 +413,7 @@ depends-member:
 - !private ["CSo8NSObject", "StationController"]
 - ["CSo8NSObject", "UIActivityIndicatorView"]
 - ["CSo8NSObject", "UIButton"]
+- !private ["CSo8NSObject", "UIColor"]
 - !private ["CSo8NSObject", "UIImage"]
 - ["CSo8NSObject", "UIImageView"]
 - ["CSo8NSObject", "UILabel"]
@@ -388,6 +422,7 @@ depends-member:
 - ["CSo8NSObject", "ViewMode"]
 - !private ["CSo8NSObject", "adjustsFontSizeToFitWidth"]
 - ["CSo8NSObject", "bufferingIndicator"]
+- !private ["CSo8NSObject", "color"]
 - ["CSo8NSObject", "detailImageView"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
 - !private ["CSo8NSObject", "hidden"]
@@ -397,6 +432,7 @@ depends-member:
 - ["CSo8NSObject", "listeningTimeLabel"]
 - ["CSo8NSObject", "playState"]
 - !private ["CSo8NSObject", "progress"]
+- !private ["CSo8NSObject", "redColor"]
 - !private ["CSo8NSObject", "setImage"]
 - ["CSo8NSObject", "show"]
 - !private ["CSo8NSObject", "startAnimating"]
@@ -416,14 +452,17 @@ depends-member:
 - !private ["CSo8NSObject", "value"]
 - ["CSo8NSObject", "viewDidLoad"]
 - ["CSo8NSObject", "viewMode"]
+- ["CSo8NSObject", "viewWillAppear"]
 - ["CSo8NSObject", "viewWillDisappear"]
 - ["CSo8NSObject", "volumeSliderFired"]
 - ["PSo16NSObjectProtocol", "PlayState"]
 - !private ["PSo16NSObjectProtocol", "StationController"]
+- !private ["PSo16NSObjectProtocol", "UIColor"]
 - !private ["PSo16NSObjectProtocol", "UIImage"]
 - ["PSo16NSObjectProtocol", "ViewMode"]
 - !private ["PSo16NSObjectProtocol", "adjustsFontSizeToFitWidth"]
 - ["PSo16NSObjectProtocol", "bufferingIndicator"]
+- !private ["PSo16NSObjectProtocol", "color"]
 - ["PSo16NSObjectProtocol", "detailImageView"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
 - !private ["PSo16NSObjectProtocol", "hidden"]
@@ -433,6 +472,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "listeningTimeLabel"]
 - ["PSo16NSObjectProtocol", "playState"]
 - !private ["PSo16NSObjectProtocol", "progress"]
+- !private ["PSo16NSObjectProtocol", "redColor"]
 - !private ["PSo16NSObjectProtocol", "setImage"]
 - ["PSo16NSObjectProtocol", "show"]
 - !private ["PSo16NSObjectProtocol", "startAnimating"]
@@ -452,10 +492,12 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "value"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", "viewMode"]
+- ["PSo16NSObjectProtocol", "viewWillAppear"]
 - ["PSo16NSObjectProtocol", "viewWillDisappear"]
 - ["PSo16NSObjectProtocol", "volumeSliderFired"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "redColor"]
 - ["Ps21NilLiteralConvertible", "Some"]
 - !private ["Ps13OptionSetType", "Normal"]
 - ["Sq", "Some"]
@@ -476,6 +518,7 @@ depends-member:
 - !private ["C13InternetRadio7Station", "stationName"]
 - ["P13InternetRadio21StationAudioBuffering", "PlayState"]
 - !private ["P13InternetRadio21StationAudioBuffering", "StationController"]
+- !private ["P13InternetRadio21StationAudioBuffering", "UIColor"]
 - !private ["P13InternetRadio21StationAudioBuffering", "UIImage"]
 - ["P13InternetRadio21StationAudioBuffering", "ViewMode"]
 - !private ["P13InternetRadio21StationAudioBuffering", "bufferingIndicator"]
@@ -506,6 +549,7 @@ depends-member:
 - !private ["C13InternetRadio26StreamDetailViewController", "StationController"]
 - ["C13InternetRadio26StreamDetailViewController", "UIActivityIndicatorView"]
 - ["C13InternetRadio26StreamDetailViewController", "UIButton"]
+- !private ["C13InternetRadio26StreamDetailViewController", "UIColor"]
 - !private ["C13InternetRadio26StreamDetailViewController", "UIImage"]
 - ["C13InternetRadio26StreamDetailViewController", "UIImageView"]
 - ["C13InternetRadio26StreamDetailViewController", "UILabel"]
@@ -532,6 +576,7 @@ depends-member:
 - ["C13InternetRadio26StreamDetailViewController", "updateWithStation"]
 - ["C13InternetRadio26StreamDetailViewController", "viewDidLoad"]
 - ["C13InternetRadio26StreamDetailViewController", "viewMode"]
+- ["C13InternetRadio26StreamDetailViewController", "viewWillAppear"]
 - ["C13InternetRadio26StreamDetailViewController", "viewWillDisappear"]
 - ["C13InternetRadio26StreamDetailViewController", "volumeSliderFired"]
 - !private ["Ps10Strideable", "hashValue"]
@@ -541,6 +586,7 @@ depends-member:
 - !private ["P13InternetRadio13TimerDelegate", "stationPaused"]
 - !private ["P13InternetRadio13TimerDelegate", "stationStarted"]
 - !private ["PSo29UIAccessibilityIdentification", "adjustsFontSizeToFitWidth"]
+- !private ["PSo29UIAccessibilityIdentification", "color"]
 - !private ["PSo29UIAccessibilityIdentification", "hidden"]
 - !private ["PSo29UIAccessibilityIdentification", "hidesWhenStopped"]
 - !private ["PSo29UIAccessibilityIdentification", "image"]
@@ -551,10 +597,13 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "stopAnimating"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo29UIAccessibilityIdentification", "value"]
+- !private ["CSo23UIActivityIndicatorView", "color"]
+- !private ["CSo23UIActivityIndicatorView", "hidden"]
 - !private ["CSo23UIActivityIndicatorView", "hidesWhenStopped"]
 - !private ["CSo23UIActivityIndicatorView", "startAnimating"]
 - !private ["CSo23UIActivityIndicatorView", "stopAnimating"]
 - !private ["PSo12UIAppearance", "adjustsFontSizeToFitWidth"]
+- !private ["PSo12UIAppearance", "color"]
 - !private ["PSo12UIAppearance", "hidden"]
 - !private ["PSo12UIAppearance", "hidesWhenStopped"]
 - !private ["PSo12UIAppearance", "image"]
@@ -566,10 +615,12 @@ depends-member:
 - !private ["PSo12UIAppearance", "value"]
 - ["PSo21UIAppearanceContainer", "PlayState"]
 - !private ["PSo21UIAppearanceContainer", "StationController"]
+- !private ["PSo21UIAppearanceContainer", "UIColor"]
 - !private ["PSo21UIAppearanceContainer", "UIImage"]
 - ["PSo21UIAppearanceContainer", "ViewMode"]
 - !private ["PSo21UIAppearanceContainer", "adjustsFontSizeToFitWidth"]
 - ["PSo21UIAppearanceContainer", "bufferingIndicator"]
+- !private ["PSo21UIAppearanceContainer", "color"]
 - ["PSo21UIAppearanceContainer", "detailImageView"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
 - !private ["PSo21UIAppearanceContainer", "hidden"]
@@ -598,12 +649,15 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "value"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", "viewMode"]
+- ["PSo21UIAppearanceContainer", "viewWillAppear"]
 - ["PSo21UIAppearanceContainer", "viewWillDisappear"]
 - ["PSo21UIAppearanceContainer", "volumeSliderFired"]
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["CSo8UIButton", "setImage"]
+- !private ["CSo7UIColor", "redColor"]
 - ["PSo18UIContentContainer", "PlayState"]
 - !private ["PSo18UIContentContainer", "StationController"]
+- !private ["PSo18UIContentContainer", "UIColor"]
 - !private ["PSo18UIContentContainer", "UIImage"]
 - ["PSo18UIContentContainer", "ViewMode"]
 - ["PSo18UIContentContainer", "bufferingIndicator"]
@@ -626,6 +680,7 @@ depends-member:
 - ["PSo18UIContentContainer", "updateWithStation"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", "viewMode"]
+- ["PSo18UIContentContainer", "viewWillAppear"]
 - ["PSo18UIContentContainer", "viewWillDisappear"]
 - ["PSo18UIContentContainer", "volumeSliderFired"]
 - ["PSo18UIContentContainer", ""]
@@ -633,6 +688,7 @@ depends-member:
 - !private ["CSo9UIControl", "value"]
 - !private ["VSC14UIControlState", "Normal"]
 - !private ["PSo17UICoordinateSpace", "adjustsFontSizeToFitWidth"]
+- !private ["PSo17UICoordinateSpace", "color"]
 - !private ["PSo17UICoordinateSpace", "hidden"]
 - !private ["PSo17UICoordinateSpace", "hidesWhenStopped"]
 - !private ["PSo17UICoordinateSpace", "image"]
@@ -643,6 +699,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo17UICoordinateSpace", "value"]
 - !private ["PSo13UIDynamicItem", "adjustsFontSizeToFitWidth"]
+- !private ["PSo13UIDynamicItem", "color"]
 - !private ["PSo13UIDynamicItem", "hidden"]
 - !private ["PSo13UIDynamicItem", "hidesWhenStopped"]
 - !private ["PSo13UIDynamicItem", "image"]
@@ -654,10 +711,12 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "value"]
 - ["PSo18UIFocusEnvironment", "PlayState"]
 - !private ["PSo18UIFocusEnvironment", "StationController"]
+- !private ["PSo18UIFocusEnvironment", "UIColor"]
 - !private ["PSo18UIFocusEnvironment", "UIImage"]
 - ["PSo18UIFocusEnvironment", "ViewMode"]
 - !private ["PSo18UIFocusEnvironment", "adjustsFontSizeToFitWidth"]
 - ["PSo18UIFocusEnvironment", "bufferingIndicator"]
+- !private ["PSo18UIFocusEnvironment", "color"]
 - ["PSo18UIFocusEnvironment", "detailImageView"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
 - !private ["PSo18UIFocusEnvironment", "hidden"]
@@ -686,6 +745,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "value"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", "viewMode"]
+- ["PSo18UIFocusEnvironment", "viewWillAppear"]
 - ["PSo18UIFocusEnvironment", "viewWillDisappear"]
 - ["PSo18UIFocusEnvironment", "volumeSliderFired"]
 - ["PSo18UIFocusEnvironment", ""]
@@ -701,6 +761,7 @@ depends-member:
 - !private ["CSo11UIResponder", "StationController"]
 - ["CSo11UIResponder", "UIActivityIndicatorView"]
 - ["CSo11UIResponder", "UIButton"]
+- !private ["CSo11UIResponder", "UIColor"]
 - !private ["CSo11UIResponder", "UIImage"]
 - ["CSo11UIResponder", "UIImageView"]
 - ["CSo11UIResponder", "UILabel"]
@@ -709,6 +770,7 @@ depends-member:
 - ["CSo11UIResponder", "ViewMode"]
 - !private ["CSo11UIResponder", "adjustsFontSizeToFitWidth"]
 - ["CSo11UIResponder", "bufferingIndicator"]
+- !private ["CSo11UIResponder", "color"]
 - ["CSo11UIResponder", "detailImageView"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
 - !private ["CSo11UIResponder", "hidden"]
@@ -737,11 +799,13 @@ depends-member:
 - !private ["CSo11UIResponder", "value"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["CSo11UIResponder", "viewMode"]
+- ["CSo11UIResponder", "viewWillAppear"]
 - ["CSo11UIResponder", "viewWillDisappear"]
 - ["CSo11UIResponder", "volumeSliderFired"]
 - !private ["CSo8UISlider", "value"]
 - ["PSo16UIStateRestoring", "PlayState"]
 - !private ["PSo16UIStateRestoring", "StationController"]
+- !private ["PSo16UIStateRestoring", "UIColor"]
 - !private ["PSo16UIStateRestoring", "UIImage"]
 - ["PSo16UIStateRestoring", "ViewMode"]
 - ["PSo16UIStateRestoring", "bufferingIndicator"]
@@ -764,6 +828,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "updateWithStation"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", "viewMode"]
+- ["PSo16UIStateRestoring", "viewWillAppear"]
 - ["PSo16UIStateRestoring", "viewWillDisappear"]
 - ["PSo16UIStateRestoring", "volumeSliderFired"]
 - ["PSo16UIStateRestoring", ""]
@@ -772,10 +837,12 @@ depends-member:
 - !private ["PSo16UITabBarDelegate", "tabBar"]
 - ["PSo18UITraitEnvironment", "PlayState"]
 - !private ["PSo18UITraitEnvironment", "StationController"]
+- !private ["PSo18UITraitEnvironment", "UIColor"]
 - !private ["PSo18UITraitEnvironment", "UIImage"]
 - ["PSo18UITraitEnvironment", "ViewMode"]
 - !private ["PSo18UITraitEnvironment", "adjustsFontSizeToFitWidth"]
 - ["PSo18UITraitEnvironment", "bufferingIndicator"]
+- !private ["PSo18UITraitEnvironment", "color"]
 - ["PSo18UITraitEnvironment", "detailImageView"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
 - !private ["PSo18UITraitEnvironment", "hidden"]
@@ -804,10 +871,12 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "value"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", "viewMode"]
+- ["PSo18UITraitEnvironment", "viewWillAppear"]
 - ["PSo18UITraitEnvironment", "viewWillDisappear"]
 - ["PSo18UITraitEnvironment", "volumeSliderFired"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "adjustsFontSizeToFitWidth"]
+- !private ["CSo6UIView", "color"]
 - !private ["CSo6UIView", "hidden"]
 - !private ["CSo6UIView", "hidesWhenStopped"]
 - !private ["CSo6UIView", "image"]
@@ -824,6 +893,7 @@ depends-member:
 - !private ["CSo16UIViewController", "StationController"]
 - ["CSo16UIViewController", "UIActivityIndicatorView"]
 - ["CSo16UIViewController", "UIButton"]
+- !private ["CSo16UIViewController", "UIColor"]
 - !private ["CSo16UIViewController", "UIImage"]
 - ["CSo16UIViewController", "UIImageView"]
 - ["CSo16UIViewController", "UILabel"]
@@ -850,6 +920,7 @@ depends-member:
 - ["CSo16UIViewController", "updateWithStation"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", "viewMode"]
+- ["CSo16UIViewController", "viewWillAppear"]
 - ["CSo16UIViewController", "viewWillDisappear"]
 - ["CSo16UIViewController", "volumeSliderFired"]
 - ["CSo16UIViewController", ""]
@@ -859,6 +930,7 @@ depends-member:
 - ["O13InternetRadio8ViewMode", "hashValue"]
 - !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps33_BuiltinIntegerLiteralConvertible", "hashValue"]
+- !private ["Ps24_ColorLiteralConvertible", "redColor"]
 - !private ["Ps24_ImageLiteralConvertible", "init"]
 - !private ["Ps14_Incrementable", "hashValue"]
 - !private ["Ps22_IntegerArithmeticType", "hashValue"]
@@ -869,6 +941,7 @@ depends-member:
 - ["Ps12_Reflectable", "Some"]
 - !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
 - !private ["Ps12_Reflectable", "adjustsFontSizeToFitWidth"]
+- !private ["Ps12_Reflectable", "color"]
 - !private ["Ps12_Reflectable", "hashValue"]
 - !private ["Ps12_Reflectable", "hidden"]
 - !private ["Ps12_Reflectable", "hidesWhenStopped"]
@@ -901,6 +974,7 @@ depends-nominal:
 - !private "Ps11IntegerType"
 - !private "Ps14MirrorPathType"
 - "PSo8NSCoding"
+- !private "PSo9NSCopying"
 - "PSo26NSExtensionRequestHandling"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
@@ -926,6 +1000,7 @@ depends-nominal:
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
 - !private "CSo8UIButton"
+- !private "CSo7UIColor"
 - "PSo18UIContentContainer"
 - !private "CSo9UIControl"
 - !private "VSC14UIControlState"
@@ -948,6 +1023,7 @@ depends-nominal:
 - "O13InternetRadio8ViewMode"
 - !private "Ps33_BuiltinBooleanLiteralConvertible"
 - !private "Ps33_BuiltinIntegerLiteralConvertible"
+- !private "Ps24_ColorLiteralConvertible"
 - !private "Ps24_ImageLiteralConvertible"
 - !private "Ps14_Incrementable"
 - !private "Ps22_IntegerArithmeticType"
@@ -969,4 +1045,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
-interface-hash: "ad49bffad7447fbfed289ad907df2ab9"
+interface-hash: "9e25c80b8af782fc79711941f21624d3"
